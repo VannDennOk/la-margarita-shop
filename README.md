@@ -1,11 +1,11 @@
 <h1>LA MARGARITA SHOP</h1>
-<p>Trabajo Final Integrador para el curso de Front End con Java Script de Talento Tech 2024.</p>
+<p>Proyecto Integrador para el curso de Front End con JavaScript de Talento Tech 2024.</p>
 <h2>Tecnologías</h2>
-<p>HTML CSS JavaScrip</p>
+<p>HTML CSS JavaScript</p>
 <h2>Estado</h2>
 <p>En desarrollo</p>
 <h3>Etapas</h3>
-<p>El proyecto se hará en varias etapas de desarrollo donde se irán agregando distientos aspectos a partir de las tecnologías aprendidas
+<p>El proyecto se hará en varias etapas de desarrollo donde se irán agregando distintos aspectos a partir de las tecnologías aprendidas en el curso.
 <br>
 Etapa 1: HTML
 <br>
