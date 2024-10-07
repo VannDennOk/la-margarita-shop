@@ -13,6 +13,6 @@ Etapa 2: CSS
 <br>
 Etapa 3: JavaScript
 </p>
-<h2>Descripción dep royecto<h2>
+<h2>Descripción dep royecto</h2>
 <p>El proyecto consite en la creación de una página web con un carrito de compras.</p>
 <br>
