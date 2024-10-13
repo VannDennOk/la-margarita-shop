@@ -6,228 +6,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Margarita Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <p>3 CUOTAS SIN INTERÉS</p>
-            <i class="bi bi-credit-card"></i>
+
+    <!-- HEADER TODOS LAS PAGES -->
+    <header class="header">
+        <div class="header__banner">
+            <p class="header__banner-txt">3 CUOTAS SIN INTERÉS</p>
+            <i class="bi bi-credit-card bi-small"></i>
         </div>
-        <img src="./images/logo.svg" width="50" alt="logo margarita">
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/talleres.html">Talleres</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
-                <li><a href="/quienes-somos.html">Quiénes somos</a></li>
+        <nav class="header__nav">
+            <img class="header__nav-logo" src="./images/logo.svg" alt="logo margarita">
+            <ul class="header__nav-links">
+                <li class="header__nav-link"><a class="selected" href="/index.html">Inicio</a></li>
+                <li class="header__nav-link"><a href="/pages/productos.html">Productos</a></li>
+                <li class="header__nav-link"><a href="/pages/talleres.html">Talleres</a></li>
+                <li class="header__nav-link"><a href="/pages/contacto.html">Contacto</a></li>
+                <li class="header__nav-link"><a href="/pages/nosotras.html">Nosotras</a></li>
             </ul>
+            <div class="header__nav-icons">
+                <a><i class="bi bi-search bi-hover"></i></a>
+                <a><i class="bi bi-heart bi-hover"></i></a>
+                <a><i class="bi bi-person-square bi-hover"></i></a>
+                <a><i class="bi bi-bag bi-hover"></i></a>
+            </div>
         </nav>
-        <div>
-            <a><i class="bi bi-search"></i></a>
-            <a><i class="bi bi-heart"></i></a>
-            <a><i class="bi bi-person-square"></i></a>
-            <a><i class="bi bi-bag"></i></a>
-        </div>
     </header>
 
     <main>
+        <!-- WELLCOME -->
         <section class="container__wellcome-area">
             <div class="container__wellcome-blur">
-                <div class="container__wellcome-txt">
-                    <h1>¡BIENVENIDOS A LA MARGARITA!</h1>
-                    <P>Somos una tienda de flores online y confeccionamos nuestros ramos con mucho amor!</P>
-                    <P>Usamos flores y productos de calidad, todos cuidadosamente seleccionados. En nuestra tienda podés
-                        encontrar ramos para regalar, arreglos florares para decorar tus espacios y arreglos especiales
-                        para eventos. Además, contamos con servicios de suscripción y talleres para aficionados.
-                    </P>
-                    <P>Realizamos envíos en la zona del AMBA. Contamos una amplia oferta de medios de pago ¡No dudes en
-                        contactarnos!
-                    </P>
-                    <button>Ir a la tienda</button>
+                <div class="container__wellcome-box">
+                    <h1 class="titulo txt-xlarge txt-dark">¡BIENVENIDOS A LA MARGARITA!</h1>
+                    <div class="container__wellcome-txt">
+                        <P class="txt-body txt-small txt-dark">Somos una <strong class="txt-resalte">tienda de
+                                flores</strong> online y confeccionamos nuestros ramos con mucho
+                            amor!</P>
+                        <P class="txt-body txt-small txt-dark">Usamos flores y productos de calidad, todos
+                            cuidadosamente seleccionados. En nuestra tienda podés
+                            encontrar <strong class="txt-resalte">ramos</strong> para regalar, <strong
+                                class="txt-resalte">arreglos florares</strong>
+                            para decorar tus espacios y <strong class="txt-resalte">diseños especiales</strong>
+                            para eventos. Además, contamos con servicios de suscripción y talleres para aficionados.
+                        </P>
+                        <P class="txt-body txt-small txt-dark">Realizamos envíos en la zona del <strong
+                                class="txt-resalte">AMBA</strong>. Te ofrecemos una amplia oferta de medios
+                            de pago ¡No dudes en
+                            contactarnos!
+                        </P>
+                    </div>
+                    <button class="btn-full btn-full-hover">Ir a la tienda</button>
                 </div>
             </div>
         </section>
 
+        <!-- LINKS A PAGES -->
         <section class="container__pages-area">
             <div class="container__pages-links">
                 <div class="container__pages-linkcard">
-                    <img src="./images/card-ramos.svg" alt="ilustración de un ramo de flores">
-                    <button>Ramos</button>
+                    <img class="img_link-pages" src="./images/inicio/card-ramos.svg"
+                        alt="ilustración de un ramo de flores">
+                    <button class="btn-blanco btn-pages btn-blanco-hover">Ramos</button>
                 </div>
                 <div class="container__pages-linkcard">
-                    <img src="./images/card-decoracion.svg" alt="ilustración de un jarrón con flores">
-                    <button>Decoración</button>
+                    <img class="img_link-pages" src="./images/inicio/card-decoracion.svg"
+                        alt="ilustración de un jarrón con flores">
+                    <button class="btn-blanco btn-pages btn-blanco-hover">Decoración</button>
                 </div>
                 <div class="container__pages-linkcard">
-                    <img src="./images/card-eventos.svg" alt="ilustración dos anillos entrelazados y flores">
-                    <button>Eventos</button>
+                    <img class="img_link-pages" src="./images/inicio/card-eventos.svg"
+                        alt="ilustración dos anillos entrelazados y flores">
+                    <button class="btn-blanco btn-pages btn-blanco-hover">Eventos</button>
                 </div>
             </div>
         </section>
 
+        <!-- BANNER -->
         <section class="container__banner-area">
             <div class="container__banner">
                 <div class="container__banner-txt">
-                    <p>CONTÁ CON NOSOTROS</p>
-                    <p>Te ayudamos a crear momentos especiales</p>
+                    <p class="title txt-medium txt-light">CONTÁ CON NOSOTROS</p>
+                    <p class="txt-body txt-small txt-light">Te ayudamos a crear momentos especiales</p>
                 </div>
             </div>
         </section>
 
+        <!-- PRODUCTOS DESTACADOS -->
         <section class="container__products-area">
             <div class="section__header">
-                <h2>PRODUCTOS DESTACADOS</h2>
+                <h2 class="titulo txt-medium txt-light">PRODUCTOS DESTACADOS</h2>
             </div>
-            <div class="container__products-grid"></div>
-            <ol>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-                <li class="container__products-card">
-                    <img src="./images/product.png" alt="ramo de flores" height="200">
-                    <span>
-                        <h4>Product Title</h4>
-                    </span>
-                    <span>
-                        <p>Price</p>
-                    </span>
-                    <button>Agregar al carrito</button>
-                </li>
-            </ol>
-            <button>Ver todo los productos</button>
+            <div class="container__products-grid-area">
+                <ol class="container__products-grid">
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                    <li class="container__products-card">
+                        <img class="img_product" src="./images/productos/product.png" alt="ramo de flores" height="200">
+                        <div class="container__product-cards-info">
+                            <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <button class="btn-full btn-agregar-carrito btn-full-hover">Agregar al carrito</button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <button class="btn-blanco btn-blanco-hover">Ver todos los productos</button>
         </section>
 
-        <section class="container__workshop-area">
-            <div class="section__header">
-                <h2>TALLERES</h2>
-            </div>
+        <!-- WORKSHOPS -->
+        <section>
+            <!--class="container__workshop-area">
+             <div class="section__header">
+                <h2 class="titulo txt-medium txt-light">TALLERES</h2>
+            </div> -->
             <div class="container__workshop-frame">
-                <video controls class="container__workshop-video" width="500">
-                    <source src="/media/workshop.mp4" type="video/mp4" alt="video del armado de un ramo de flores">
-                    <track src="/media/subtitlesEs.vtt" kind="subtitles" srclang="es" label="Español" default>
-                    <track src="/media/subtitlesEn.vtt" kind="subtitles" srclang="en" label="English">
-                    Tu navegador no soporta la reproducción del video.
-                </video>
+                <div class="container__workshop-video">
+                    <video autoplay loop class="video">
+                        <source src="./media/workshop.mp4" type="video/mp4" alt="video del armado de un ramo de flores">
+                        <!--<track src="./media/subtitlesEs.vtt" kind="subtitles" srclang="es" label="Español" default>
+                        <track src="./media/subtitlesEn.vtt" kind="subtitles" srclang="en" label="English">-->
+                        Tu navegador no soporta la reproducción del video.
+                    </video>
+                </div>
                 <div class="container__workshop-card">
-                    <h3>TALLERES</h3>
-                    <P>Tenemos talleres presenciales y virtuales sobre armado de arreglos florales. Hay uno para cada
-                        ocasión. Pueden ser para vos o para regalarle a alguien especial.</P>
-                    <P>No te los pierdas!</P>
-                    <button>Ver talleres</button>
+                    <h3 class="titulo txt-medium txt-light">TALLERES</h3>
+                    <div class="container__workshop-card-txt">
+                        <P class="txt-body txt-small txt-light">Tenemos talleres presenciales y virtuales sobre armado
+                            de arreglos florales.</P>
+                        <P class="txt-body txt-small txt-light">Hay uno para cada ocasión.</P>
+                        <P class="txt-body txt-small txt-light">Pueden ser para vos o para regalarle a alguien especial.
+                        </P>
+                        <P class="txt-body txt-small txt-light">No te los pierdas!</P>
+                    </div>
+                    <button class="btn-blanco btn-100 btn-blanco-hover">Ver talleres</button>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACTO -->
         <section class="container__contact-area">
             <div class="section__header">
-                <h2>CONTACTO</h2>
+                <h2 class="titulo txt-medium txt-light">CONTACTO</h2>
             </div>
 
             <div class="container__contact-frame">
-                <img src="/images/contact-img.png" alt="mano con margarita" width="500">
+                <div class="img-contact"></div>
+                <!-- <img class="img-contact" src="./images/contacto/contact-img.png" alt="mano con margarita"> -->
                 <div class="container__contact-box">
                     <div class="container__contact-info">
-                        <p>Si tenés alguna consulta, no dudes en contactarnos. Podés completar el formulario y te
+                        <p class="txt-body txt-small txt-light">Si tenés alguna consulta, no dudes en contactarnos.
+                            Podés completar el formulario y te
                             escribiremos a la brevedad.</p>
                         <div class="contact">
-                            <p>Contacto</p>
+                            <p class="titulo txt-medium txt-light">Contacto</p>
                             <ul class="contact-list">
-                                <li><a href="/paginaprueba.html"><i
-                                            class="bi bi-envelope"></i></a>lamargarita.shop@gmail.com</li>
-                                <li><a href="/paginaprueba.html"><i class="bi bi-geo-alt"></i></a>Rivadavia 5432 - CABA,
-                                    Argentina</li>
-                                <li><i class="bi bi-telephone"></i>+54 11 4981-0987</li>
-                                <li><a href="/paginaprueba.html"><i class="bi bi-whatsapp"></i></a>+54 9 11 6867-2345
+                                <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                            class="bi bi-envelope bi-hover"></i></a>lamargarita.shop@gmail.com
                                 </li>
+                                <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                            class="bi bi-geo-alt bi-hover"></i></a>Rivadavia 5432 - CABA,
+                                    Argentina</li>
+                                <li class="contact-line txt-body txt-small txt-light"><i class="bi bi-telephone"></i>+54
+                                    11
+                                    4981-0987</li>
+                                <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                            class="bi bi-whatsapp bi-hover"></i></a>+54 9 11 6867-2345</li>
                             </ul>
                         </div>
                         <div class="social">
-                            <p>Seguinos</p>
+                            <p class="titulo txt-medium txt-light">Seguinos</p>
                             <div class="social-icons">
-                                <a href="/paginaprueba.html"><i class="bi bi-facebook"></i></a>
-                                <a href="/paginaprueba.html"><i class="bi bi-instagram"></i></a>
-                                <a href="/paginaprueba.html"><i class="bi bi-pinterest"></i></a>
-                                <a href="/paginaprueba.html"><i class="bi bi-youtube"></i></a>
+                                <a href="/pages/error.html"><i class="bi bi-facebook bi-hover"></i></a>
+                                <a href="/pages/error.html"><i class="bi bi-instagram bi-hover"></i></a>
+                                <a href="/pages/error.html"><i class="bi bi-pinterest bi-hover"></i></a>
+                                <a href="/pages/error.html"><i class="bi bi-youtube bi-hover"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="container__contact-form">
-                        <p>Formulario de contacto</p>
-                        <form action="#" method="POST">
-                            <label for="name">Nombre</label>
+                        <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
+                        <form class="form-contact" action="#" method="POST">
+                            <label for="name">Nombre*</label>
                             <input type="text" name="name" id="name" placeholder="Ingresá tu nombre" required>
 
-                            <label for="email">E-mail</label>
+                            <label for="email">E-mail*</label>
                             <input type="email" name="email" id="email" placeholder="Ingresá tu e-mail" required>
 
                             <label for="phone">Teléfono</label>
@@ -236,96 +255,124 @@
                             <label for="subjet">Asunto</label>
                             <input type="text" name="subjet" id="subjet" placeholder="Ingresá un asunto">
 
-                            <label for="message">Mensaje</label>
+                            <label for="message">Mensaje*</label>
                             <textarea name="message" id="messege" rows="10" cols="30"
                                 placeholder="Escribí tu mensaje aquí" required></textarea>
 
-                            <input type="checkbox" name="checkbox" id="checkbox">
-                            <label for="checkbox">Quiero suscribirme al Newsletter</label>
+                            <label class="checkbox-line" for="checkbox">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <span class="checkmark"></span>
+                                Quiero suscribirme al Newsletter
+                            </label>
 
-                            <input type="submit" value="Enviar">
+                            <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar">
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container__banner-area2">
-            <div class="container__banner2">
-                <div class="container__banner-txt">
-                    <p>ENVÍOS</p>
-                    <p>Hacemos entregas en todo el AMBA</p>
-                    <p>Los 365 días del año</p>
+        <!-- BANNER -->
+        <section class="container__banner-area">
+            <div class="container__banner-2">
+                <div class="container__banner-contentbox">
+                    <p class="titulo txt-medium txt-light">ENVÍOS</p>
+                    <div class="container__banner-txt">
+                        <p class="txt-body txt-small txt-light">Hacemos entregas en todo el AMBA</p>
+                        <p class="txt-body txt-small txt-light">Los 365 días del año</p>
+                    </div>
                     <i class="bi bi-truck"></i>
                 </div>
-                <div class="container__banner-txt">
-                    <p>RETIROS</p>
-                    <p>Podés retirar por nuestro local</p>
-                    <p>de lunes a sábados de 8 a 20 hs</p>
+                <div class="container__banner-contentbox">
+                    <p class="titulo txt-medium txt-light">TIEMPOS</p>
+                    <div class="container__banner-txt">
+                        <p class="txt-body txt-small txt-light">Envíos express en 24hs o</p>
+                        <p class="txt-body txt-small txt-light">envíos programados</p>
+                    </div>
+                    <i class="bi bi-clock-history"></i>
+                </div>
+                <div class="container__banner-contentbox">
+                    <p class="titulo txt-medium txt-light">RETIROS</p>
+                    <div class="container__banner-txt">
+                        <p class="txt-body txt-small txt-light">Podés retirar por nuestro local</p>
+                        <p class="txt-body txt-small txt-light">de lunes a sábados de 8 a 20 hs</p>
+                    </div>
                     <i class="bi bi-shop"></i>
                 </div>
             </div>
         </section>
 
     </main>
-    <footer>
+
+    <!-- FOOTER PARA TODOS LAS PAGES -->
+    <footer class="footer__area">
         <section class="footer__top">
             <div class="footer__navegacion">
-                <p>Navegación</p>
-                <ul>
+                <p class="titulo txt-medium txt-light">Navegación</p>
+                <ul class="footer__navegacion-links">
                     <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/productos.html">Productos</a></li>
-                    <li><a href="/talleres.html">Talleres</a></li>
-                    <li><a href="/contacto.html">Contacto</a></li>
-                    <li><a href="/quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="/pages/productos.html">Productos</a></li>
+                    <li><a href="/pages/talleres.html">Talleres</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <li><a href="/pages/nosotras.html">Nosotras</a></li>
                     <li><a href="#">Opiniones</a></li>
                     <li><a href="#">Cómo comprar</a></li>
                     <li><a href="#">Cómo llegar</a></li>
                 </ul>
             </div>
             <div class="footer__pago">
-                <p>Medios de pago</p>
+                <p class="titulo txt-medium txt-light">Medios de pago</p>
                 <div class="footer__pago-img">
-                    <img src="/images/c-visa.png" alt="logo visa">
-                    <img src="/images/c-master.png" alt="logo mastercard">
-                    <img src="/images/c-american.png" alt="logo american express">
-                    <img src="/images/c-diners.png" alt="logo diners club">
-                    <img src="/images/c-mp.png" alt="logo mercado pago">
+                    <img src="./images/pago/c-visa.png" alt="logo visa">
+                    <img src="./images/pago/c-master.png" alt="logo mastercard">
+                    <img src="./images/pago/c-american.png" alt="logo american express">
+                    <img src="./images/pago/c-diners.png" alt="logo diners club">
+                    <img src="./images/pago/c-mp.png" alt="logo mercado pago">
                 </div>
             </div>
             <div class="footer__contact">
                 <div class="contact">
-                    <p>Contacto</p>
+                    <p class="titulo txt-medium txt-light">Contacto</p>
                     <ul class="contact-list">
-                        <li><a href="/paginaprueba.html"><i class="bi bi-envelope"></i></a>lamargarita.shop@gmail.com
+                        <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                    class="bi bi-envelope bi-hover"></i></a>lamargarita.shop@gmail.com
                         </li>
-                        <li><a href="/paginaprueba.html"><i class="bi bi-geo-alt"></i></a>Rivadavia 5432 - CABA,
+                        <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                    class="bi bi-geo-alt bi-hover"></i></a>Rivadavia 5432 - CABA,
                             Argentina</li>
-                        <li><i class="bi bi-telephone"></i>+54 11 4981-0987</li>
-                        <li><a href="/paginaprueba.html"><i class="bi bi-whatsapp"></i></a>+54 9 11 6867-2345</li>
+                        <li class="contact-line txt-body txt-small txt-light"><i class="bi bi-telephone"></i>+54 11
+                            4981-0987</li>
+                        <li class="contact-line txt-body txt-small txt-light"><a href="/pages/error.html"><i
+                                    class="bi bi-whatsapp bi-hover"></i></a>+54 9 11 6867-2345</li>
                     </ul>
                 </div>
                 <div class="social">
-                    <p>Seguinos</p>
+                    <p class="titulo txt-medium txt-light">Seguinos</p>
                     <div class="social-icons">
-                        <a href="/paginaprueba.html"><i class="bi bi-facebook"></i></a>
-                        <a href="/paginaprueba.html"><i class="bi bi-instagram"></i></a>
-                        <a href="/paginaprueba.html"><i class="bi bi-pinterest"></i></a>
-                        <a href="/paginaprueba.html"><i class="bi bi-youtube"></i></a>
+                        <a href="/pages/error.html"><i class="bi bi-facebook bi-hover"></i></a>
+                        <a href="/pages/error.html"><i class="bi bi-instagram bi-hover"></i></a>
+                        <a href="/pages/error.html"><i class="bi bi-pinterest bi-hover"></i></a>
+                        <a href="/pages/error.html"><i class="bi bi-youtube bi-hover"></i></a>
                     </div>
                 </div>
             </div>
-            <form class="newslatter" action="#" method="POST">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Ingresá tu e-mail" required>
-                <button type="submit"><i class="bi bi-send"></i></button>
-            </form>
+            <div class="newsletter">
+                <p class="titulo txt-medium txt-light">Newsletter</p>
+                <form class="newslatter-input" action="https://formspree.io/f/mwpkewyb" method="POST">
+                    <label for="email"></label>
+                    <input class="input txt-body txt-small txt-dark" type="email" name="email" id="email"
+                        placeholder="Ingresá tu e-mail" required>
+                    <button type="submit" class="btn-submit"><i class="bi bi-send"></i></button>
+                </form>
+            </div>
         </section>
         <section class="footer_copyright">
-            <p>© Vanina Denegri | 2024</p>
-            <p>Esta página fue creada para el Proyecto Final Integrador del curso de Front End de Talento Tech</p>
+            <p class="txt-body txt-small txt-light">© Vanina Denegri | 2024</p>
+            <p class="txt-body txt-small txt-light">Esta página fue creada para el Proyecto Final Integrador del curso
+                de Front End de Talento Tech</p>
         </section>
     </footer>
+
 </body>
 
 </html>
