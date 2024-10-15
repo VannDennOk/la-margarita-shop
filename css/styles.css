@@ -44,10 +44,10 @@ PLAYFAIR DISPLAY --> Títulos
     /* FONDO #f8f9f8*/
     --color-blanco-transp: rgba(248, 249, 248, 0.2);
     --color-verde-claro: #b7c3b7;
-    --color-verde: #6f876f;
-    --color-verde-transp: rgba(111, 135, 111, 0.5);
-    --color-verde-oscuro: #3d493d;
-    --color-verde-oscuro-transp: rgba(61, 73, 61, 0.5);
+    --color-verde: rgb(81, 98, 81);
+    --color-verde-transp: rgba(81, 98, 81, 0.5);
+    --color-verde-oscuro: rgb(32, 36, 32);
+    --color-verde-oscuro-transp: rgba(32, 36, 32, 0.5);
     --color-mostaza-claro: #e6c381;
     --color-mostaza: #cd8603;
     --color-mostaza-oscuro: #6c4907;
@@ -71,7 +71,7 @@ body {
 }
 
 /* LINKS E ICONOS - ESTILOS GENERALES*/
-li {
+/* li {
     list-style: none;
 }
 
@@ -98,7 +98,7 @@ a:active {
 
 .selected:hover {
     border-bottom: 2px solid var(--color-mostaza-claro);
-}
+} */
 
 .bi {
     color: var(--color-blanco);
@@ -303,6 +303,31 @@ textarea {
     gap: 1rem;
 }
 
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    text-decoration: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: var(--color-mostaza-claro);
+}
+
+.selected {
+    border-bottom: 2px solid var(--color-blanco);
+}
+
+.selected:hover {
+    border-bottom: 2px solid var(--color-mostaza-claro);
+}
+
+
 /* HEADER DE SECCIÓN - ESTILOS GENERALES */
 
 .section__header {
@@ -348,6 +373,22 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-mostaza-claro);
 }
 
 .footer__pago-img {
