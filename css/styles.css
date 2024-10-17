@@ -44,9 +44,9 @@ PLAYFAIR DISPLAY --> Títulos
     /* FONDO #f8f9f8*/
     --color-blanco-transp: rgba(248, 249, 248, 0.2);
     --color-verde-claro: #b7c3b7;
-    --color-verde: rgb(81, 98, 81);
+    --color-verde: #516251;
     --color-verde-transp: rgba(81, 98, 81, 0.5);
-    --color-verde-oscuro: rgb(32, 36, 32);
+    --color-verde-oscuro: #202420;
     --color-verde-oscuro-transp: rgba(32, 36, 32, 0.5);
     --color-mostaza-claro: #e6c381;
     --color-mostaza: #cd8603;
@@ -112,6 +112,10 @@ a:active {
 .bi-small {
     font-size: 1rem;
     padding-top: 0.4rem;
+}
+
+.bi-large {
+    font-size: 2.5rem;
 }
 
 /* FONTS - ESTILOS GENERALES*/
@@ -196,6 +200,15 @@ a:active {
 
 .btn-100 {
     width: 100%;
+}
+
+.btn__icon{
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem;
 }
 
 /* LABELS-INPUTS-TEXTAREAS - ESTILOS GENERALES*/
@@ -387,7 +400,7 @@ footer a {
     cursor: pointer;
 }
 
-a:hover {
+footer a:hover {
     color: var(--color-mostaza-claro);
 }
 
@@ -645,6 +658,12 @@ a:hover {
 }
 
 /* CONTACTO - INICIO */
+
+/* <li class="contact-line">
+<button class="btn__icon" aria-label="iniciar chat en whatsapp">
+<i class="bi bi-whatsapp bi-hover"></i>
+<span class="txt-body txt-small txt-light">+54 9 11 6861-1033</span>
+</button> */
 
 .container__contact-area {
     display: flex;
