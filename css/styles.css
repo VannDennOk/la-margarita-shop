@@ -367,7 +367,8 @@ header nav a:hover {
     background-color: var(--color-negro);
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4rem;
     padding: 6.5rem;
 }
 
@@ -406,8 +407,13 @@ footer a:hover {
 
 .footer__pago-img {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 0.5rem;
+}
+
+.pago__img {
+    width: 3rem;
 }
 
 .social-icons {
@@ -606,7 +612,7 @@ footer a:hover {
     width: 100%;
 }
 
-/* WORKSHOP - INICIO */
+/* WORKSHOP / TALLERES - INICIO */
 
 /* .container__workshop-area{
     width: 100%;
@@ -639,7 +645,7 @@ footer a:hover {
     left: 8.5rem;
     bottom: 8.5rem;
     width: 18rem;
-    background-color: var(--color-verde-transp);
+    background-color: var(--color-verde);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -815,6 +821,49 @@ footer a:hover {
     padding-bottom: 0.5rem;
 }
 
+/* PAGE PRODUCTOS */
+
+.product__nav-links {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-bottom: 2px solid var(--color-verde);
+}
+
+.product__nav li { 
+    list-style: none;
+}
+
+.product__nav a{
+    text-decoration: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    color: var(--color-texto-oscuro);    
+}
+
+.product__nav-link-selected{
+    border-bottom: 1px solid var(--color-texto-oscuro);
+    padding-bottom: 0.5rem;
+}
+
+.product__nav a:hover {
+    color: var(--color-mostaza);
+}
+
+.banner__productpage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4.5rem 0rem 6.5rem;
+}
+
+.banner__img {
+    width: 100%;
+}
 
 /* PAGE CONTACTO*/
 .fullpage {
