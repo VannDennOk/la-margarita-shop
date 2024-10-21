@@ -105,6 +105,10 @@ a:active {
     font-size: 1.5rem;
 }
 
+.bi-hover {
+    transition: all .5s ease-in-out;
+}
+
 .bi-hover:hover {
     color: var(--color-mostaza-claro);
 }
@@ -174,6 +178,7 @@ a:active {
     color: var(--color-blanco);
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .btn-full-hover:hover {
@@ -191,6 +196,7 @@ a:active {
     color: var(--color-verde);
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .btn-blanco-hover:hover {
@@ -202,7 +208,7 @@ a:active {
     width: 100%;
 }
 
-.btn__icon{
+.btn__icon {
     width: 2rem;
     height: 2rem;
     background-color: transparent;
@@ -326,6 +332,7 @@ header nav a {
     font-size: 1rem;
     color: var(--color-blanco);
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 header nav a:hover {
@@ -333,11 +340,13 @@ header nav a:hover {
 }
 
 .selected {
-    border-bottom: 2px solid var(--color-blanco);
+    border-bottom: 1px solid var(--color-blanco);
+    padding-bottom: 0.5rem;
+    transition: all .5s ease-in-out;
 }
 
 .selected:hover {
-    border-bottom: 2px solid var(--color-mostaza-claro);
+    border-bottom: 1px solid var(--color-mostaza-claro);
 }
 
 
@@ -399,6 +408,7 @@ footer a {
     font-size: 1rem;
     color: var(--color-blanco);
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 footer a:hover {
@@ -446,11 +456,12 @@ footer a:hover {
 }
 
 .btn-submit {
-    width: 3rem;
-    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
     background-color: var(--color-verde);
     border: 2px solid var(--color-verde);
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 
 .btn-submit:hover {
@@ -591,11 +602,26 @@ footer a:hover {
     justify-content: center;
     border: 2px solid var(--color-verde);
     background-color: var(--color-blanco);
-    box-shadow: 6px 6px 16px var(--color-verde-oscuro);
+    box-shadow: 6px 6px 16px var(--color-verde-claro);
+
+}
+
+.container__img_product {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img_product {
     width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.img_product:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+
 }
 
 .container__product-cards-info {
@@ -694,7 +720,7 @@ footer a:hover {
 .img-contact {
     width: 100%;
     height: 18.5rem;
-    background-image: url("../images/contacto/contact-img.png");
+    background-image: url("../images/contacto/contact-img.jpg");
     background-size: cover;
 }
 
@@ -833,24 +859,30 @@ footer a:hover {
     border-bottom: 2px solid var(--color-verde);
 }
 
-.product__nav li { 
+.product__nav li {
     list-style: none;
 }
 
-.product__nav a{
+.product__nav a {
     text-decoration: none;
     font-family: var(--font-lato);
     font-size: 1rem;
-    color: var(--color-texto-oscuro);    
-}
-
-.product__nav-link-selected{
-    border-bottom: 1px solid var(--color-texto-oscuro);
-    padding-bottom: 0.5rem;
+    color: var(--color-texto-oscuro);
+    transition: all .5s ease-in-out;
 }
 
 .product__nav a:hover {
     color: var(--color-mostaza);
+}
+
+.product__nav-link-selected {
+    border-bottom: 1px solid var(--color-texto-oscuro);
+    padding-bottom: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.product__nav-link-selected:hover {
+    border-bottom: 1px solid var(--color-mostaza);
 }
 
 .banner__productpage {
@@ -862,10 +894,96 @@ footer a:hover {
 }
 
 .banner__img {
-    width: 100%;
+    width: 25%;
 }
+
+
+.container__products-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0rem 6.5rem;
+
+}
+
+.container__products-header-txt {
+    width: 70%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: flex-start;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-verde);
+    padding-bottom: 0.5rem;
+}
+
+/*menú desplegable customizado*/
+/*1. eliminamos los estilos por defecto de la caja*/
+.content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/*2. eliminamos los estilos por defecto de la flecha*/
+.content-select select::-ms-expand {
+    display: none;
+}
+
+/*3. personalizamos el select*/
+.content-select {
+    width: 12.5rem;
+    position: relative;
+}
+
+.content-select select {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem;
+    height: 3rem;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: var(--color-blanco);
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    color: var(--color-texto-oscuro);
+    border: 2px solid var(--color-verde);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.content-select select:hover {
+    border: 2px solid var(--color-mostaza);
+}
+
+/* 
+4. volvemos a crear una flecha que es un cuadrado con solo
+dos bordes con color y que se gira 45 grados;
+*/
+.content-select i {
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - 0.8rem);
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    border-left: 2px solid var(--color-verde);
+    border-bottom: 2px solid var(--color-verde);
+    transform: rotate(-45deg);
+    /* Giramos el cuadrado */
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.content-select:hover i {
+    border-left: 2px solid var(--color-mostaza);
+    border-bottom: 2px solid var(--color-mostaza);
+}
+
 
 /* PAGE CONTACTO*/
 .fullpage {
- padding-top: 6.5rem;
+    padding-top: 6.5rem;
 }
