@@ -113,6 +113,10 @@ a:active {
     color: var(--color-mostaza-claro);
 }
 
+.bi-dark{
+    color: var(--color-texto-oscuro);
+}
+
 .bi-small {
     font-size: 1rem;
     padding-top: 0.4rem;
@@ -658,12 +662,7 @@ footer a:hover {
     cursor: pointer;
 }
 
-.bi-heart {
-    color: var(--color-texto-oscuro);
-}
-
 .bi-heart-fill {
-    color: var(--color-texto-oscuro);
     pointer-events: none;
     position: absolute;
     top: 0;
