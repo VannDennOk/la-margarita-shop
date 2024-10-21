@@ -19,7 +19,7 @@ El proyecto consite en la creación de una página web con un carrito de compras
 </p>
 
 <h2>Requisitos :clipboard:</h2>
-<p>Se cuenta con una ruta de avance con los requisitos mínimos para cada estapa.</p>
+<p>Se cuenta con una ruta de avance con los requisitos mínimos para cada etapa.</p>
 
 <h3>Etapa :one: - HTML</h3>
 <p>
