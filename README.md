@@ -9,7 +9,8 @@
 <img src="https://img.shields.io/badge/HTML_5-E34F26?style=flat-square&logo=html5&logoColor=FFFFFF"> <img src="https://img.shields.io/badge/CSS_3-1572B6?style=flat-square&logo=css3&logoColor=FFFFFF"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=FFFFFF">
 <br>
 <br>
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=FFFFFF"> <img src="https://img.shields.io/badge/CorelDraw-000000?style=flat-square&logo=coreldraw&logoColor=FFFFFF"> <img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=flat-square&logo=adobeillustrator&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=FFFFFF"> <img src="https://img.shields.io/badge/CorelDraw-000000?style=flat-square&logo=coreldraw&logoColor=FFFFFF">
+<img src="https://img.shields.io/badge/Corel_PhotoPaint-000000?style=flat-square&logo=coreldraw&logoColor=FFFFFF"> 
 </p>
 
 <h2>Descripción del Proyecto :bulb:</h2>
@@ -36,7 +37,7 @@ Lo realizado hasta la clase 4:
 Lo realizado hasta la clase 8 (preentrega):
 <br>:heavy_check_mark: Aplicación de estilos básicos con CSS (header, footer, lista de navegación).
 <br>:heavy_check_mark: Integración de un archivo externo styles.css.
-<br>Implementación de Google Fonts.
+<br>:heavy_check_mark: Implementación de Google Fonts.
 <br>:heavy_check_mark: Propiedades de Background en alguna sección (color, imagen, degradado, etc.).
 <br>:heavy_check_mark: Sección Productos: organizada en cards de forma responsiva con Flexbox.
 <br>:construction: Sección Reseñas: organizada con Grid.
@@ -62,7 +63,8 @@ Lo realizado hasta la clase 16.
 <br>:x: Procesar los datos obtenidos de la API para organizarlos en cards (diseñadas con Flexbox o Grid).
 <br>:x: Implementar un carrito de compras que permita a los usuarios añadir productos desde las cards, utilizando localStorage y sessionStorage para almacenar la información del carrito.
 <br>:x: Los productos en el carrito se deben poder visualizar, editar (cambiar la cantidad) y eliminar.
-<br>La información debe mantenerse después de recargar la página.
+<br>:x: La información debe mantenerse después de recargar la página.
+<br>:x: No debe presentar errores en el inspector de código del navegador.
 </p>
 
 <h2>Acceso al proyecto :link:</h2>
