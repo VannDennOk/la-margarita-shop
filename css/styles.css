@@ -603,7 +603,6 @@ footer a:hover {
     border: 2px solid var(--color-verde);
     background-color: var(--color-blanco);
     box-shadow: 6px 6px 16px var(--color-verde-claro);
-
 }
 
 .container__img_product {
@@ -623,6 +622,15 @@ footer a:hover {
     transform: scale(1.3);
 
 }
+ 
+.bi-heart-fill {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
 
 .container__product-cards-info {
     width: 100%;
@@ -632,6 +640,36 @@ footer a:hover {
     align-items: self-start;
     justify-content: space-between;
     gap: 0.5rem;
+}
+
+.cards-info-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn__heart {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bi-heart {
+    color: var(--color-texto-oscuro);
+}
+
+.bi-heart-fill {
+    color: var(--color-texto-oscuro);
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
 }
 
 .btn-agregar-carrito {
