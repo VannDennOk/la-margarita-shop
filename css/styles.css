@@ -1024,3 +1024,56 @@ dos bordes con color y que se gira 45 grados;
 .fullpage {
     padding-top: 6.5rem;
 }
+
+/* PAGE MÁS INFORMACIÓN*/
+
+.masinformacion__nav-links {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-bottom: 2px solid var(--color-verde);
+}
+
+.masinformacion__nav li {
+    list-style: none;
+}
+
+.masinformacion__nav a {
+    text-decoration: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    color: var(--color-texto-oscuro);
+    transition: all .5s ease-in-out;
+}
+
+.masinformacion__nav a:hover {
+    color: var(--color-mostaza);
+}
+
+.masinformacion__nav-link-selected {
+    border-bottom: 1px solid var(--color-texto-oscuro);
+    padding-bottom: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.masinformacion__nav-link-selected:hover {
+    border-bottom: 1px solid var(--color-mostaza);
+}
+
+/* PÁGINA EN CONSTRUCCIÓN */
+.construction__area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.img-error {
+    width: 25%;
+}
