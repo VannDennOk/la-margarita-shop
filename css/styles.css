@@ -691,9 +691,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 6.5rem;
+    padding: 6.5rem 5rem;
 }
 
 .container__workshop-video {
@@ -726,6 +724,63 @@ footer a:hover {
     align-items: flex-start;
     justify-content: center;
     gap: 0.5rem;
+}
+
+/* ABOUT US / NOSOTRAS - INICIO */
+
+.container__aboutus-area{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6.5rem;
+}
+
+.container__aboutus-frame {
+    width: 100%;
+    display: flex;
+    padding-bottom: 6.5rem;
+}
+
+.img__aboutus-box {
+    width: 50%;
+    min-height: 30rem;
+    background-color: var(--color-verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    padding-bottom: 0.25rem;
+    flex: 1 1 30rem;
+}
+
+.img__aboutus {
+    width: 100%;
+    min-height: 30rem;
+    background-image: url("../images/nosotras/nosotras1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container__aboutus-txt {
+    width: 50%;
+    min-height: 30rem;
+    background-color: var(--color-verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.container__aboutus-txt-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* CONTACTO - INICIO */
@@ -761,6 +816,8 @@ footer a:hover {
     height: 18.5rem;
     background-image: url("../images/contacto/contact-img.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .container__contact-box {
