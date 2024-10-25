@@ -64,41 +64,15 @@ PLAYFAIR DISPLAY --> Títulos
     box-sizing: border-box;
 }
 
-body {
-    background-color: var(--color-blanco);
+html {
     font-size: 16px;
-    /* 1rem = 16px */
+    scroll-behavior: smooth;
+    background-color: var(--color-blanco);
 }
+
+/* //////////////// ESTILOS PARA SECCIONES Y ELEMENTOS QUE SE REPITEN EN TODAS LAS PÁGINA //////////////// */
 
 /* LINKS E ICONOS - ESTILOS GENERALES*/
-/* li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    color: var(--color-blanco);
-    cursor: pointer;
-}
-
-a:hover {
-    color: var(--color-mostaza-claro);
-}
-
-a:active {
-    color: var(--color-mostaza-claro);
-    border-bottom: 2px solid var(--color-mostaza-claro);
-}
-
-.selected {
-    border-bottom: 2px solid var(--color-blanco);
-}
-
-.selected:hover {
-    border-bottom: 2px solid var(--color-mostaza-claro);
-} */
 
 .bi {
     color: var(--color-blanco);
@@ -353,7 +327,6 @@ header nav a:hover {
     border-bottom: 1px solid var(--color-mostaza-claro);
 }
 
-
 /* HEADER DE SECCIÓN - ESTILOS GENERALES */
 
 .section__header {
@@ -382,7 +355,7 @@ header nav a:hover {
     align-items: flex-start;
     justify-content: center;
     gap: 4rem;
-    padding: 6.5rem;
+    padding: 4.5rem 6.5rem;
 }
 
 .footer__navegacion,
@@ -483,6 +456,11 @@ footer a:hover {
     justify-content: center;
 }
 
+/* //////////////// SECCIONES QUE VARÍAN POR PÁGINA //////////////// */
+
+/* /////////////////// */
+/* PAGE HOME - INICIO */
+
 /* SECTION WELLCOME - INICIO */
 
 .container__wellcome-area {
@@ -561,8 +539,9 @@ footer a:hover {
 }
 
 /* BANNER - INICIO */
+
 .container__banner-area {
-    padding-bottom: 6.5rem;
+    padding-bottom: 4.5rem;
 }
 
 .container__banner {
@@ -584,8 +563,8 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 6.5rem;
-    gap: 6.5rem;
+    padding-bottom: 4.5rem;
+    gap: 4.5rem;
 }
 
 .container__products-grid {
@@ -679,19 +658,19 @@ footer a:hover {
 
 /* WORKSHOP / TALLERES - INICIO */
 
-/* .container__workshop-area{
+.container__workshop-area {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .container__workshop-frame {
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding: 6.5rem 5rem;
+    padding: 4rem 5rem;
 }
 
 .container__workshop-video {
@@ -734,13 +713,13 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6.5rem;
+    gap: 4.5rem;
 }
 
 .container__aboutus-frame {
     width: 100%;
     display: flex;
-    padding-bottom: 6.5rem;
+    padding-bottom: 4.5rem;
 }
 
 .img__aboutus-box {
@@ -796,8 +775,8 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6.5rem;
-    padding-bottom: 6.5rem;
+    gap: 4.5rem;
+    padding-bottom: 4.5rem;
     background-image: url("../images/contacto/img_deco-contactarea.svg"), url("../images/contacto/img_deco-contactarea.svg");
     background-size: 25%;
     background-position: left 40%, right 60%;
@@ -943,8 +922,10 @@ footer a:hover {
     padding-bottom: 0.5rem;
 }
 
+/* /////////////// */
 /* PAGE PRODUCTOS */
 
+/* Nav específico de páginas secundarias (productos, ramos, decoración, bodas y talleres) */
 .product__nav-links {
     width: 100%;
     height: 3.5rem;
@@ -981,6 +962,8 @@ footer a:hover {
     border-bottom: 1px solid var(--color-mostaza);
 }
 
+/* Banner con imágenes (se repite: productos, ramos, decoración y bodas) */
+
 .banner__productpage {
     width: 100%;
     display: flex;
@@ -993,7 +976,7 @@ footer a:hover {
     width: 25%;
 }
 
-
+/* Heder con datos y filtro de productos (se repite: productos, ramos, decoración y bodas) */
 .container__products-header {
     width: 100%;
     display: flex;
@@ -1078,13 +1061,17 @@ dos bordes con color y que se gira 45 grados;
     border-bottom: 2px solid var(--color-mostaza);
 }
 
-
+/* ///////////// */
 /* PAGE CONTACTO*/
+
+/* Adapta el contacto del home a toda la página*/
 .fullpage {
     padding-top: 6.5rem;
 }
 
+/* //////////////////// */
 /* PAGE MÁS INFORMACIÓN*/
+/* Nav específico de páginas secundarias (más información, opiniones, cómo comprar, cómo llegar) */
 
 .masinformacion__nav-links {
     width: 100%;
@@ -1122,6 +1109,8 @@ dos bordes con color y que se gira 45 grados;
     border-bottom: 1px solid var(--color-mostaza);
 }
 
+
+/* /////////////////////// */
 /* PÁGINA EN CONSTRUCCIÓN */
 .construction__area{
     width: 100%;
