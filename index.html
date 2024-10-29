@@ -27,6 +27,7 @@
                 <li class="header__nav-link"><a href="#talleres">Talleres</a></li>
                 <li class="header__nav-link"><a href="#nosotras">Nosotras</a></li>
                 <li class="header__nav-link"><a href="#contacto">Contacto</a></li>
+                <li class="header__nav-link"><a href="#opiniones">Opiniones</a></li>
             </ul>
             <div class="header__nav-icons">
                 <button class="btn__icon" aria-label="buscar en la tienda"><i
@@ -61,7 +62,8 @@
                             contactarnos!
                         </P>
                     </div>
-                    <button class="btn-full btn-full-hover" aria-label="Ir a la tienda">Ir a la tienda</button>
+                    <button id="btn_irProductos" class="btn-full btn-full-hover" aria-label="Ir a la tienda">Ir a la
+                        tienda</button>
                 </div>
             </div>
         </section>
@@ -72,18 +74,20 @@
                 <div class="container__pages-linkcard">
                     <img class="img_link-pages" src="./images/inicio/card-ramos.svg"
                         alt="ilustración de un ramo de flores">
-                    <button class="btn-blanco btn-pages btn-blanco-hover" aria-label="Página ramos">Ramos</button>
+                    <button id="btn_irRamos" class="btn-blanco btn-pages btn-blanco-hover"
+                        aria-label="Página ramos">Ramos</button>
                 </div>
                 <div class="container__pages-linkcard">
                     <img class="img_link-pages" src="./images/inicio/card-decoracion.svg"
                         alt="ilustración de un jarrón con flores">
-                    <button class="btn-blanco btn-pages btn-blanco-hover"
+                    <button id="btn_irDecoracion" class="btn-blanco btn-pages btn-blanco-hover"
                         aria-label="Página decoración">Decoración</button>
                 </div>
                 <div class="container__pages-linkcard">
                     <img class="img_link-pages" src="./images/inicio/card-bodas.svg"
                         alt="ilustración dos anillos entrelazados y flores">
-                    <button class="btn-blanco btn-pages btn-blanco-hover" aria-label="Página eventos">Bodas</button>
+                    <button id="btn_irBodas" class="btn-blanco btn-pages btn-blanco-hover"
+                        aria-label="Página eventos">Bodas</button>
                 </div>
             </div>
         </section>
@@ -101,7 +105,7 @@
         <!-- PRODUCTOS DESTACADOS -->
         <section class="container__products-area" id="productos">
             <div class="section__header">
-                <h2 class="titulo txt-medium txt-light"  >PRODUCTOS DESTACADOS</h2>
+                <h2 class="titulo txt-medium txt-light">PRODUCTOS DESTACADOS</h2>
             </div>
             <div class="container__products-grid-area">
                 <ol class="container__products-grid">
@@ -135,7 +139,7 @@
                                 </button>
                             </div>
                             <p class="txt-body txt-small txt-dark">Price</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
+                            <button id="btn_irProductos" class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
@@ -243,73 +247,73 @@
                     </li>
                 </ol>
             </div>
-            <button class="btn-blanco btn-blanco-hover" aria-label="Ver todos los productos">Ver todos los
-                productos</button>
+            <button id="btn_irProductos2" class="btn-blanco btn-blanco-hover" aria-label="Ver todos los productos">Ver
+                todos los productos</button>
         </section>
 
         <!-- WORKSHOPS -->
-        <section  class="container__workshop-area" id="talleres">
-                <div class="section__header">
-                    <h2 class="titulo txt-medium txt-light">TALLERES</h2>
-                </div>
-                <div class="container__workshop-frame">
-                    <div class="container__workshop-video">
-                        <video autoplay loop class="video">
-                            <source src="./media/workshop.mp4" type="video/mp4"
-                                alt="video del armado de un ramo de flores">
-                            <!--<track src="./media/subtitlesEs.vtt" kind="subtitles" srclang="es" label="Español" default>
+        <section class="container__workshop-area" id="talleres">
+            <div class="section__header">
+                <h2 class="titulo txt-medium txt-light">TALLERES</h2>
+            </div>
+            <div class="container__workshop-frame">
+                <div class="container__workshop-video">
+                    <video autoplay loop class="video">
+                        <source src="./media/workshop.mp4" type="video/mp4" alt="video del armado de un ramo de flores">
+                        <!--<track src="./media/subtitlesEs.vtt" kind="subtitles" srclang="es" label="Español" default>
                         <track src="./media/subtitlesEn.vtt" kind="subtitles" srclang="en" label="English">-->
-                            Tu navegador no soporta la reproducción del video.
-                        </video>
-                    </div>
-                    <div class="container__workshop-card">
-                        <h3 class="titulo txt-medium txt-light">TALLERES</h3>
-                        <div class="container__workshop-card-txt">
-                            <P class="txt-body txt-small txt-light">Tenemos talleres presenciales y virtuales sobre
-                                armado
-                                de arreglos florales.</P>
-                            <P class="txt-body txt-small txt-light">Hay uno para cada ocasión.</P>
-                            <P class="txt-body txt-small txt-light">Pueden ser para vos o para regalarle a alguien
-                                especial.
-                            </P>
-                            <P class="txt-body txt-small txt-light">No te los pierdas!</P>
-                        </div>
-                        <button class="btn-blanco btn-100 btn-blanco-hover" aria-label="Ver talleres">Ver
-                            talleres</button>
-                    </div>
+                        Tu navegador no soporta la reproducción del video.
+                    </video>
                 </div>
+                <div class="container__workshop-card">
+                    <h3 class="titulo txt-medium txt-light">TALLERES</h3>
+                    <div class="container__workshop-card-txt">
+                        <P class="txt-body txt-small txt-light">Tenemos talleres presenciales y virtuales sobre
+                            armado
+                            de arreglos florales.</P>
+                        <P class="txt-body txt-small txt-light">Hay uno para cada ocasión.</P>
+                        <P class="txt-body txt-small txt-light">Pueden ser para vos o para regalarle a alguien
+                            especial.
+                        </P>
+                        <P class="txt-body txt-small txt-light">No te los pierdas!</P>
+                    </div>
+                    <button id="btn_irTalleres" class="btn-blanco btn-100 btn-blanco-hover" aria-label="Ver talleres">Ver
+                        talleres</button>
+                </div>
+            </div>
         </section>
 
         <!-- NOSOTRAS -->
         <section class="container__aboutus-area" id="nosotras">
-                <div class="section__header">
-                    <h2 class="titulo txt-medium txt-light">NOSOTRAS</h2>
-                </div>
-                <div class="container__aboutus-frame">
-                    <div class="img__aboutus-box">
-                        <div class="img__aboutus">
-                        </div>
+            <div class="section__header">
+                <h2 class="titulo txt-medium txt-light">NOSOTRAS</h2>
+            </div>
+            <div class="container__aboutus-frame">
+                <div class="img__aboutus-box">
+                    <div class="img__aboutus">
                     </div>
+                </div>
 
-                    <div class="container__aboutus-txt">
-                        <h3 class="titulo txt-medium txt-light">Hola! Somos Mila y Juli</i>
-                        </h3>
-                        <div class="container__aboutus-txt-txt">
-                            <P class="txt-body txt-small txt-light">Somos dos grandes amigas unidas por una pasión: las
+                <div class="container__aboutus-txt">
+                    <h3 class="titulo txt-medium txt-light">Hola! Somos Mila y Juli</i>
+                    </h3>
+                    <div class="container__aboutus-txt-txt">
+                        <P class="txt-body txt-small txt-light">Somos dos grandes amigas unidas por una pasión: las
                             flores. A finales de 2017 abrimos nuestra tienda física de La Margarita y a mediados de 2020
                             sumamos nuestra tienda online, adaptándonos a una nueva era.</P>
-                            <P class="txt-body txt-small txt-light">Desde que abrimos nuestro negocio hace 7 años, fuimos
-                                creciendo y sumando servicios como los talleres, pero sobre todo creamos una bella
-                                comunidad. Hoy podemos decir que nuestros clientes se han convertido en grandes amigos.</P>
-                            <P class="txt-body txt-small txt-light">Queremos que en cada ramo y arreglo realizados por
+                        <P class="txt-body txt-small txt-light">Desde que abrimos nuestro negocio hace 7 años, fuimos
+                            creciendo y sumando servicios como los talleres, pero sobre todo creamos una bella
+                            comunidad. Hoy podemos decir que nuestros clientes se han convertido en grandes amigos.</P>
+                        <P class="txt-body txt-small txt-light">Queremos que en cada ramo y arreglo realizados por
                             nosotras se pueda reflejar el amor y cariño que ponemos en cada uno de ellos, para que hagas
                             un regalo espectacular, para que ilumine tus espacios o para que te acompañe en los momentos
                             más importantes de tu vida.</P>
-                            <p class="txt-body txt-small txt-light">Confiá en nuestras manos y en nuestro corazón.</p>
-                        </div>
-                        <button class="btn-blanco btn-blanco-hover" aria-label="Leer más sobre nosotras">Más sobre nosotras</button> 
+                        <p class="txt-body txt-small txt-light">Confiá en nuestras manos y en nuestro corazón.</p>
                     </div>
+                    <button id="btn_irNosotras" class="btn-blanco btn-blanco-hover" aria-label="Leer más sobre nosotras">Más sobre
+                        nosotras</button>
                 </div>
+            </div>
         </section>
 
         <!-- CONTACTO -->
@@ -400,6 +404,167 @@
             </div>
         </section>
 
+        <!-- OPINIONES -->
+        <section class="container__opiniones-area" id="opiniones">
+            <div class="section__header">
+                <h2 class="titulo txt-medium txt-light">OPINIONES</h2>
+            </div>
+            <div class="container__opiniones-frame">
+
+                <!-- Opinión 1 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario1.jpg"
+                            alt="retrato de mujer joven con cabello castaño">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Confiable</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Pilar</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-10-03">20/10/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark"> Me encuentro en España y quería enviar un regalo a mi mamá
+                        por su día. Pueden hacer su pedido con toda confianza, ya que en un día tan movido cumplieron a
+                        la perfección. Tanto el producto, como
+                        el servicio, se merecen un 10/10.</p>
+                </div>
+
+                <!-- Opinión 2 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario2.jpg"
+                            alt="mujer mayor con pelo corto y pelirrojo">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Chocha</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Ana Rosa</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-10-10">10/10/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark">Servicio de lujo!! Muy contenta, quería decorar mi casa para
+                        festejar mi cumpleaños número 80 y me trataron como una reina. Mis amigas quedaron todas
+                        celosas!!!</p>
+                </div>
+
+                <!-- Opinión 3 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario3.jpg"
+                            alt="hombre morocho con anteojos">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Muy bien todo</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Juanjo</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-05-21">21/05/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark">Las chicas son súper atentas, cordiales y responsables,
+                        además de crear hermosos ramos! Es la segunda vez que compro para mi novia por nuestro
+                        aniversario. Me hacen quedar muy bien!</p>
+                </div>
+
+                <!-- Opinión 4 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario4.jpg"
+                            alt="retrato mujer rubia">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Excelente!</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Claudia</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-07-26">26/07/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark">Excelente servicio! El ramo fue recibido en el día y horario
+                        acordado y además estaba muy bonito! Tanía mis dudas pero me contacté por whatsapp y
+                        me respondieron todo. Excelente atención! Gracias!!</p>
+                </div>
+
+                <!-- Opinión 5 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario5.jpg"
+                            alt="mujer rubia con paisaje montañoso atrás">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Muy bueno!</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Marce</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-09-03">03/09/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark">Hice el taller de armado de flores básico. Muy bien explicado
+                        y con todas las herramientas. Además pasé una linda tarde con gente muy copada.</p>
+                </div>
+
+                <!-- Opinión 6 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="./images/opiniones/opiniones-usuario6.jpg"
+                            alt="pareja hombre y mujer">
+                        <div class="opinion_data">
+                            <h2 class="titulo txt-medium txt-dark txt-strong">Novia feliz</h2>
+                            <span class="opinion_data-user">
+                                <cite class="txt-body txt-medium txt-dark">Agus y Mati</cite>
+                                <time class="txt-body txt-small txt-dark" datetime="2024-04-15">15/04/2024</time>
+                            </span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="txt-body txt-small txt-dark">Quería un ramo de novias especial y ellas lo lograron. Además
+                        hicimos los de las madrinas y la nena de las flores, un paquete genial!
+                        La calidez de las dueñas es espectacular.</p>
+                </div>
+            </div>
+            <button id="btn_irOpiniones" class="btn-blanco btn-blanco-hover" aria-label="Ver más opiniones">Ver
+                más opiniones</button>
+        </section>
+
         <!-- BANNER -->
         <section class="container__banner-area">
             <div class="container__banner-2">
@@ -429,7 +594,6 @@
                 </div>
             </div>
         </section>
-        
     </main>
 
     <!-- FOOTER PARA TODOS LAS PAGES -->
@@ -515,6 +679,7 @@
         </section>
     </footer>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
