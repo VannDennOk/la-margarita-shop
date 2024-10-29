@@ -1,37 +1,45 @@
 /*TODO ESTO ES PROVISORIO HASTA QUE VEAMOS BIEN JAVA EN CLASE!!!*/
 
 /*BOTONES DE ENLACES*/
+// Mapeamos cada botón con su URL de destino
+const buttonRutas = {
+    "btn_irProductos": "pages/productos.html",
+    "btn_irRamos": "pages/productos-ramos.html",
+    "btn_irDecoracion": "pages/productos-decoración.html",
+    "btn_irBodas": "pages/productos-bodas.html",
+    "btn_irProductos2": "pages/productos.html",
+    "btn_irTalleres": "pages/talleres.html",
+    "btn_irNosotras": "pages/nosotras.html",
+    "btn_irOpiniones": "pages/opiniones.html"
+};
 
-document.getElementById("btn_irProductos").addEventListener("click", function() {
-    window.location.href = "pages/productos.html";
+// Asignamos el evento de click a cada botón según el mapeo
+Object.keys(buttonRutas).forEach(buttonId => {
+    const button = document.getElementById(buttonId);
+    if (button) {
+        button.addEventListener("click", function () {
+            window.location.href = buttonRutas[buttonId];
+        });
+    }
 });
 
-document.getElementById("btn_irRamos").addEventListener("click", function() {
-    window.location.href = "pages/productos-ramos.html";
-});
+/* BOTON PARA IR ARRIBA CON EFECTO */
+const btnUp = document.getElementById("btn-up");
+btnUp.addEventListener("click", scrollUp);
 
-document.getElementById("btn_irDecoracion").addEventListener("click", function() {
-    window.location.href = "pages/productos-decoración.html";
-});
+function scrollUp() {
+    const currentScroll = document.documentElement.scrollTop;
 
-document.getElementById("btn_irBodas").addEventListener("click", function() {
-    window.location.href = "pages/productos-bodas.html";
-});
+    if (currentScroll > 0) {
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo(0, currentScroll - currentScroll / 0.5); // Ajuste para un desplazamiento más rápido, ojo que en css está aplicado scroll-behavior: smooth para el html
+    }
+}
 
-document.getElementById("btn_irProductos2").addEventListener("click", function() {
-    window.location.href = "pages/productos.html";
-});
-
-document.getElementById("btn_irTalleres").addEventListener("click", function() {
-    window.location.href = "pages/talleres.html";
-});
-
-document.getElementById("btn_irNosotras").addEventListener("click", function() {
-    window.location.href = "pages/nosotras.html";
-});
-
-document.getElementById("btn_irOpiniones").addEventListener("click", function() {
-    window.location.href = "pages/opiniones.html";
+// Mostrar/ocultar el botón al hacer scroll
+window.addEventListener("scroll", () => {
+    const scroll = document.documentElement.scrollTop;
+    btnUp.style.transform = scroll > 500 ? "scale(1)" : "scale(0)";
 });
 
 

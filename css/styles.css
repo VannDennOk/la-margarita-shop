@@ -1175,6 +1175,35 @@ dos bordes con color y que se gira 45 grados;
 
 
 
+
+/* BOTON ARRIBA / BUTTON UP (DESKTOP)*/
+
+.btn-up {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-verde);
+    box-shadow: 6px 6px 16px var(--color-verde-oscuro-transp);
+    color: var(--color-withe);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.6rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 2.5rem;
+    cursor: pointer;
+    transform: scale(0);
+    /* transition: all .5s ease-in-out; */
+    transition: transform 0.3s ease;
+}
+
+.btn-up:hover {
+    background-color: var(--color-mostaza);
+    color: var(--color-withe);
+}
+
 /* /////////////////////// */
 /* PÁGINA EN CONSTRUCCIÓN */
 .construction__area{
