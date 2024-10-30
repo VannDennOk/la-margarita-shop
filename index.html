@@ -8,7 +8,9 @@
     <title>La Margarita Shop Inicio</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
 </head>
 
 <body>
@@ -30,22 +32,22 @@
                 <li class="header__nav-link"><a href="#opiniones">Opiniones</a></li>
             </ul>
             <div class="header__nav-icons">
-                <button class="btn__icon" aria-label="buscar en la tienda"><i
-                        class="bi bi-search bi-hover"></i></button>
+                <button class="btn__icon" aria-label="buscar en la tienda"><i class="bi bi-search bi-hover"></i></button>
                 <button class="btn__icon" aria-label="ver mis favoritos"><i class="bi bi-heart bi-hover"></i></button>
                 <button class="btn__icon" aria-label="mi cuenta"><i class="bi bi-person bi-hover"></i></button>
                 <button class="btn__icon" aria-label="mi bolsa"><i class="bi bi-bag bi-hover"></i></button>
+                <button class="btn__icon mostrarMQ" aria-label="mi bolsa" hidden><i class="bi bi-list bi-hover"></i></button>
             </div>
         </nav>
     </header>
 
     <main>
-        <!-- WELLCOME -->
-        <section class="container__wellcome-area">
-            <div class="container__wellcome-blur">
-                <div class="container__wellcome-box">
+        <!-- HERO -->
+        <section class="container__hero-area">
+            <div class="container__hero-blur">
+                <div class="container__hero-box">
                     <h1 class="titulo txt-xlarge txt-dark">¡BIENVENIDOS A LA MARGARITA!</h1>
-                    <div class="container__wellcome-txt">
+                    <div class="container__hero-txt">
                         <P class="txt-body txt-small txt-dark">Somos una <strong class="txt-resalte">tienda de
                                 flores</strong> online y confeccionamos nuestros ramos con mucho
                             amor!</P>
@@ -328,7 +330,7 @@
                 <div class="img-contact"></div>
                 <div class="container__contact-box">
                     <div class="container__contact-info">
-                        <p class="txt-body txt-small txt-light">Si tenés alguna consulta, no dudes en contactarnos.
+                        <p class="txt-body txt-small txt-light ocultarMQ">Si tenés alguna consulta, no dudes en contactarnos.
                             Podés completar el formulario y te
                             escribiremos a la brevedad.</p>
                         <div class="contact">
@@ -370,6 +372,9 @@
                         </div>
                     </div>
                     <div class="container__contact-form">
+                        <p class="txt-body txt-small txt-dark mostrarMQ" hidden>Si tenés alguna consulta, no dudes en contactarnos.
+                            Podés completar el formulario y te
+                            escribiremos a la brevedad.</p>
                         <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
                             <label for="name">Nombre*</label>
@@ -418,12 +423,9 @@
                     <div class="container__opiniones-card-header">
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario1.jpg"
                             alt="retrato de mujer joven con cabello castaño">
-                        <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Confiable</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Pilar</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-10-03">20/10/2024</time>
-                            </span>
+                        <div class="opinion_data">                            
+                            <span><cite class="txt-body txt-medium txt-dark">Pilar</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-10-03">20/10/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -433,6 +435,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Confiable</h2>
                     <p class="txt-body txt-small txt-dark"> Me encuentro en España y quería enviar un regalo a mi mamá
                         por su día. Pueden hacer su pedido con toda confianza, ya que en un día tan movido cumplieron a
                         la perfección. Tanto el producto, como
@@ -445,11 +448,8 @@
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario2.jpg"
                             alt="mujer mayor con pelo corto y pelirrojo">
                         <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Chocha</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Ana Rosa</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-10-10">10/10/2024</time>
-                            </span>
+                            <span><cite class="txt-body txt-medium txt-dark">María Rosa</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-10-10">10/10/2024</time></span>         
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -459,6 +459,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Chocha</h2>
                     <p class="txt-body txt-small txt-dark">Servicio de lujo!! Muy contenta, quería decorar mi casa para
                         festejar mi cumpleaños número 80 y me trataron como una reina. Mis amigas quedaron todas
                         celosas!!!</p>
@@ -470,11 +471,8 @@
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario3.jpg"
                             alt="hombre morocho con anteojos">
                         <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Muy bien todo</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Juanjo</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-05-21">21/05/2024</time>
-                            </span>
+                            <span><cite class="txt-body txt-medium txt-dark">Juanjo</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-05-21">21/05/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -484,6 +482,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Muy bien todo</h2>
                     <p class="txt-body txt-small txt-dark">Las chicas son súper atentas, cordiales y responsables,
                         además de crear hermosos ramos! Es la segunda vez que compro para mi novia por nuestro
                         aniversario. Me hacen quedar muy bien!</p>
@@ -495,11 +494,8 @@
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario4.jpg"
                             alt="retrato mujer rubia">
                         <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Excelente!</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Claudia</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-07-26">26/07/2024</time>
-                            </span>
+                            <span><cite class="txt-body txt-medium txt-dark">Claudia</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-07-26">26/07/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -509,6 +505,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Excelente!</h2>
                     <p class="txt-body txt-small txt-dark">Excelente servicio! El ramo fue recibido en el día y horario
                         acordado y además estaba muy bonito! Tanía mis dudas pero me contacté por whatsapp y
                         me respondieron todo. Excelente atención! Gracias!!</p>
@@ -520,11 +517,8 @@
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario5.jpg"
                             alt="mujer rubia con paisaje montañoso atrás">
                         <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Muy bueno!</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Marce</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-09-03">03/09/2024</time>
-                            </span>
+                            <span><cite class="txt-body txt-medium txt-dark">Marce</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-09-03">03/09/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -534,6 +528,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Muy bueno!</h2>
                     <p class="txt-body txt-small txt-dark">Hice el taller de armado de flores básico. Muy bien explicado
                         y con todas las herramientas. Además pasé una linda tarde con gente muy copada.</p>
                 </div>
@@ -544,11 +539,8 @@
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario6.jpg"
                             alt="pareja hombre y mujer">
                         <div class="opinion_data">
-                            <h2 class="titulo txt-medium txt-dark txt-strong">Novia feliz</h2>
-                            <span class="opinion_data-user">
-                                <cite class="txt-body txt-medium txt-dark">Agus y Mati</cite>
-                                <time class="txt-body txt-small txt-dark" datetime="2024-04-15">15/04/2024</time>
-                            </span>
+                            <span><cite class="txt-body txt-medium txt-dark">Agus y Mati</cite></span>
+                            <span><time class="txt-body txt-small txt-dark" datetime="2024-04-15">15/04/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -558,6 +550,7 @@
                             </div>
                         </div>
                     </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Novia feliz</h2>
                     <p class="txt-body txt-small txt-dark">Quería un ramo de novias especial y ellas lo lograron. Además
                         hicimos los de las madrinas y la nena de las flores, un paquete genial!
                         La calidez de las dueñas es espectacular.</p>

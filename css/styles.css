@@ -41,7 +41,6 @@ PLAYFAIR DISPLAY --> Títulos
 :root {
     --color-negro: #111211;
     --color-blanco: #f8f9f8;
-    /* FONDO #f8f9f8*/
     --color-blanco-transp: rgba(248, 249, 248, 0.2);
     --color-verde-claro: #b7c3b7;
     --color-verde: #516251;
@@ -465,10 +464,11 @@ footer a:hover {
 /* /////////////////// */
 /* PAGE HOME - INICIO */
 
-/* SECTION WELLCOME - INICIO */
+/* SECTION HERO - INICIO */
 
-.container__wellcome-area {
+.container__hero-area {
     width: 100%;
+    height: 87vh;
     background-image: url("../images/inicio/wellcome-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -479,14 +479,14 @@ footer a:hover {
     padding: 5rem 0rem;
 }
 
-.container__wellcome-blur {
+.container__hero-blur {
     width: 72.47%;
     background-color: var(--color-blanco-transp);
     backdrop-filter: blur(10px);
     padding: 2.5rem;
 }
 
-.container__wellcome-box {
+.container__hero-box {
     background-color: var(--color-blanco);
     padding: 1.5rem;
     display: flex;
@@ -494,14 +494,16 @@ footer a:hover {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    text-align: center;
 }
 
-.container__wellcome-txt {
+.container__hero-txt {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     gap: 0.5rem;
+    text-align: left;
 }
 
 /* LINKS A PAGES - INICIO */
@@ -517,8 +519,9 @@ footer a:hover {
 .container__pages-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0rem 6.5rem;
+    gap: 3rem;
 }
 
 .container__pages-linkcard {
@@ -575,13 +578,14 @@ footer a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-content: center;
     gap: 2rem;
-    padding: 0rem 6.5rem;
+    padding: 0 7.61%;
 }
 
 .container__products-card {
+    width: 16rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -589,7 +593,6 @@ footer a:hover {
     border: 2px solid var(--color-verde);
     background-color: var(--color-blanco);
     box-shadow: 6px 6px 16px var(--color-verde-transp);
-    flex: 1 1 16rem;
 }
 
 .container__img_product {
@@ -911,32 +914,37 @@ footer a:hover {
 
 .container__opiniones-frame {
     display: grid;
-    grid-template-columns: repeat(3, minmax(20rem, 1fr)); 
-    gap: 3rem;
-    padding: 0rem 4.5rem;
+    grid-template-columns: repeat(3, minmax(16rem, 1fr)); 
+    row-gap: 3rem;
+    column-gap: 3.51%;
+    padding: 0 5.27%;
 }
 
 .container__opiniones-card {
     background-color: var(--color-blanco);
     border: 2px solid var(--color-verde);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5rem 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 1rem;
     padding: 1rem;
     box-shadow: 6px 6px 16px var(--color-verde-transp);
 }
 
 .container__opiniones-card-header {
-    display: grid;
-    grid-template-columns: 5rem 1fr;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
 .img_opinion {
- width: 100%;
- border: 3px solid var(--color-verde);
- border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid var(--color-verde);
+    border-radius: 50%;
 
 }
 
@@ -948,13 +956,6 @@ footer a:hover {
     gap: 0.25rem;
 }
 
-.opinion_data-user,
-.opinion_calificacion {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    gap: 0.5rem;
-}
 
 /* BANNER 2 - INICIO */
 
