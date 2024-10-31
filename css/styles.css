@@ -1,7 +1,5 @@
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* FONTS
 
-/* 
 LATO --> Texto - Enlaces - Labels
   font-family: "Lato", sans-serif;
   font-weight: 100, 300, 400, 700, 900;
@@ -244,7 +242,7 @@ textarea {
     resize: none;
 }
 
-/* HEADER  - ESTILOS GENERALES */
+/* HEADER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
 
 .header {
     width: 100%;
@@ -330,7 +328,7 @@ header nav a:hover {
     border-bottom: 1px solid var(--color-mostaza-claro);
 }
 
-/* HEADER DE SECCIÓN - ESTILOS GENERALES */
+/* HEADER DE SECCIÓN PARA TODAS LAS PÁGINAS - ESTILOS GENERALES */
 
 .section__header {
     width: 100%;
@@ -341,7 +339,7 @@ header nav a:hover {
     justify-content: center;
 }
 
-/* FOOTER  - ESTILOS GENERALES */
+/* FOOTER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
 
 .footer__area {
     width: 100%;
@@ -358,7 +356,7 @@ header nav a:hover {
     align-items: flex-start;
     justify-content: center;
     gap: 4rem;
-    padding: 4.5rem 6.5rem;
+    padding: 4.5rem 7.61%;
 }
 
 .footer__navegacion,
@@ -398,7 +396,6 @@ footer a:hover {
 .footer__pago-img {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -520,13 +517,13 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0rem 6.5rem;
-    gap: 3rem;
+    padding: 0 7.61%;
+    gap: 3.51%;
 }
 
 .container__pages-linkcard {
-    width: 21.25rem;
-    height: 21.25rem;
+    min-width: 25%;
+    height: auto;
     background-color: var(--color-verde);
     display: flex;
     flex-direction: column;
@@ -581,7 +578,7 @@ footer a:hover {
     justify-content: center;
     align-content: center;
     gap: 2rem;
-    padding: 0 7.61%;
+    padding: 0 5.86%;
 }
 
 .container__products-card {
@@ -674,9 +671,8 @@ footer a:hover {
 
 .container__workshop-frame {
     display: flex;
-    flex-wrap: wrap;
     position: relative;
-    padding: 4rem 5rem;
+    padding: 4rem 5.86%;
 }
 
 .container__workshop-video {
@@ -690,8 +686,8 @@ footer a:hover {
 
 .container__workshop-card {
     position: absolute;
-    left: 8.5rem;
-    bottom: 8.5rem;
+    left: 10%;
+    bottom: 17%;
     width: 18rem;
     background-color: var(--color-verde);
     display: flex;
@@ -736,9 +732,7 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 0.25rem;
-    padding-left: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding: 0.25rem;
     flex: 1 1 30rem;
 }
 
@@ -769,12 +763,6 @@ footer a:hover {
 }
 
 /* CONTACTO - INICIO */
-
-/* <li class="contact-line">
-<button class="btn__icon" aria-label="iniciar chat en whatsapp">
-<i class="bi bi-whatsapp bi-hover"></i>
-<span class="txt-body txt-small txt-light">+54 9 11 6861-1033</span>
-</button> */
 
 .container__contact-area {
     display: flex;
@@ -1171,10 +1159,6 @@ dos bordes con color y que se gira 45 grados;
 .masinformacion__nav-link-selected:hover {
     border-bottom: 1px solid var(--color-mostaza);
 }
-
-
-
-
 
 
 /* BOTON ARRIBA / BUTTON UP (DESKTOP)*/

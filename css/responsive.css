@@ -1,9 +1,33 @@
+/* VARIABLES EN CSS */
+:root {
+    --color-negro: #111211;
+    --color-blanco: #f8f9f8;
+    --color-blanco-transp: rgba(248, 249, 248, 0.2);
+    --color-verde-claro: #b7c3b7;
+    --color-verde: #516251;
+    --color-verde-transp: rgba(81, 98, 81, 0.5);
+    --color-verde-oscuro: #202420;
+    --color-verde-oscuro-transp: rgba(32, 36, 32, 0.5);
+    --color-mostaza-claro: #e6c381;
+    --color-mostaza: #cd8603;
+    --color-mostaza-oscuro: #6c4907;
+    --color-texto-oscuro: #161816;
+    --color-texto-claro: #d4dbd4;
+    --font-playfair: "Playfair Display", serif;
+    --font-lato: "Lato", sans-serif;
+}
 
-/* ESTILOS RESPONSIVOS PARA TABLETA */
+/* RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@media (max-width: 960px) {
+/* ESTILOS RESPONSIVOS PARA TABLET */
+
+@media screen and (max-width: 960px) {
     
-
     /* Generales para mostrar u ocultar elementos */
     .ocultarMQ {
         display: none;
@@ -18,6 +42,22 @@
         display: none;
     }
 
+    /* FOOTER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
+    .footer__top {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .footer__navegacion-links {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(30%, 1fr));
+        column-gap: 2rem;
+    }
+
+    .footer__pago-img {
+        flex-direction: row;
+    }
+
     /* SECTION HERO - INICIO */
     .container__hero-area {
         width: 100%;
@@ -26,12 +66,74 @@
 
     .container__hero-blur {
         width: 90%;
-        background-color: var(--color-blanco-transp);
-        backdrop-filter: blur(10px);
-        padding: 2.5rem;
     }
 
+    /* LINKS A PAGES - INICIO */
     
+    .container__pages-area {
+        padding: 4rem 0rem;
+    }
+    
+    .container__pages-links {
+        flex-wrap: wrap;
+        padding: 0 5%;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    /* PRODUCTOS DESTACADOS - INICIO */
+    .container__products-grid {
+        gap: 2rem;
+        padding: 0 2%;
+    }
+
+    /* WORKSHOP / TALLERES - INICIO */
+    .container__workshop-area {
+        background-image: url("../images/inicio/img_waves.svg");
+        background-size: contain;
+        background-position: 0 85%;
+        background-repeat: no-repeat;
+    }
+
+    .container__workshop-frame {
+        position: initial;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .container__workshop-video {
+        position: initial;
+    }
+
+    .container__workshop-card {
+        position: initial;
+        width: 60%;
+    }
+
+    /* ABOUT US / NOSOTRAS - INICIO */
+
+    .container__aboutus-area{
+        background-color: var(--color-mostaza-claro);
+    }
+    
+    .container__aboutus-frame {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 2rem 4.5rem;
+    }
+        
+    .img__aboutus-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container__aboutus-txt {
+        width: 100%;
+    }
+
     /* CONTACTO - INICIO */
     .container__contact-area {
         background-image: none;
@@ -55,7 +157,6 @@
     }
 
     /* OPINIONES - INICIO */
-
     .container__opiniones-frame{
         display: grid;
         grid-template-columns: repeat(2, minmax(18%, 1fr)); 
@@ -67,15 +168,14 @@
     .img_opinion {
         width: 4rem;
         height: 4rem;
-        border: 3px solid var(--color-verde);
-        border-radius: 50%;
     }
-
-
-
-
-
     
-
-    
+    /* BANNER 2 - INICIO */    
+    .container__banner-2 {
+        flex-wrap: wrap;
+        column-gap: 6rem;
+        row-gap: 2rem;
+        padding: 2rem;
+    }
+   
 }
