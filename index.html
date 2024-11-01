@@ -7,13 +7,15 @@
     <meta name="description" content="Página inicial de La Margarita Shop. Tienda de arreglos y servicios florales">
     <title>La Margarita Shop Inicio</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
-    
+
     <!-- ICONOS CON BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
     <!-- FUENTES DE GOOGLE FONTS (PLAYFAIR DISPLAY Y LATO) -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/responsive.css">
@@ -38,11 +40,16 @@
                 <li class="header__nav-link"><a href="#opiniones">Opiniones</a></li>
             </ul>
             <div class="header__nav-icons">
-                <button class="btn__icon" aria-label="buscar en la tienda"><i class="bi bi-search bi-hover"></i></button>
-                <button class="btn__icon" aria-label="ver mis favoritos"><i class="bi bi-heart bi-hover"></i></button>
-                <button class="btn__icon" aria-label="mi cuenta"><i class="bi bi-person bi-hover"></i></button>
-                <button class="btn__icon" aria-label="mi bolsa"><i class="bi bi-bag bi-hover"></i></button>
-                <button class="btn__icon mostrarMQ" aria-label="menú desplegable" hidden><i class="bi bi-list bi-hover"></i></button>
+                <button class="btn__icon ocultarCelular" aria-label="buscar en la tienda"><i
+                        class="bi bi-search bi-hover"></i></button>
+                <button class="btn__icon ocultarCelular" aria-label="ver mis favoritos"><i
+                        class="bi bi-heart bi-hover"></i></button>
+                <button class="btn__icon ocultarCelular" aria-label="mi cuenta"><i
+                        class="bi bi-person bi-hover"></i></button>
+                <button class="btn__icon ocultarCelular" aria-label="mi bolsa"><i
+                        class="bi bi-bag bi-hover"></i></button>
+                <button class="btn__icon mostrarTablet" aria-label="menú desplegable" hidden><i
+                        class="bi bi-list bi-hover"></i></button>
             </div>
         </nav>
     </header>
@@ -70,7 +77,8 @@
                             contactarnos!
                         </P>
                     </div>
-                    <button id="btn_irProductos" class="btn-full btn-full-hover" aria-label="Ir a la tienda">Ir a la
+                    <button id="btn_irProductos" class="btn-full btn-full-hover btn-100Celular"
+                        aria-label="Ir a la tienda">Ir a la
                         tienda</button>
                 </div>
             </div>
@@ -117,138 +125,161 @@
             </div>
             <div class="container__products-grid-area">
                 <ol class="container__products-grid">
+
+                    <!-- PRODUCTO 1 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/ramos-001-00003.jpg"
+                                alt="ramo de flores con rosas">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Premium: rosas y más</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 75.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 2 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/bodas-003-00001.jpg"
+                                alt="ramo de novia con rosas blancas">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Bodas | Rosas clásicas</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
                             <button id="btn_irProductos" class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 3 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/ramos-001-00012.jpg" alt="ramo de fresias">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Siempre fresias</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 4 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/ramos-001-00006.jpg"
+                                alt="ramo de flores variadas">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Primavera total</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 5 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/bodas-003-00005.jpg"
+                                alt="ramo de novia campestre">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Bodas | Popurrí campestre</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 6 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/decoración-002-00002.jpg"
+                                alt="jarrón redondo de vicrio con flores">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Jarrón primaveral</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 75.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 7 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/ramos-001-00011.jpg"
+                                alt="ramo de rosas rojas">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Siempre rosas rojas</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
                     </li>
+
+                    <!-- PRODUCTO 8 -->
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/product.png" alt="ramo de flores">
+                            <img class="img_product" src="./images/productos/talleres-004-00001.png"
+                                alt="taller inicial">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Product Title</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">Taller inicial</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Price</p>
+                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
@@ -319,7 +350,7 @@
                             más importantes de tu vida.</P>
                         <p class="txt-body txt-small txt-light">Confiá en nuestras manos y en nuestro corazón.</p>
                     </div>
-                    <button id="btn_irNosotras" class="btn-blanco btn-blanco-hover"
+                    <button id="btn_irNosotras" class="btn-blanco btn-blanco-hover btn-100Celular"
                         aria-label="Leer más sobre nosotras">Más sobre
                         nosotras</button>
                 </div>
@@ -336,7 +367,8 @@
                 <div class="img-contact"></div>
                 <div class="container__contact-box">
                     <div class="container__contact-info">
-                        <p class="txt-body txt-small txt-light ocultarMQ">Si tenés alguna consulta, no dudes en contactarnos.
+                        <p class="txt-body txt-small txt-light ocultarTablet">Si tenés alguna consulta, no dudes en
+                            contactarnos.
                             Podés completar el formulario y te
                             escribiremos a la brevedad.</p>
                         <div class="contact">
@@ -378,7 +410,8 @@
                         </div>
                     </div>
                     <div class="container__contact-form">
-                        <p class="txt-body txt-small txt-dark mostrarMQ" hidden>Si tenés alguna consulta, no dudes en contactarnos.
+                        <p class="txt-body txt-small txt-dark mostrarTablet" hidden>Si tenés alguna consulta, no dudes
+                            en contactarnos.
                             Podés completar el formulario y te
                             escribiremos a la brevedad.</p>
                         <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
@@ -429,9 +462,10 @@
                     <div class="container__opiniones-card-header">
                         <img class="img_opinion" src="./images/opiniones/opiniones-usuario1.jpg"
                             alt="retrato de mujer joven con cabello castaño">
-                        <div class="opinion_data">                            
+                        <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">Pilar</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-10-03">20/10/2024</time></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-10-03">20/10/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -455,7 +489,8 @@
                             alt="mujer mayor con pelo corto y pelirrojo">
                         <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">María Rosa</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-10-10">10/10/2024</time></span>         
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-10-10">10/10/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -478,7 +513,8 @@
                             alt="hombre morocho con anteojos">
                         <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">Juanjo</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-05-21">21/05/2024</time></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-05-21">21/05/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -501,7 +537,8 @@
                             alt="retrato mujer rubia">
                         <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">Claudia</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-07-26">26/07/2024</time></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-07-26">26/07/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -524,7 +561,8 @@
                             alt="mujer rubia con paisaje montañoso atrás">
                         <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">Marce</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-09-03">03/09/2024</time></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-09-03">03/09/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
@@ -546,7 +584,8 @@
                             alt="pareja hombre y mujer">
                         <div class="opinion_data">
                             <span><cite class="txt-body txt-medium txt-dark">Agus y Mati</cite></span>
-                            <span><time class="txt-body txt-small txt-dark" datetime="2024-04-15">15/04/2024</time></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-04-15">15/04/2024</time></span>
                             <div class="opinion_calificacion">
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
                                 <i class="bi bi-star-fill bi-small bi-amarillo"></i>
