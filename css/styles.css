@@ -448,12 +448,16 @@ footer a:hover {
 
 .footer_copyright {
     width: 100%;
-    padding: 1rem;
+    padding-left: 5%;
+    padding-right: 25%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
     background-color: var(--color-verde-oscuro);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 1rem;
 }
 
 /* //////////////// SECCIONES QUE VARÍAN POR PÁGINA //////////////// */
@@ -968,7 +972,8 @@ footer a:hover {
 /* PAGE PRODUCTOS */
 
 /* Nav específico de páginas secundarias (productos, ramos, decoración, bodas y talleres) */
-.product__nav-links {
+.product__nav-links,
+.masinformacion__nav-links {
     width: 100%;
     height: 3.5rem;
     display: flex;
@@ -978,11 +983,13 @@ footer a:hover {
     border-bottom: 2px solid var(--color-verde);
 }
 
-.product__nav li {
+.product__nav li,
+.masinformacion__nav li {
     list-style: none;
 }
 
-.product__nav a {
+.product__nav a,
+.masinformacion__nav a {
     text-decoration: none;
     font-family: var(--font-lato);
     font-size: 1rem;
@@ -990,17 +997,21 @@ footer a:hover {
     transition: all .5s ease-in-out;
 }
 
-.product__nav a:hover {
+
+.product__nav a:hover,
+.masinformacion__nav a:hover {
     color: var(--color-mostaza);
 }
 
-.product__nav-link-selected {
+.product__nav-link-selected,
+.masinformacion__nav-link-selected {
     border-bottom: 1px solid var(--color-texto-oscuro);
     padding-bottom: 0.5rem;
     transition: all .5s ease-in-out;
 }
 
-.product__nav-link-selected:hover {
+.product__nav-link-selected:hover,
+.masinformacion__nav-link-selected:hover {
     border-bottom: 1px solid var(--color-mostaza);
 }
 
@@ -1011,7 +1022,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4.5rem 0rem 6.5rem;
+    padding: 4.5rem 0rem 4.5rem;
 }
 
 .banner__img {
@@ -1024,8 +1035,7 @@ footer a:hover {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0rem 6.5rem;
-
+    padding: 0rem 5.86%;
 }
 
 .container__products-header-txt {
@@ -1110,47 +1120,6 @@ dos bordes con color y que se gira 45 grados;
 .fullpage {
     padding-top: 6.5rem;
 }
-
-/* //////////////////// */
-/* PAGE MÁS INFORMACIÓN*/
-/* Nav específico de páginas secundarias (más información, opiniones, cómo comprar, cómo llegar) */
-
-.masinformacion__nav-links {
-    width: 100%;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    border-bottom: 2px solid var(--color-verde);
-}
-
-.masinformacion__nav li {
-    list-style: none;
-}
-
-.masinformacion__nav a {
-    text-decoration: none;
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    color: var(--color-texto-oscuro);
-    transition: all .5s ease-in-out;
-}
-
-.masinformacion__nav a:hover {
-    color: var(--color-mostaza);
-}
-
-.masinformacion__nav-link-selected {
-    border-bottom: 1px solid var(--color-texto-oscuro);
-    padding-bottom: 0.5rem;
-    transition: all .5s ease-in-out;
-}
-
-.masinformacion__nav-link-selected:hover {
-    border-bottom: 1px solid var(--color-mostaza);
-}
-
 
 /* BOTON ARRIBA / BUTTON UP (DESKTOP)*/
 

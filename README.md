@@ -40,8 +40,8 @@ Lo realizado hasta la clase 8 (preentrega):
 <br>:heavy_check_mark: Implementación de Google Fonts.
 <br>:heavy_check_mark: Propiedades de Background en alguna sección (color, imagen, degradado, etc.).
 <br>:heavy_check_mark: Sección Productos: organizada en cards de forma responsiva con Flexbox.
-<br>:construction: Sección Reseñas: organizada con Grid.
-<br>:construction: Sección Contacto: responsiva con Media Queries.
+<br>:heavy_check_mark: Sección Reseñas: organizada con Grid.
+<br>:heavy_check_mark: Sección Contacto: responsiva con Media Queries.
 </p>
 
 <h3>Etapa :three: - JavaScript</h3>

@@ -162,6 +162,7 @@
 
     .container__contact-info {
         width: 100%;
+        gap: 3rem;
     }
 
     .container__contact-form {
@@ -190,6 +191,37 @@
         column-gap: 6rem;
         row-gap: 2rem;
         padding: 2rem;
+    }
+
+    /* /////////////// */
+    /* PAGE PRODUCTOS */
+
+    .product__nav-links,
+    .masinformacion__nav-links {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .banner__productpage {
+        flex-wrap: wrap;
+    }
+
+    .banner__img {
+        width: 50%;
+    }
+
+    .container__products-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 0 4%;
+    }
+
+    .container__products-header-txt {
+        width: 100%;
+        flex-direction: column;
     }
 
 }
