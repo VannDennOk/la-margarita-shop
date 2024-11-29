@@ -44,7 +44,7 @@ window.addEventListener("scroll", () => {
 
 // VERIFICACIÓN DE LOS INPUTS
 /* El método trim() elimina los espacios en blanco al principio y al final del valor del input, 
-para evitar que se consideren como texto válido si el usuario solo ingresó espacios. */   
+para evitar que se consideren como texto válido si el usuario solo ingresó espacios. */
 
 // Selección de elementos del DOM
 const inputName = document.getElementById('input-name');
@@ -97,12 +97,12 @@ btnFormulario.addEventListener('click', function (event) {
     const errorName = document.getElementById('errorName');
     const errorEmail = document.getElementById('errorEmail');
     const errorMessage = document.getElementById('errorMessage');
-    
+
     // Validaciones individuales
     const nombreValido = validarCampo(inputName, errorName, "Por favor, ingresá un nombre.");
     const emailValido = validarEmail(inputEmail, errorEmail);
     const mensajeValido = validarCampo(inputMessage, errorMessage, "Por favor, ingresá un mensaje.");
-    
+
     // Prevención del envío del formulario si hay errores
     if (!nombreValido || !emailValido || !mensajeValido) {
         event.preventDefault(); // Evita el envío si algún campo está vacío o es inválido

@@ -107,34 +107,37 @@
                             escribiremos a la brevedad.</p>
                         <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
-                            <label for="input-name">Nombre</label>
-                            <input type="text" name="Nombre" id="input-name" placeholder="Ingresá tu nombre" autocomplete="on"
-                                required>
+                            <label class="label" for="input-name">Nombre*</label>
+                            <input class="input" type="text" name="Nombre" id="input-name"
+                                placeholder="Ingresá tu nombre" required autocomplete="on">
+                            <p class="input-mensaje-error" id="errorName" hidden></p>
 
-                            <label for="input-email">E-mail</label>
-                            <input type="email" name="Email" id="input-email" placeholder="Ingresá tu e-mail"
-                                autocomplete="on" required>
+                            <label class="label" for="input-email">E-mail*</label>
+                            <input class="input" type="email" name="Email" id="input-email"
+                                placeholder="Ingresá tu e-mail" required autocomplete="on">
+                            <p class="input-mensaje-error" id="errorEmail" hidden></p>
 
-                            <label for="input-phone">Teléfono</label>
-                            <input type="tel" name="Teléfono" id="input-phone" placeholder="Ingresá tu teléfono"
-                                autocomplete="on">
+                            <label class="label" for="input-phone">Teléfono</label>
+                            <input class="input" type="tel" name="Teléfono" id="input-phone"
+                                placeholder="Ingresá tu teléfono" autocomplete="on">
 
-                            <label for="input-subjet">Asunto</label>
-                            <input type="text" name="Asunto" id="input-subjet" placeholder="Ingresá un asunto"
-                                autocomplete="on">
+                            <label class="label" for="input-subjet">Asunto</label>
+                            <input class="input" type="text" name="Asunto" id="input-subjet"
+                                placeholder="Ingresá un asunto" autocomplete="on">
 
-                            <label for="input-message">Mensaje</label>
-                            <textarea name="Mensaje" id="input-message" rows="10" cols="30"
-                                placeholder="Escribí tu mensaje aquí" required></textarea>
+                            <label class="label" for="input-message">Mensaje*</label>
+                            <textarea class="textarea" name="Mensaje" id="input-message" rows="10" cols="30"
+                                placeholder="Escribí tu mensaje aquí" required autocomplete="off"></textarea>
+                            <p class="input-mensaje-error" id="errorMessage" hidden></p>
 
-                            <label class="checkbox-line" for="input-checkbox">
+                            <label class="checkbox-line label" for="input-checkbox">
                                 <input type="checkbox" name="Checkbox" id="input-checkbox">
                                 <span class="checkmark"></span>
                                 Quiero suscribirme al Newsletter
                             </label>
 
-                            <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar" id="btn-formulario"
-                                aria-label="Enviar formulario de contacto">
+                            <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar"
+                                id="btn-formulario" aria-label="Enviar formulario de contacto">
                         </form>
                     </div>
                 </div>
