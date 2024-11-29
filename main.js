@@ -42,59 +42,69 @@ window.addEventListener("scroll", () => {
     btnUp.style.transform = scroll > 500 ? "scale(1)" : "scale(0)";
 });
 
-/* VERIFICACIÓN DE LOS INPUTS */
+// VERIFICACIÓN DE LOS INPUTS
 /* El método trim() elimina los espacios en blanco al principio y al final del valor del input, 
 para evitar que se consideren como texto válido si el usuario solo ingresó espacios. */   
 
+// Selección de elementos del DOM
 const inputName = document.getElementById('input-name');
 const inputEmail = document.getElementById('input-email');
 const inputMessage = document.getElementById('input-message');
 const btnFormulario = document.getElementById('btn-formulario');
 
-btnFormulario.addEventListener('click', function () { 
-
-const inputValueName = inputName.value;   
-const errorName = document.getElementById('errorName');     
-if (inputValueName.trim() === ''){
-    console.log("Error: el campo 'Nombre' está vacío y es obligatorio");
-    errorName.innerText = "Por favor, ingresá un nombre.";
-    errorName.classList.add("mostrar-mensaje-error");
-    inputName.classList.add("input-error");
-} else {
-    console.log("Ok: el campo obligatorio 'Nombre' se ha completado");
+// Función para validar campos de entrada (que no queden vacíos) y mostrar error 
+function validarCampo(input, error, mensajeError) {
+    if (input.value.trim() === '') {
+        console.log(`Error: ${mensajeError}`);
+        error.innerText = mensajeError;
+        error.classList.add('mostrar-mensaje-error');
+        input.classList.add('input-error');
+        return false;
+    } else {
+        error.classList.remove('mostrar-mensaje-error');
+        input.classList.remove('input-error');
+        console.log(`Ok: El campo obligatorio '${mensajeError.split(" ")[2]}' se ha completado`);
+        return true;
+    }
 }
 
-const inputValueEmail = inputEmail.value;
-const errorEmail = document.getElementById('errorEmail');    
-if (inputValueEmail.trim() === ''){
-    console.log("Error:  el campo 'E-mail' está vacío y es obligatorio");
-    errorEmail.innerText = "Por favor, ingresá un e-mail válido.";
-    errorEmail.classList.add("mostrar-mensaje-error");
-    inputEmail.classList.add("input-error");
-} else {
-    console.log("Ok: el campo obligatorio 'E-mail' se ha completado");
+// Validación específica para el email
+function validarEmail(input, error) {
+    const emailFormato = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresión regular para formato de email
+    if (input.value.trim() === '') {
+        console.log("Error: El campo 'E-mail' está vacío y es obligatorio");
+        error.innerText = "Por favor, ingresá un e-mail.";
+        error.classList.add('mostrar-mensaje-error');
+        input.classList.add('input-error');
+        return false;
+    } else if (!emailFormato.test(input.value.trim())) {
+        console.log("Error: El formato del e-mail no es válido");
+        error.innerText = "El formato del e-mail no es válido.";
+        error.classList.add('mostrar-mensaje-error');
+        input.classList.add('input-error');
+        return false;
+    } else {
+        error.classList.remove('mostrar-mensaje-error');
+        input.classList.remove('input-error');
+        console.log("Ok: El campo obligatorio 'E-mail' se ha completado");
+        return true;
+    }
 }
 
-const inputValueMessage = inputMessage.value;
-const errorMessage = document.getElementById('errorMessage');    
-if (inputValueMessage.trim() === ''){
-    console.log("Error: el campo 'Mensaje' está vacío y es obligatorio");
-    errorMessage.innerText = "Por favor, ingresá un mensaje.";
-    errorMessage.classList.add("mostrar-mensaje-error");
-    inputMessage.classList.add("input-error");
-} else {
-    console.log("Ok: el campo obligatorio 'Mensaje' se ha completado");
-}
-
-
-const errorPopup = document.getElementById('popup-form');
-const btnContinuar = document.getElementById('btn-continuar');
-if (inputValueName.trim() === '' && inputValueEmail.trim() === '' && inputValueMessage.trim() === '') {
-    console.log("Error: hay campos obligatoriso sin completar");
-    errorPopup.classList.add("mostrar-popup__form");
-    btnContinuar.addEventListener('click', function () {
-        errorPopup.classList.add("ocultar-popup__form");
-    })
-}
-
+// Manejo del evento click
+btnFormulario.addEventListener('click', function (event) {
+    // Selección de los elementos de error
+    const errorName = document.getElementById('errorName');
+    const errorEmail = document.getElementById('errorEmail');
+    const errorMessage = document.getElementById('errorMessage');
+    
+    // Validaciones individuales
+    const nombreValido = validarCampo(inputName, errorName, "Por favor, ingresá un nombre.");
+    const emailValido = validarEmail(inputEmail, errorEmail);
+    const mensajeValido = validarCampo(inputMessage, errorMessage, "Por favor, ingresá un mensaje.");
+    
+    // Prevención del envío del formulario si hay errores
+    if (!nombreValido || !emailValido || !mensajeValido) {
+        event.preventDefault(); // Evita el envío si algún campo está vacío o es inválido
+    }
 });

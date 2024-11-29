@@ -418,22 +418,22 @@
                         <p class="txt-body txt-xsmall txt-dark">Los campos con asterisco (*) son obligatorios</p>
                         
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
-                            <label for="input-name">Nombre*</label>
-                            <input type="text" name="Nombre" id="input-name" placeholder="Ingresá tu nombre" required autocomplete="on">
+                            <label class="label" for="input-name">Nombre*</label>
+                            <input class="input" type="text" name="Nombre" id="input-name" placeholder="Ingresá tu nombre" required autocomplete="on">
                             <p class="input-mensaje-error" id="errorName" hidden></p>
 
-                            <label for="input-email">E-mail*</label>
-                            <input type="email" name="Email" id="input-email" placeholder="Ingresá tu e-mail" required autocomplete="on">
+                            <label class="label" for="input-email">E-mail*</label>
+                            <input class="input" type="email" name="Email" id="input-email" placeholder="Ingresá tu e-mail" required autocomplete="on">
                             <p class="input-mensaje-error" id="errorEmail" hidden></p>
 
-                            <label for="input-phone">Teléfono</label>
-                            <input type="tel" name="Teléfono" id="input-phone" placeholder="Ingresá tu teléfono" autocomplete="on">
+                            <label class="label" for="input-phone">Teléfono</label>
+                            <input class="input" type="tel" name="Teléfono" id="input-phone" placeholder="Ingresá tu teléfono" autocomplete="on">
 
-                            <label for="input-subjet">Asunto</label>
-                            <input type="text" name="Asunto" id="input-subjet" placeholder="Ingresá un asunto" autocomplete="on">
+                            <label class="label" for="input-subjet">Asunto</label>
+                            <input class="input" type="text" name="Asunto" id="input-subjet" placeholder="Ingresá un asunto" autocomplete="on">
 
-                            <label for="input-message">Mensaje*</label>
-                            <textarea name="Mensaje" id="input-message" rows="10" cols="30" placeholder="Escribí tu mensaje aquí" required autocomplete="off"></textarea>
+                            <label class="label" for="input-message">Mensaje*</label>
+                            <textarea class="textarea" name="Mensaje" id="input-message" rows="10" cols="30" placeholder="Escribí tu mensaje aquí" required autocomplete="off"></textarea>
                             <p class="input-mensaje-error" id="errorMessage" hidden></p>
 
                             <label class="checkbox-line" for="input-checkbox">
@@ -446,16 +446,6 @@
                                 aria-label="Enviar formulario de contacto">
 
                         </form>
-                        <div class="popup__form" id="popup-form" hidden>
-                            <div class="popup__form-box">
-                                
-                                <span class="popup__form-txt">
-                                    <i class="bi bi-exclamation-octagon-fill"></i>
-                                    <p class="txt-body txt-large txt-dark" id="popup-txt">Hay campos obligatorios sin completar.</p>
-                                </span>
-                                <button class="btn-full btn-100 btn-full-hover" type="button" id="btn-continuar">Continuar</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
