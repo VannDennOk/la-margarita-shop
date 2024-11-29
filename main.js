@@ -42,6 +42,59 @@ window.addEventListener("scroll", () => {
     btnUp.style.transform = scroll > 500 ? "scale(1)" : "scale(0)";
 });
 
+/* VERIFICACIÓN DE LOS INPUTS */
+/* El método trim() elimina los espacios en blanco al principio y al final del valor del input, 
+para evitar que se consideren como texto válido si el usuario solo ingresó espacios. */   
+
+const inputName = document.getElementById('input-name');
+const inputEmail = document.getElementById('input-email');
+const inputMessage = document.getElementById('input-message');
+const btnFormulario = document.getElementById('btn-formulario');
+
+btnFormulario.addEventListener('click', function () { 
+
+const inputValueName = inputName.value;   
+const errorName = document.getElementById('errorName');     
+if (inputValueName.trim() === ''){
+    console.log("Error: el campo 'Nombre' está vacío y es obligatorio");
+    errorName.innerText = "Por favor, ingresá un nombre.";
+    errorName.classList.add("mostrar-mensaje-error");
+    inputName.classList.add("input-error");
+} else {
+    console.log("Ok: el campo obligatorio 'Nombre' se ha completado");
+}
+
+const inputValueEmail = inputEmail.value;
+const errorEmail = document.getElementById('errorEmail');    
+if (inputValueEmail.trim() === ''){
+    console.log("Error:  el campo 'E-mail' está vacío y es obligatorio");
+    errorEmail.innerText = "Por favor, ingresá un e-mail válido.";
+    errorEmail.classList.add("mostrar-mensaje-error");
+    inputEmail.classList.add("input-error");
+} else {
+    console.log("Ok: el campo obligatorio 'E-mail' se ha completado");
+}
+
+const inputValueMessage = inputMessage.value;
+const errorMessage = document.getElementById('errorMessage');    
+if (inputValueMessage.trim() === ''){
+    console.log("Error: el campo 'Mensaje' está vacío y es obligatorio");
+    errorMessage.innerText = "Por favor, ingresá un mensaje.";
+    errorMessage.classList.add("mostrar-mensaje-error");
+    inputMessage.classList.add("input-error");
+} else {
+    console.log("Ok: el campo obligatorio 'Mensaje' se ha completado");
+}
 
 
+const errorPopup = document.getElementById('popup-form');
+const btnContinuar = document.getElementById('btn-continuar');
+if (inputValueName.trim() === '' && inputValueEmail.trim() === '' && inputValueMessage.trim() === '') {
+    console.log("Error: hay campos obligatoriso sin completar");
+    errorPopup.classList.add("mostrar-popup__form");
+    btnContinuar.addEventListener('click', function () {
+        errorPopup.classList.add("ocultar-popup__form");
+    })
+}
 
+});

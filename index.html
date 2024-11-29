@@ -415,36 +415,47 @@
                             Podés completar el formulario y te
                             escribiremos a la brevedad.</p>
                         <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
+                        <p class="txt-body txt-xsmall txt-dark">Los campos con asterisco (*) son obligatorios</p>
+                        
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
-                            <label for="name">Nombre*</label>
-                            <input type="text" name="name" id="name" placeholder="Ingresá tu nombre" autocomplete="on"
-                                required>
+                            <label for="input-name">Nombre*</label>
+                            <input type="text" name="Nombre" id="input-name" placeholder="Ingresá tu nombre" required autocomplete="on">
+                            <p class="input-mensaje-error" id="errorName" hidden></p>
 
-                            <label for="email">E-mail*</label>
-                            <input type="email" name="email" id="email" placeholder="Ingresá tu e-mail"
-                                autocomplete="on" required>
+                            <label for="input-email">E-mail*</label>
+                            <input type="email" name="Email" id="input-email" placeholder="Ingresá tu e-mail" required autocomplete="on">
+                            <p class="input-mensaje-error" id="errorEmail" hidden></p>
 
-                            <label for="phone">Teléfono</label>
-                            <input type="tel" name="phone" id="phone" placeholder="Ingresá tu teléfono"
-                                autocomplete="on">
+                            <label for="input-phone">Teléfono</label>
+                            <input type="tel" name="Teléfono" id="input-phone" placeholder="Ingresá tu teléfono" autocomplete="on">
 
-                            <label for="subjet">Asunto</label>
-                            <input type="text" name="subjet" id="subjet" placeholder="Ingresá un asunto"
-                                autocomplete="on">
+                            <label for="input-subjet">Asunto</label>
+                            <input type="text" name="Asunto" id="input-subjet" placeholder="Ingresá un asunto" autocomplete="on">
 
-                            <label for="message">Mensaje*</label>
-                            <textarea name="message" id="message" rows="10" cols="30"
-                                placeholder="Escribí tu mensaje aquí" required></textarea>
+                            <label for="input-message">Mensaje*</label>
+                            <textarea name="Mensaje" id="input-message" rows="10" cols="30" placeholder="Escribí tu mensaje aquí" required autocomplete="off"></textarea>
+                            <p class="input-mensaje-error" id="errorMessage" hidden></p>
 
-                            <label class="checkbox-line" for="checkbox">
-                                <input type="checkbox" name="checkbox" id="checkbox">
+                            <label class="checkbox-line" for="input-checkbox">
+                                <input type="checkbox" name="Checkbox" id="input-checkbox">
                                 <span class="checkmark"></span>
                                 Quiero suscribirme al Newsletter
                             </label>
 
-                            <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar"
+                            <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar" id="btn-formulario"
                                 aria-label="Enviar formulario de contacto">
+
                         </form>
+                        <div class="popup__form" id="popup-form" hidden>
+                            <div class="popup__form-box">
+                                
+                                <span class="popup__form-txt">
+                                    <i class="bi bi-exclamation-octagon-fill"></i>
+                                    <p class="txt-body txt-large txt-dark" id="popup-txt">Hay campos obligatorios sin completar.</p>
+                                </span>
+                                <button class="btn-full btn-100 btn-full-hover" type="button" id="btn-continuar">Continuar</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

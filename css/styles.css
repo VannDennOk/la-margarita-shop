@@ -50,6 +50,8 @@ PLAYFAIR DISPLAY --> Títulos
     --color-mostaza-oscuro: #6c4907;
     --color-texto-oscuro: #161816;
     --color-texto-claro: #d4dbd4;
+    --color-rojo-error: #95160A;
+    --color-verde-exito: #3F703F;
     --font-playfair: "Playfair Display", serif;
     --font-lato: "Lato", sans-serif;
 }
@@ -221,11 +223,16 @@ input {
 input:focus,
 textarea:focus {
     border: 2px solid var(--color-mostaza);
+    background-color: var(--color-blanco);
 }
 
 input::placeholder,
 textarea::placeholder {
     color: var(--color-verde);
+}
+
+.input-error, .input-error:focus {
+    border: 2px solid var(--color-rojo-error);
 }
 
 textarea {
@@ -241,6 +248,20 @@ textarea {
     color: var(--color-texto-oscuro);
     resize: none;
 }
+
+.input-mensaje-error {
+    font-family: var(--font-lato);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-rojo-error);
+}
+
+.mostrar-mensaje-error {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
 
 /* HEADER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
 
@@ -810,6 +831,7 @@ footer a:hover {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1.5rem;
+    position: relative;
 }
 
 .form-contact {
@@ -882,6 +904,52 @@ footer a:hover {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
+.popup__form {
+    position: absolute;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: var(--color-verde-oscuro-transp);
+    padding: 30% 20%;
+}
+
+.popup__form-box {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.popup__form-txt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bi-exclamation-octagon-fill {
+    color: var(--color-rojo-error);
+    font-size: 3rem;
+}
+
+.mostrar-popup__form {
+    display: block;
+}
+
+.ocultar-popup__form {
+    display: none;
+}
+
 
 
 /* OPINIONES - INICIO */
