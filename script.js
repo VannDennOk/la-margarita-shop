@@ -115,11 +115,11 @@ function validarPhone(input, error) {
     podría plantear el inicio del if así:
     if (phoneFormato !== '' && isNaN(phoneFormato) || phoneFormato.length <= 8 || phoneFormato.length >= 12) {
     --> al usar isNaN verifico que lo ingresado sean solo números, y luego verifica que esté en un largo promedio de los núemros argentinos
-    --> pero no contemplo si el formato es el adecuado y si el usuario ingresó algún otro caracter común como +, () o -  
+    --> pero no contemplo si el formato es el adecuado y si el usuario ingresó el + al inicio 
 
     Entonces validamos si:
-    (\+54|54)?: si se ingresó el prefijo internacional +54 o 54. (opcional)
-    9?: si se ingresó un 9 (celulares en Argentina suelen incluirlo) (opcional).
+    (\+54|54)?: si se ingresó el prefijo internacional +54 o 54. (su ingreso es opcional)
+    9?: si se ingresó un 9 (celulares en Argentina suelen incluirlo) (su ingreso opcional).
     [1-9]: nos asegura que el número no comience con 0.
     [0-9]{9}: obliga a que el resto sean 9 dígitos numéricos.
 
