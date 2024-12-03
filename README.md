@@ -96,13 +96,16 @@ Esta página fue diseñada y desarrollada por Vanina Denegri.
 Imágenes de uso libre:
 <br>
 <br>
-<a href="https://www.pexels.com"><img src="https://img.shields.io/badge/Pexels-%2305A081?style=flat-square&logo=pexels&logoColor=%23ffffff"></a> <a href="https://unsplash.com"><img src="https://img.shields.io/badge/Unsplah-%23000000?style=flat-square&logo=unsplash&logoColor=%23ffffff"></a>
+<a href="https://www.pexels.com"><img src="https://img.shields.io/badge/Pexels-%2305A081?style=flat-square&logo=pexels&logoColor=%23ffffff"></a> 
+<a href="https://unsplash.com"><img src="https://img.shields.io/badge/Unsplah-%23000000?style=flat-square&logo=unsplash&logoColor=%23ffffff"></a>
 <br>
 <br>
 Herramientas web utilizadas en el proyecto:
 <br>
 <br>
-<a href="https://formspree.io"><img src="https://img.shields.io/badge/Formspree-E5122E?style=flat-square&logo=formspree&logoColor=FFFFFF&link=https%3A%2F%2Fformspree.io%2F"></a> <a href="https://icons.getbootstrap.com/?q=menu"><img src="https://img.shields.io/badge/Bootstrap%20Icons-7952B3?style=flat-square&logo=bootstrap&logoColor=FFFFFF&link=ttps%3A%2F%2Ficons.getbootstrap.com%2F"></a> <a href=""><img src="https://img.shields.io/badge/Google_Fonts-%234285F4?style=flat-square&logo=googlefonts&logoColor=%23ffffff"></a>
+<a href="https://formspree.io"><img src="https://img.shields.io/badge/Formspree-E5122E?style=flat-square&logo=formspree&logoColor=FFFFFF&link=https%3A%2F%2Fformspree.io%2F"></a> 
+<a href="https://icons.getbootstrap.com/?q=menu"><img src="https://img.shields.io/badge/Bootstrap%20Icons-7952B3?style=flat-square&logo=bootstrap&logoColor=FFFFFF&link=ttps%3A%2F%2Ficons.getbootstrap.com%2F"></a> 
+<a href=""><img src="https://img.shields.io/badge/Google_Fonts-%234285F4?style=flat-square&logo=googlefonts&logoColor=%23ffffff"></a>
 <br>
 <br>
 Herramientas web utilizadas en este README:
