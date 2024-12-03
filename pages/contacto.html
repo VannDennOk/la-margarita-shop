@@ -101,10 +101,6 @@
                         </div>
                     </div>
                     <div class="container__contact-form">
-                        <p class="txt-body txt-small txt-dark mostrarMQ" hidden>Si tenés alguna consulta, no dudes en
-                            contactarnos.
-                            Podés completar el formulario y te
-                            escribiremos a la brevedad.</p>
                         <p class="titulo txt-medium txt-dark">Formulario de contacto</p>
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
                             <label class="label" for="input-name">Nombre*</label>
@@ -117,9 +113,10 @@
                                 placeholder="Ingresá tu e-mail" required autocomplete="on">
                             <p class="input-mensaje-error" id="errorEmail" hidden></p>
 
-                            <label class="label" for="input-phone">Teléfono</label>
+                            <label class="label" for="input-phone">Teléfono (Argentina)</label>
                             <input class="input" type="tel" name="Teléfono" id="input-phone"
-                                placeholder="Ingresá tu teléfono" autocomplete="on">
+                                placeholder="Ingresá tu teléfono sin espacios o guiones" autocomplete="on">
+                            <p class="input-mensaje-error" id="errorPhone" hidden></p>
 
                             <label class="label" for="input-subjet">Asunto</label>
                             <input class="input" type="text" name="Asunto" id="input-subjet"
@@ -139,6 +136,12 @@
                             <input class="btn-full btn-100 btn-full-hover" type="submit" value="Enviar"
                                 id="btn-formulario" aria-label="Enviar formulario de contacto">
                         </form>
+                    </div>
+                    <div class="container__contact-mensaje mostrarTablet" hidden>
+                        <p class="txt-body txt-small txt-light">Si tenés alguna consulta, no dudes
+                            en contactarnos.
+                            Podés completar el formulario y te
+                            escribiremos a la brevedad.</p>
                     </div>
                 </div>
             </div>
@@ -235,7 +238,7 @@
         </section>
     </footer>
 
-    <script src="/main.js"></script>
+    <script src="/script.js"></script>
 </body>
 
 </html>

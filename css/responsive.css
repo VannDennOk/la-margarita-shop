@@ -169,6 +169,12 @@
         width: 100%;
     }
 
+    .container__contact-mensaje {
+        background-color: var(--color-verde-oscuro);
+        width: 100%;
+        padding: 2.5rem;
+    }
+
     /* OPINIONES - INICIO */
 
     .container__opiniones-frame {

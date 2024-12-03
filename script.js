@@ -98,7 +98,7 @@ function validarPhone(input, error) {
     const phoneFormato = input.value.trim(); 
     if (phoneFormato !== '' && !phoneFormatoArg.test(phoneFormato)) { // En este caso solo tira error si el campo ha sido completado, ya que no es obligatorio.
         console.log("Error: El formato del Teléfono no es válido");
-        error.innerText = "El teléfono no cumple con el formato argentino. Ingrese los números sin espacios, guiones o paréntesis y sin el 0 delante del código de área. Ejemplo: 5491168611033. El código de país es opcional.";
+        error.innerText = "El teléfono no cumple con el formato argentino. Ingrese los números sin espacios, guiones o paréntesis y sin el 0 delante del código de área. Ej.: +5491168611033. El código de país es opcional.";
         error.classList.add('mostrar-mensaje-error');
         input.classList.add('input-error');
         return false;
