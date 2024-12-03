@@ -418,6 +418,7 @@
                         <p class="txt-body txt-xsmall txt-dark">Los campos con asterisco (*) son obligatorios</p>
 
                         <form class="form-contact" action="https://formspree.io/f/mwpkewyb" method="POST">
+                            
                             <label class="label" for="input-name">Nombre*</label>
                             <input class="input" type="text" name="Nombre" id="input-name"
                                 placeholder="Ingresá tu nombre" required autocomplete="on">
@@ -428,9 +429,10 @@
                                 placeholder="Ingresá tu e-mail" required autocomplete="on">
                             <p class="input-mensaje-error" id="errorEmail" hidden></p>
 
-                            <label class="label" for="input-phone">Teléfono</label>
+                            <label class="label" for="input-phone">Teléfono (Argentina)</label>
                             <input class="input" type="tel" name="Teléfono" id="input-phone"
-                                placeholder="Ingresá tu teléfono" autocomplete="on">
+                                placeholder="Ingresá tu teléfono sin espacios o guiones" autocomplete="on">
+                            <p class="input-mensaje-error" id="errorPhone" hidden></p>
 
                             <label class="label" for="input-subjet">Asunto</label>
                             <input class="input" type="text" name="Asunto" id="input-subjet"
