@@ -47,8 +47,8 @@ Lo realizado hasta la clase 8 (preentrega):
 <h3>Etapa :three: - JavaScript</h3>
 <p>
 Lo realizado hasta la clase 12. Agrega funcionalidad con JavaScript:
-<br>:x: Integración de un archivo script.js relacionado con el HTML.
-<br>:x: Implementación de una función que verifique si todos los campos del formulario de contacto están completos, mostrando un mensaje en consola.
+<br>:heavy_check_mark: Integración de un archivo script.js relacionado con el HTML.
+<br>:heavy_check_mark: Implementación de una función que verifique si todos los campos del formulario de contacto están completos, mostrando un mensaje en consola (extra: verifica el formato del e-mail y del teléfono). 
 <br>:x: Creación de un ciclo que genere dinámicamente una lista de productos disponibles y los muestre en la consola.
 <br>:x: Implementación de un evento click que muestra la descripción ampliada del producto que clickeamos.
 <br>:x: Listado de productos incluidos en nuestro HTML generado por medio de una función en Js.
