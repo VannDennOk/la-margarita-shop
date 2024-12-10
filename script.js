@@ -144,3 +144,86 @@ btnFormulario.addEventListener('click', function (event) {
         event.preventDefault(); // Evita el envío si algún campo está vacío o es inválido
     }
 });
+
+
+//iterar productos
+
+function listarProductos() {
+let productos = [
+    { nombre: '', disponible: true},
+    { nombre: '', disponible: false},
+    { nombre: '', disponible: true},
+    { nombre: '', disponible: false}
+];
+
+for (let i = 0; i < productos.length; i++) {
+    if (productos[i].disponible === true) {
+        console.log(productos[i].nombre + " está en stock.");
+    } else {
+        console.log(productos[i].nombre + " no está en stock.");
+    }
+    
+}
+}
+
+
+
+
+
+
+
+
+// VISTO EN CLASE PARA ADAPTAR AL TP
+
+// buscar
+
+let frutas = ["manzana", "banana", "pomelo", "mandarina", "uva"];
+
+const elementoBuscado = "pomelo";
+for (let indice = 0; indice < frutas.length; indice++) {
+    if(frutas[indice] === elementoBuscado){
+        console.log("Elemento encontrado en la posición" + indice)
+    } else {
+        console.log("No está en la posición" + indice)
+    }
+}
+
+// OBJETOS EN JAVASCRIPT --> JSON: JavaScript Object Notation
+
+const productosEj  = [
+    {
+        codigo: 1,
+        nombre: "Producto 1",
+        descripcion: "lorem ipsum",
+        precio: 70.8
+    },
+
+    {
+        codigo: 2,
+        nombre: "Producto 2",
+        descripcion: "lorem ipsum",
+        precio: 70.8
+    },
+
+    {
+        codigo: 3,
+        nombre: "Producto 3",
+        descripcion: "lorem ipsum",
+        precio: 70.8
+    }
+];
+
+console.log(productosEj); //key - value / vlave - valor
+
+/*arreglos de objetos*/
+//buena práctica: cuando trabajamos con productos, trabajar en plural: "productos"
+//subdividir el problema en partes: 
+    //mostrar los productos
+    //seleccionar los productos
+    //etc.
+//cada una de estas partes se puede resolver creando funciones.
+//en una función vamos a guardar un conjunto de instrucciones.
+
+
+
+

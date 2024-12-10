@@ -202,8 +202,7 @@
     /* /////////////// */
     /* PAGE PRODUCTOS */
 
-    .product__nav-links,
-    .masinformacion__nav-links {
+    .page__nav-links {
         height: auto;
         flex-wrap: wrap;
         gap: 2rem;
@@ -230,7 +229,55 @@
         flex-direction: column;
     }
 
+    /* /////////////// */
+    /* PAGE NOSOTRAS */
+    .container__aboutus-infomargarita {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem 2rem;
+    }
+
+    .container__aboutus-section-txt {
+        width: 100%;
+    }
+
+    .container__aboutus-bio {
+        padding: 3rem;
+        gap: 3rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .conatiner__aboutus-bio-july {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .conatiner__aboutus-bio-mile {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+    
+    .container__aboutus-elegirnos {
+        flex-direction: column-reverse;
+        gap: 4rem;
+        padding: 3rem 1.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 
 /* ESTILOS RESPONSIVOS PARA CELULAR */
 

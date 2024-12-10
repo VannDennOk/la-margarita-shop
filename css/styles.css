@@ -989,11 +989,10 @@ footer a:hover {
 }
 
 /* /////////////// */
-/* PAGE PRODUCTOS */
+/* NAV ESPECÍFICO PARA PÁGINAS SECUNDARIAS*/
 
-/* Nav específico de páginas secundarias (productos, ramos, decoración, bodas y talleres) */
-.product__nav-links,
-.masinformacion__nav-links {
+/* (productos, ramos, decoración, bodas, talleres, nosotras, cómo comprar, cómo llegar) */
+.page__nav-links {
     width: 100%;
     height: 3.5rem;
     display: flex;
@@ -1003,13 +1002,11 @@ footer a:hover {
     border-bottom: 2px solid var(--color-verde);
 }
 
-.product__nav li,
-.masinformacion__nav li {
+.page__nav li {
     list-style: none;
 }
 
-.product__nav a,
-.masinformacion__nav a {
+.page__nav a {
     text-decoration: none;
     font-family: var(--font-lato);
     font-size: 1rem;
@@ -1017,23 +1014,22 @@ footer a:hover {
     transition: all .5s ease-in-out;
 }
 
-
-.product__nav a:hover,
-.masinformacion__nav a:hover {
+.page__nav a:hover {
     color: var(--color-mostaza);
 }
 
-.product__nav-link-selected,
-.masinformacion__nav-link-selected {
+.page__nav-link-selected {
     border-bottom: 1px solid var(--color-texto-oscuro);
     padding-bottom: 0.5rem;
     transition: all .5s ease-in-out;
 }
 
-.product__nav-link-selected:hover,
-.masinformacion__nav-link-selected:hover {
+.page__nav-link-selected:hover {
     border-bottom: 1px solid var(--color-mostaza);
 }
+
+/* /////////////// */
+/* PAGE PRODUCTOS */
 
 /* Banner con imágenes (se repite: productos, ramos, decoración y bodas) */
 
@@ -1133,6 +1129,93 @@ dos bordes con color y que se gira 45 grados;
     border-bottom: 2px solid var(--color-mostaza);
 }
 
+/* /////////////// */
+/* PAGE NOSOTRAS */
+
+.container__aboutus-info{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 4.5rem;
+margin-top: 4.5rem;
+}
+
+.container__aboutus-infomargarita {
+    background-color: var(--color-verde-oscuro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6rem;
+    padding: 2rem 6rem;
+    margin-bottom: 4.5rem;
+}
+
+.img__aboutus-infomargarita {
+    max-width: 6rem;
+}
+
+.container__aboutus-section-txt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 3rem; 
+}
+
+.container__aboutus-bio {
+    background-color: var(--color-verde-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 6rem;
+    margin-bottom: 4.5rem;
+}
+
+.conatiner__aboutus-bio-july, .conatiner__aboutus-bio-mile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__aboutus-elegirnos {
+    background-color: var(--color-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 2rem 6rem;
+    margin-bottom: 4.5rem;
+}
+
+.container__aboutus-section-txt-txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.container__aboutus-section-txt-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.img__aboutus-elegirnos{
+    width: 100%;
+}
+
+
+
 /* ///////////// */
 /* PAGE CONTACTO*/
 
@@ -1168,6 +1251,9 @@ dos bordes con color y que se gira 45 grados;
     background-color: var(--color-mostaza);
     color: var(--color-withe);
 }
+
+
+
 
 /* /////////////////////// */
 /* PÁGINA EN CONSTRUCCIÓN */
