@@ -1,26 +1,59 @@
-/*TODO ESTO ES PROVISORIO HASTA QUE VEAMOS BIEN JAVA EN CLASE!!!*/
-
 /*BOTONES DE ENLACES*/
 // Mapeamos cada botón con su URL de destino
 const buttonRutas = {
-    "btn_irProductos": "pages/productos.html",
-    "btn_irRamos": "pages/productos-ramos.html",
-    "btn_irDecoracion": "pages/productos-decoración.html",
-    "btn_irBodas": "pages/productos-bodas.html",
-    "btn_irProductos2": "pages/productos.html",
-    "btn_irTalleres": "pages/talleres.html",
-    "btn_irNosotras": "pages/nosotras.html",
-    "btn_irOpiniones": "pages/opiniones.html"
+    "btn_irProductos": "/pages/productos.html",
+    "btn_irRamos": "/pages/productos-ramos.html",
+    "btn_irDecoracion": "/pages/productos-decoración.html",
+    "btn_irBodas": "/pages/productos-bodas.html",
+    "btn_irTalleres": "/pages/talleres.html",
+    "btn_irNosotras": "/pages/nosotras.html",
+    "btn_irOpiniones": "/pages/opiniones.html",
+    "btn_enviarMail": "mailto:lamargarita.shop@gmail.com",
+    "btn_irGoogleMaps": "https://maps.app.goo.gl/A2tasdKRbdA3P8t89",
+    "btn_iniciarWA": "https://wa.me/5491168611033",
+    "btn_irFacebook": "/pages/redessociales.html",
+    "btn_irInstagram":"/pages/redessociales.html",
+    "btn_irPinterest":"/pages/redessociales.html",
+    "btn_irYoutube":"/pages/redessociales.html",
+    //"btn_volverInicio": "/index.html"
 };
 
 // Asignamos el evento de click a cada botón según el mapeo
-Object.keys(buttonRutas).forEach(buttonId => {
+/* Object.keys(buttonRutas).forEach(buttonId => {
     const button = document.getElementById(buttonId);
     if (button) {
         button.addEventListener("click", function () {
             window.location.href = buttonRutas[buttonId];
         });
     }
+});
+*/
+
+// Cambia el código para llamar por data-action y abrir algunos en páginas distintas
+document.querySelectorAll("[data-action]").forEach(button => {
+    const action = button.getAttribute("data-action");
+    if (buttonRutas[action]) {
+        button.addEventListener("click", function () {
+            const url = buttonRutas[action];
+            // Abrir en nueva pestaña para acciones específicas
+            if (action === "btn_irGoogleMaps" 
+                || action === "btn_iniciarWA" 
+                || action === "btn_irFacebook"
+                || action === "btn_irInstagram"
+                || action === "btn_irPinterest"
+                || action === "btn_irYoutube"       
+            ) {
+                window.open(url, "_blank");
+            } else {
+                window.location.href = url;
+            }
+        });
+    }
+});
+
+/* BOTON PARA CERRAR PÁGINA/VENTANA (PAGE NOT FOUND)*/
+document.querySelector('[data-action="btn_cerrarVentana"]').addEventListener('click', function() {
+    window.close();
 });
 
 /* BOTON PARA IR ARRIBA CON EFECTO */

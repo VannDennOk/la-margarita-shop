@@ -198,6 +198,10 @@ html {
     padding: 0.25rem;
 }
 
+.nopointer {
+    cursor: default;
+}
+
 /* LABELS-INPUTS-TEXTAREAS - ESTILOS GENERALES*/
 
 .label {
@@ -1214,8 +1218,6 @@ margin-top: 4.5rem;
     width: 100%;
 }
 
-
-
 /* ///////////// */
 /* PAGE CONTACTO*/
 
@@ -1269,4 +1271,50 @@ margin-top: 4.5rem;
 
 .img-error {
     width: 25%;
+}
+
+
+/* /////////////////////// */
+/* PÁGINA NO ENCONTRADA */
+.main__pagenotfound {
+    width: 100vw;
+    height: 100vh;
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-verde-claro);
+}
+
+.container__pagenotfound-area {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-verde-oscuro);
+    box-shadow: 6px 6px 16px var(--color-verde-transp);    
+}
+
+.container__pagenotfound-img-box {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-verde);
+    background-image: url("../images/error.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container__pagenotfound-txt-box {
+    width: 50%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }
