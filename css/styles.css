@@ -1254,8 +1254,30 @@ margin-top: 4.5rem;
     color: var(--color-withe);
 }
 
+/* ///////////// */
+/*PAGE CONTACTO*/
 
+.container__masinfo-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+}
 
+.container__masinfo-txt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.container__masinfo-img {
+    width: 60%;
+}
 
 /* /////////////////////// */
 /* PÁGINA EN CONSTRUCCIÓN */

@@ -256,7 +256,7 @@
         flex-direction: column-reverse;
         gap: 1.5rem;
     }
-    
+
     .container__aboutus-elegirnos {
         flex-direction: column-reverse;
         gap: 4rem;
@@ -264,32 +264,61 @@
         margin-bottom: 4.5rem;
     }
 
+    /* ///////////// */
+    /*PAGE CÓMO LLEGAR*/
 
-/* /////////////////////// */
-/* PÁGINA NO ENCONTRADA */
-.main__pagenotfound {
-    padding: 1rem;
-    align-items: flex-start;
-}
+    .container__masinfo-area {
+        padding: 2rem;
+    }
 
-.container__pagenotfound-area {
-    flex-direction: column;
-    width: 90%;
-    height: 100%;
-    gap: 1rem;
-}
+    .container__masinfo-txt {
+        width: 80%;
+    }
 
-.container__pagenotfound-img-box {
-    width: 100%;
-    height: 60%;
-}
+    .container__masinfo-img {
+        width: 80%;
+    }
 
-.container__pagenotfound-txt-box {
-    width: 100%;
-    height: 40%;
-    padding: 2rem;
-    gap: 2rem;
-}
+    /* /////////////////////// */
+    /* PÁGINA CÓMO LLEGO*/
+
+    .container__masinfo-area {
+        padding: 2rem;
+    }
+
+    .container__masinfo-txt {
+        width: 80%;
+    }
+
+    .container__masinfo-img {
+        width: 80%;
+    }
+
+    /* /////////////////////// */
+    /* PÁGINA NO ENCONTRADA */
+    .main__pagenotfound {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+
+    .container__pagenotfound-area {
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+        gap: 1rem;
+    }
+
+    .container__pagenotfound-img-box {
+        width: 100%;
+        height: 60%;
+    }
+
+    .container__pagenotfound-txt-box {
+        width: 100%;
+        height: 40%;
+        padding: 2rem;
+        gap: 2rem;
+    }
 
 }
 
@@ -425,11 +454,24 @@
         box-shadow: 2px 2px 6px var(--color-verde-transp);
     }
 
+    /* /////////////////////// */
+    /* PÁGINA CÓMO LLEGO*/
 
-/* /////////////////////// */
-/* PÁGINA NO ENCONTRADA */
+    .container__masinfo-area {
+        padding: 2rem;
+    }
+
+    .container__masinfo-txt {
+        width: 100%;
+    }
+
+    .container__masinfo-img {
+        width: 100%;
+    }
+
+    /* /////////////////////// */
+    /* PÁGINA NO ENCONTRADA */
     .container__pagenotfound-txt-box {
         padding: 1rem;
     }
-
 }
