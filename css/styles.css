@@ -202,71 +202,6 @@ html {
     cursor: default;
 }
 
-/* LABELS-INPUTS-TEXTAREAS - ESTILOS GENERALES*/
-
-.label {
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-texto-oscuro);
-}
-
-.input {
-    background-color: var(--color-blanco);
-    border: 2px solid var(--color-verde);
-    width: 100%;
-    height: 3rem;
-    padding: 0.5rem;
-    outline: none;
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-texto-oscuro);
-}
-
-.textarea {
-    background-color: var(--color-blanco);
-    border: 2px solid var(--color-verde);
-    width: 100%;
-    height: 9rem;
-    padding: 0.5rem;
-    outline: none;
-    font-family: var(--font-lato);
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-texto-oscuro);
-    resize: none;
-}
-
-.input:focus,
-.textarea:focus {
-    border: 2px solid var(--color-mostaza);
-}
-
-.input::placeholder,
-.textarea::placeholder {
-    color: var(--color-verde);
-}
-
-.input-error,
-.input-error:focus {
-    border: 2px solid var(--color-rojo-error);
-}
-
-.input-mensaje-error {
-    font-family: var(--font-lato);
-    font-size: 0.8rem;
-    font-weight: 400;
-    color: var(--color-rojo-error);
-}
-
-.mostrar-mensaje-error {
-    display: block;
-    margin-bottom: 1rem;
-}
-
-
-
 /* HEADER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
 
 .header {
@@ -351,17 +286,6 @@ header nav a:hover {
 
 .selected:hover {
     border-bottom: 1px solid var(--color-mostaza-claro);
-}
-
-/* HEADER DE SECCIÓN PARA TODAS LAS PÁGINAS - ESTILOS GENERALES */
-
-.section__header {
-    width: 100%;
-    height: 3rem;
-    background-color: var(--color-verde);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /* FOOTER DE TODAS LAS PÁGINAS - ESTILOS GENERALES */
@@ -485,10 +409,39 @@ footer a:hover {
     gap: 1rem;
 }
 
+/* /////////////////////// */
+/* BOTON ARRIBA / BUTTON UP (DESKTOP)*/
+
+.btn-up {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-verde);
+    box-shadow: 6px 6px 16px var(--color-verde-oscuro-transp);
+    color: var(--color-withe);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.6rem;
+    position: fixed;
+    bottom: 4rem;
+    right: 2.5rem;
+    cursor: pointer;
+    transform: scale(0);
+    /* transition: all .5s ease-in-out; */
+    transition: transform 0.3s ease;
+}
+
+.btn-up:hover {
+    background-color: var(--color-mostaza);
+    color: var(--color-withe);
+}
+
 /* //////////////// SECCIONES QUE VARÍAN POR PÁGINA //////////////// */
 
 /* /////////////////// */
-/* PAGE HOME - INICIO */
+/* LANDING PAGE - HOME - INICIO */
 
 /* SECTION HERO - INICIO */
 
@@ -532,7 +485,7 @@ footer a:hover {
     text-align: left;
 }
 
-/* LINKS A PAGES - INICIO */
+/* LINKS A PAGES DE LA TIENDA - INICIO */
 
 .container__pages-area {
     padding: 6.5rem 0rem;
@@ -586,6 +539,17 @@ footer a:hover {
     text-align: center;
     gap: 1rem;
     padding: 2rem;
+}
+
+/* HEADER DE SECCIONES - INICIO */
+
+.section__header {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* PRODUCTOS DESTACADOS - INICIO */
@@ -845,6 +809,69 @@ footer a:hover {
     align-items: flex-start;
     justify-content: space-between;
     gap: 0.5rem;
+}
+
+/* LABELS-INPUTS-TEXTAREAS - ESTILOS GENERALES*/
+
+.label {
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-texto-oscuro);
+}
+
+.input {
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-verde);
+    width: 100%;
+    height: 3rem;
+    padding: 0.5rem;
+    outline: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-texto-oscuro);
+}
+
+.textarea {
+    background-color: var(--color-blanco);
+    border: 2px solid var(--color-verde);
+    width: 100%;
+    height: 9rem;
+    padding: 0.5rem;
+    outline: none;
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-texto-oscuro);
+    resize: none;
+}
+
+.input:focus,
+.textarea:focus {
+    border: 2px solid var(--color-mostaza);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: var(--color-verde);
+}
+
+.input-error,
+.input-error:focus {
+    border: 2px solid var(--color-rojo-error);
+}
+
+.input-mensaje-error {
+    font-family: var(--font-lato);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-rojo-error);
+}
+
+.mostrar-mensaje-error {
+    display: block;
+    margin-bottom: 1rem;
 }
 
 .checkbox-line {
@@ -1136,14 +1163,14 @@ dos bordes con color y que se gira 45 grados;
 /* /////////////// */
 /* PAGE NOSOTRAS */
 
-.container__aboutus-info{
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 4.5rem;
-margin-top: 4.5rem;
+.container__aboutus-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    margin-top: 4.5rem;
 }
 
 .container__aboutus-infomargarita {
@@ -1168,7 +1195,7 @@ margin-top: 4.5rem;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 0 3rem; 
+    padding: 0 3rem;
 }
 
 .container__aboutus-bio {
@@ -1181,7 +1208,8 @@ margin-top: 4.5rem;
     margin-bottom: 4.5rem;
 }
 
-.conatiner__aboutus-bio-july, .conatiner__aboutus-bio-mile {
+.conatiner__aboutus-bio-july,
+.conatiner__aboutus-bio-mile {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1197,7 +1225,7 @@ margin-top: 4.5rem;
     margin-bottom: 4.5rem;
 }
 
-.container__aboutus-section-txt-txt{
+.container__aboutus-section-txt-txt {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1206,7 +1234,7 @@ margin-top: 4.5rem;
     gap: 1.5rem;
 }
 
-.container__aboutus-section-txt-line{
+.container__aboutus-section-txt-line {
     width: 100%;
     display: flex;
     align-items: center;
@@ -1214,7 +1242,7 @@ margin-top: 4.5rem;
     gap: 1rem;
 }
 
-.img__aboutus-elegirnos{
+.img__aboutus-elegirnos {
     width: 100%;
 }
 
@@ -1224,6 +1252,26 @@ margin-top: 4.5rem;
 /* Adapta el contacto del home a toda la página*/
 .fullpage {
     padding-top: 6.5rem;
+}
+
+/* ///////////// */
+/* PAGE OPINIONES*/
+
+.container__opiniones-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 4.5rem 0;
+}
+
+.container__opiniones-txt-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 /* ///////////// */
@@ -1257,7 +1305,7 @@ margin-top: 4.5rem;
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem 0;     
+    padding: 1rem 0;
 }
 
 .masinfo-txt-line {
@@ -1267,36 +1315,6 @@ margin-top: 4.5rem;
     gap: 1rem;
     padding-left: 1rem;
 }
-
-/* BOTON ARRIBA / BUTTON UP (DESKTOP)*/
-
-.btn-up {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: var(--color-verde);
-    box-shadow: 6px 6px 16px var(--color-verde-oscuro-transp);
-    color: var(--color-withe);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0.6rem;
-    position: fixed;
-    bottom: 4rem;
-    right: 2.5rem;
-    cursor: pointer;
-    transform: scale(0);
-    /* transition: all .5s ease-in-out; */
-    transition: transform 0.3s ease;
-}
-
-.btn-up:hover {
-    background-color: var(--color-mostaza);
-    color: var(--color-withe);
-}
-
-
 
 /* /////////////////////// */
 /* PÁGINA EN CONSTRUCCIÓN */
@@ -1313,7 +1331,6 @@ margin-top: 4.5rem;
 .img-error {
     width: 25%;
 }
-
 
 /* /////////////////////// */
 /* PÁGINA NO ENCONTRADA */
@@ -1336,7 +1353,7 @@ margin-top: 4.5rem;
     gap: 2rem;
     background-color: var(--color-blanco);
     border: 2px solid var(--color-verde-oscuro);
-    box-shadow: 6px 6px 16px var(--color-verde-transp);    
+    box-shadow: 6px 6px 16px var(--color-verde-transp);
 }
 
 .container__pagenotfound-img-box {

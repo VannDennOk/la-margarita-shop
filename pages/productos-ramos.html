@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Página de productos de ramos de La Margarita Shop. Tienda de arreglos y servicios florales">
+    <meta name="description" content="Página de productos de ramos de La Margarita Shop. Tienda de arreglos y servicios florales">
     <title>La Margarita Shop Productos Ramos</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- ICONOS CON BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- FUENTES DE GOOGLE FONTS (PLAYFAIR DISPLAY Y LATO) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/responsive.css">
 </head>
@@ -76,7 +84,7 @@
                 </div>
                 <div class="content-select">
                     <label for="select"></label>
-                    <select name="select">
+                    <select name="Ordenar" id="select">
                         <option value="0" selected>Ordenar por</option>
                         <option value="1">A-Z</option>
                         <option value="2">Z-A</option>
@@ -313,8 +321,8 @@
         </section>
 
         <!-- BOTON ARRIBA / GO TOP BUTTON -->
-        <div class="btn-up btn-hover" id="btn-up">
-            <i class="bi bi-chevron-up"></i></i>
+        <div class="btn-up btn-hover" data-action="btn_irArriba">
+            <i class="bi bi-chevron-up"></i>
         </div>
     </main>
 

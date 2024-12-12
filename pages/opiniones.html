@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Información opiniones de compradores de La Margarita Shop. Tienda de arreglos y servicios florales">
+    <meta name="description" content="Información opiniones de compradores de La Margarita Shop. Tienda de arreglos y servicios florales">
     <title>La Margarita Shop Opiniones</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- ICONOS CON BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- FUENTES DE GOOGLE FONTS (PLAYFAIR DISPLAY Y LATO) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/responsive.css">
 </head>
@@ -56,15 +64,301 @@
             </nav>
         </header>
 
-        <!-- AVISO DE PÁGINA EN CONSTRUCCIÓN -->
-        <section class="construction__area">
-            <p class="txt-body txt-dark txt-large">Ups! Página en construcción.</p>
-            <img class="img-error" src="../images/error.jpg">
+        <section class="container__opiniones-area">
+
+            <div class="container__opiniones-txt">
+                <h2 class="titulo txt-dark txt-large">Opiniones</h2>
+                <div class="container__opiniones-txt-lines" >
+                    <p class="txt-body txt-dark txt-small">Sabemos la importancia que hay detrás de cada uno de nuestros ramos y arreglos florales.</p>
+                    <p class="txt-body txt-dark txt-small">Por eso queremos mostrarte que somos comunidad.</p> 
+                    <p class="txt-body txt-dark txt-small txt-strong txt-resalte">Confiá en nostras!</p>
+                </div>
+            </div>
+
+            <div class="container__opiniones-frame">
+                <!-- Opinión 1 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario1.jpg"
+                            alt="retrato de mujer joven con cabello castaño">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Carla</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-09-15">15/09/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Excelente servicio</h2>
+                    <p class="txt-body txt-small txt-dark">Pedí un ramo personalizado para el cumpleaños de mi mamá, y quedó hermoso. Las flores frescas y el diseño, impecable. ¡Se nota el amor con el que trabajan!</p>
+                </div>
+
+                <!-- Opinión 2 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario2.jpg"
+                            alt="mujer mayor con pelo corto y pelirrojo">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Sofía</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-08-21">21/08/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Lujaso</h2>
+                    <p class="txt-body txt-small txt-dark">Compré un ramo para decorar un evento en casa, ¡y fue la sensación! Llegaron en perfectas condiciones y el aroma llenó toda la sala. Definitivamente volveré a comprar aquí.</p>
+                </div>
+
+                <!-- Opinión 3 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario3.jpg"
+                            alt="hombre morocho con anteojos">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Lucila</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-10-30">30/10/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Taller</h2>
+                    <p class="txt-body txt-small txt-dark">Tomé el taller de ramos creativos, ¡y fue una experiencia inolvidable! Todo súper organizado, aprendí mucho y me llevé un ramo precioso hecho por mí. ¡Gracias por la paciencia y dedicación!!</p>
+                </div>
+
+                <!-- Opinión 4 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario4.jpg"
+                            alt="retrato mujer rubia">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Daniel</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-11-12">12/11/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Recomiendo!</h2>
+                    <p class="txt-body txt-small txt-dark">El ramo llegó tal cual las fotos de la web, incluso mejor. Detalles cuidados y flores frescas que duraron semanas. Recomendadísimos para cualquier ocasión especial.</p>
+                </div>
+
+                <!-- Opinión 5 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario5.jpg"
+                            alt="mujer rubia con paisaje montañoso atrás">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Martín</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-07-05">05/07/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Espectacular</h2>
+                    <p class="txt-body txt-small txt-dark">Hice un pedido express para el aniversario con mi pareja y cumplieron con todo. El ramo era espectacular, y la atención al cliente fue excelente. 100% confiable.</p>
+                </div>
+
+                <!-- Opinión 6 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario6.jpg"
+                            alt="pareja hombre y mujer">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Juliana</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-12-17">17/12/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Calidad!</h2>
+                    <p class="txt-body txt-small txt-dark">¡Qué lindo es encontrar una tienda tan comprometida con la calidad! Pedí un ramo de flores primaverales, y quedó perfecto como decoración para mi oficina. Súper original y bien presentado.</p>
+                </div>
+
+                <!-- Opinión 1 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario1.jpg"
+                            alt="retrato de mujer joven con cabello castaño">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Pilar</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-10-03">20/10/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Confiable</h2>
+                    <p class="txt-body txt-small txt-dark"> Me encuentro en España y quería enviar un regalo a mi mamá
+                        por su día. Pueden hacer su pedido con toda confianza, ya que en un día tan movido cumplieron a
+                        la perfección. Tanto el producto, como
+                        el servicio, se merecen un 10/10.</p>
+                </div>
+
+                <!-- Opinión 2 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario2.jpg"
+                            alt="mujer mayor con pelo corto y pelirrojo">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">María Rosa</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-10-10">10/10/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Chocha</h2>
+                    <p class="txt-body txt-small txt-dark">Servicio de lujo!! Muy contenta, quería decorar mi casa para
+                        festejar mi cumpleaños número 80 y me trataron como una reina. Mis amigas quedaron todas
+                        celosas!!!</p>
+                </div>
+
+                <!-- Opinión 3 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario3.jpg"
+                            alt="hombre morocho con anteojos">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Juanjo</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-05-21">21/05/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Muy bien todo</h2>
+                    <p class="txt-body txt-small txt-dark">Las chicas son súper atentas, cordiales y responsables,
+                        además de crear hermosos ramos! Es la segunda vez que compro para mi novia por nuestro
+                        aniversario. Me hacen quedar muy bien!</p>
+                </div>
+
+                <!-- Opinión 4 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario4.jpg"
+                            alt="retrato mujer rubia">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Claudia</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-07-26">26/07/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Excelente!</h2>
+                    <p class="txt-body txt-small txt-dark">Excelente servicio! El ramo fue recibido en el día y horario
+                        acordado y además estaba muy bonito! Tanía mis dudas pero me contacté por whatsapp y
+                        me respondieron todo. Excelente atención! Gracias!!</p>
+                </div>
+
+                <!-- Opinión 5 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario5.jpg"
+                            alt="mujer rubia con paisaje montañoso atrás">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Marce</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-09-03">03/09/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Muy bueno!</h2>
+                    <p class="txt-body txt-small txt-dark">Hice el taller de armado de flores básico. Muy bien explicado
+                        y con todas las herramientas. Además pasé una linda tarde con gente muy copada.</p>
+                </div>
+
+                <!-- Opinión 6 -->
+                <div class="container__opiniones-card">
+                    <div class="container__opiniones-card-header">
+                        <img class="img_opinion" src="../images/opiniones/opiniones-usuario6.jpg"
+                            alt="pareja hombre y mujer">
+                        <div class="opinion_data">
+                            <span><cite class="txt-body txt-medium txt-dark">Agus y Mati</cite></span>
+                            <span><time class="txt-body txt-small txt-dark"
+                                    datetime="2024-04-15">15/04/2024</time></span>
+                            <div class="opinion_calificacion">
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                                <i class="bi bi-star-fill bi-small bi-amarillo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="titulo txt-medium txt-dark txt-strong">Novia feliz</h2>
+                    <p class="txt-body txt-small txt-dark">Quería un ramo de novias especial y ellas lo lograron. Además
+                        hicimos los de las madrinas y la nena de las flores, un paquete genial!
+                        La calidez de las dueñas es espectacular.</p>
+                </div>
+</div>
+
+
         </section>
 
         <!-- BOTON ARRIBA / GO TOP BUTTON -->
-        <div class="btn-up btn-hover" id="btn-up">
-            <i class="bi bi-chevron-up"></i></i>
+        <div class="btn-up btn-hover" data-action="btn_irArriba">
+            <i class="bi bi-chevron-up"></i>
         </div>
 
     </main>
