@@ -1,82 +1,256 @@
-const productos  = [
-    //producto 1
-    {
-        id: "ramos0001",
-        nombre: "Premium | Rosas y más",
-        tipo: "ramos",
-        precio: 75.000,
-        disponible: true,
-        descuento: false
-    },
-    
-    //producto 2
-    {
-        id: "bodas0001",
-        nombre: "Bodas | Rosas clásicas",
-        tipo: "bodas",
-        precio: 50.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 3
-    {
-        id: "ramos0002",
-        nombre: "Siempre fresias",
-        tipo: "ramos",
-        precio: 40.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 4
-    {
-        id: "ramos0003",
-        nombre: "Primavera total",
-        tipo: "ramos",
-        precio: 50.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 5
-    {
-        id: "bodas0002",
-        nombre: "Bodas | Popurrí campestre",
-        tipo: "bodas",
-        precio: 40.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 6
-    {
-        id: "deco0001",
-        nombre: "Jarrón primaveral",
-        tipo: "deco",
-        precio: 75.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 7
-    {
-        id: "ramos0004",
-        nombre: "Siempre rosas rojas",
-        tipo: "ramos",
-        precio: 50.000,
-        disponible: true,
-        descuento: false
-    },
-
-    //producto 8
-    {
-        id: "taller0001",
-        nombre: "Taller inicial",
-        tipo: "talleres",
-        precio: 40.000,
-        disponible: true,
-        descuento: false
-    }
-
-];
+{
+    "productosbd": [
+        {
+            "id": "r01",
+            "nombre": "Gerbera plus",
+            "tipo": "ramos",
+            "precio": 60.000,
+            "imagen": "../images/productos/ramos-001-00001.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r02",
+            "nombre": "Primavera total",
+            "tipo": "ramos",
+            "precio": 50.000,
+            "imagen": "../images/productos/ramos-001-00002.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r03",
+            "nombre": "Premium | Rosas y más",
+            "tipo": "ramos",
+            "precio": 75.000,
+            "imagen": "../images/productos/ramos-001-00003.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r04",
+            "nombre": "Primavera especial",
+            "tipo": "ramos",
+            "precio": 50.000,
+            "imagen": "../images/productos/ramos-001-00004.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r05",
+            "nombre": "Variedad de rosas",
+            "tipo": "ramos",
+            "precio": 60.000,
+            "imagen": "../images/productos/ramos-001-00005.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r06",
+            "nombre": "Gerbera veraniega",
+            "tipo": "ramos",
+            "precio": 50.000,
+            "imagen": "../images/productos/ramos-001-00006.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r07",
+            "nombre": "Gerbera Mimi",
+            "tipo": "ramos",
+            "precio": 40.000,
+            "imagen": "../images/productos/ramos-001-00007.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r08",
+            "nombre": "Crisantemos y más",
+            "tipo": "ramos",
+            "precio": 40.000,
+            "imagen": "../images/productos/ramos-001-00008.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r09",
+            "nombre": "Caléndula otoñal",
+            "tipo": "ramos",
+            "precio": 60.000,
+            "imagen": "../images/productos/ramos-001-00009.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r10",
+            "nombre": "Simplemente gerbera",
+            "tipo": "ramos",
+            "precio": 50.000,
+            "imagen": "../images/productos/ramos-001-00010.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "r11",
+            "nombre": "Siempre rosas rojas",
+            "tipo": "ramos",
+            "precio": 50.000,
+            "disponible": true,
+            "imagen": "../images/productos/ramos-001-00011.jpg",
+            "descuento": false
+        },
+        {
+            "id": "r12",
+            "nombre": "Siempre fresias",
+            "tipo": "ramos",
+            "precio": 40.000,
+            "imagen": "../images/productos/ramos-001-00012.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b01",
+            "nombre": "Bodas | Rosas clásicas",
+            "tipo": "bodas",
+            "precio": 50.000,
+            "imagen": "../images/productos/bodas-003-00001.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b02",
+            "nombre": "Bodas | Rosas Diamante",
+            "tipo": "bodas",
+            "precio": 70.000,
+            "imagen": "../images/productos/bodas-003-00002.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b03",
+            "nombre": "Bodas | Rosas campestres",
+            "tipo": "bodas",
+            "precio": 50.000,
+            "imagen": "../images/productos/bodas-003-00003.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b04",
+            "nombre": "Bodas | Rosas bicolor",
+            "tipo": "bodas",
+            "precio": 60.000,
+            "imagen": "../images/productos/bodas-003-00004.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b05",
+            "nombre": "Bodas | Popurrí campestre",
+            "tipo": "bodas",
+            "precio": 40.000,
+            "imagen": "../images/productos/bodas-003-00005.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b06",
+            "nombre": "Bodas | Rosas de primavera",
+            "tipo": "bodas",
+            "precio": 60.000,
+            "imagen": "../images/productos/bodas-003-00006.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b07",
+            "nombre": "Bodas | Rosas modernas",
+            "tipo": "bodas",
+            "precio": 50.000,
+            "imagen": "../images/productos/bodas-003-00007.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b08",
+            "nombre": "Bodas | Margaritas plus",
+            "tipo": "bodas",
+            "precio": 40.000,
+            "imagen": "../images/productos/bodas-003-00008.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b09",
+            "nombre": "Bodas | Variedad mini",
+            "tipo": "bodas",
+            "precio": 30.000,
+            "imagen": "../images/productos/bodas-003-00009.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b10",
+            "nombre": "Bodas | Variedad rosal",
+            "tipo": "bodas",
+            "precio": 50.000,
+            "imagen": "../images/productos/bodas-003-00010.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b11",
+            "nombre": "Bodas | Rosas coloridas",
+            "tipo": "bodas",
+            "precio": 70.000,
+            "imagen": "../images/productos/bodas-003-00011.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "b12",
+            "nombre": "Bodas | Variedad plus",
+            "tipo": "bodas",
+            "precio": 50.000,
+            "imagen": "../images/productos/bodas-003-00012.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "d01",
+            "nombre": "Jarrón pompom",
+            "tipo": "deco",
+            "precio": 75.000,
+            "imagen": "../images/productos/decoracion-002-00001.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "d02",
+            "nombre": "Jarrón primaveral",
+            "tipo": "deco",
+            "precio": 75.000,
+            "imagen": "../images/productos/decoracion-002-00002.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "d03",
+            "nombre": "Jarrón rosas y fresias",
+            "tipo": "deco",
+            "precio": 85.000,
+            "imagen": "../images/productos/decoracion-002-00002.jpg",
+            "disponible": true,
+            "descuento": false
+        },
+        {
+            "id": "taller0001",
+            "nombre": "Taller inicial",
+            "tipo": "talleres",
+            "precio": 40.000,
+            "imagen": "../images/productos/talleres-004-00001.jpg",
+            "disponible": true,
+            "descuento": false
+        }
+    ]
+}
