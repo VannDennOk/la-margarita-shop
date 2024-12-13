@@ -6,6 +6,7 @@
             "tipo": "ramos",
             "precio": 60.000,
             "imagen": "../images/productos/ramos-001-00001.jpg",
+            "alt": "ramo de flores gerberas",
             "disponible": true,
             "descuento": false
         },
@@ -15,6 +16,7 @@
             "tipo": "ramos",
             "precio": 50.000,
             "imagen": "../images/productos/ramos-001-00002.jpg",
+            "alt": "ramo de flores variadas",
             "disponible": true,
             "descuento": false
         },
@@ -24,6 +26,7 @@
             "tipo": "ramos",
             "precio": 75.000,
             "imagen": "../images/productos/ramos-001-00003.jpg",
+            "alt": "ramo de flores rosas",
             "disponible": true,
             "descuento": false
         },
@@ -33,6 +36,7 @@
             "tipo": "ramos",
             "precio": 50.000,
             "imagen": "../images/productos/ramos-001-00004.jpg",
+            "alt": "ramo de flores variadas",
             "disponible": true,
             "descuento": false
         },
@@ -42,6 +46,7 @@
             "tipo": "ramos",
             "precio": 60.000,
             "imagen": "../images/productos/ramos-001-00005.jpg",
+            "alt": "ramo de flores rosas",
             "disponible": true,
             "descuento": false
         },
@@ -51,6 +56,7 @@
             "tipo": "ramos",
             "precio": 50.000,
             "imagen": "../images/productos/ramos-001-00006.jpg",
+            "alt": "ramo de flores gerberas",
             "disponible": true,
             "descuento": false
         },
@@ -60,6 +66,7 @@
             "tipo": "ramos",
             "precio": 40.000,
             "imagen": "../images/productos/ramos-001-00007.jpg",
+            "alt": "ramo de flores gerberas",
             "disponible": true,
             "descuento": false
         },
@@ -69,6 +76,7 @@
             "tipo": "ramos",
             "precio": 40.000,
             "imagen": "../images/productos/ramos-001-00008.jpg",
+            "alt": "ramo de flores crisantemos",
             "disponible": true,
             "descuento": false
         },
@@ -78,6 +86,7 @@
             "tipo": "ramos",
             "precio": 60.000,
             "imagen": "../images/productos/ramos-001-00009.jpg",
+            "alt": "ramo de flores caléndulas",
             "disponible": true,
             "descuento": false
         },
@@ -87,6 +96,7 @@
             "tipo": "ramos",
             "precio": 50.000,
             "imagen": "../images/productos/ramos-001-00010.jpg",
+            "alt": "ramo de flores gerberas",
             "disponible": true,
             "descuento": false
         },
@@ -97,6 +107,7 @@
             "precio": 50.000,
             "disponible": true,
             "imagen": "../images/productos/ramos-001-00011.jpg",
+            "alt": "ramo de flores rosas rojas",
             "descuento": false
         },
         {
@@ -105,6 +116,7 @@
             "tipo": "ramos",
             "precio": 40.000,
             "imagen": "../images/productos/ramos-001-00012.jpg",
+            "alt": "ramo de flores fresias",
             "disponible": true,
             "descuento": false
         },
@@ -114,6 +126,7 @@
             "tipo": "bodas",
             "precio": 50.000,
             "imagen": "../images/productos/bodas-003-00001.jpg",
+            "alt": "ramo de bodas rosas",
             "disponible": true,
             "descuento": false
         },
@@ -123,6 +136,7 @@
             "tipo": "bodas",
             "precio": 70.000,
             "imagen": "../images/productos/bodas-003-00002.jpg",
+            "alt": "ramo de bodas rosas con diamantes",
             "disponible": true,
             "descuento": false
         },
@@ -132,6 +146,7 @@
             "tipo": "bodas",
             "precio": 50.000,
             "imagen": "../images/productos/bodas-003-00003.jpg",
+            "alt": "ramo de bodas con margaritas",
             "disponible": true,
             "descuento": false
         },
@@ -141,6 +156,7 @@
             "tipo": "bodas",
             "precio": 60.000,
             "imagen": "../images/productos/bodas-003-00004.jpg",
+            "alt": "ramo de bodas rosas de diferentes colores",
             "disponible": true,
             "descuento": false
         },
@@ -150,6 +166,7 @@
             "tipo": "bodas",
             "precio": 40.000,
             "imagen": "../images/productos/bodas-003-00005.jpg",
+            "alt": "ramo de bodas flores silvestres",
             "disponible": true,
             "descuento": false
         },
@@ -159,6 +176,7 @@
             "tipo": "bodas",
             "precio": 60.000,
             "imagen": "../images/productos/bodas-003-00006.jpg",
+            "alt": "ramo de bodas rosas de diferentes tonos",
             "disponible": true,
             "descuento": false
         },
@@ -168,6 +186,7 @@
             "tipo": "bodas",
             "precio": 50.000,
             "imagen": "../images/productos/bodas-003-00007.jpg",
+            "alt": "ramo de bodas rosas con pelotitas",
             "disponible": true,
             "descuento": false
         },
@@ -177,6 +196,7 @@
             "tipo": "bodas",
             "precio": 40.000,
             "imagen": "../images/productos/bodas-003-00008.jpg",
+            "alt": "ramo de bodas con margaritas",
             "disponible": true,
             "descuento": false
         },
@@ -186,6 +206,7 @@
             "tipo": "bodas",
             "precio": 30.000,
             "imagen": "../images/productos/bodas-003-00009.jpg",
+            "alt": "ramo de bodas flores variadas y chicas",
             "disponible": true,
             "descuento": false
         },
@@ -195,6 +216,7 @@
             "tipo": "bodas",
             "precio": 50.000,
             "imagen": "../images/productos/bodas-003-00010.jpg",
+            "alt": "ramo de bodas rosas variadas",
             "disponible": true,
             "descuento": false
         },
@@ -204,6 +226,7 @@
             "tipo": "bodas",
             "precio": 70.000,
             "imagen": "../images/productos/bodas-003-00011.jpg",
+            "alt": "ramo de bodas rosas variadas",
             "disponible": true,
             "descuento": false
         },
@@ -213,6 +236,7 @@
             "tipo": "bodas",
             "precio": 50.000,
             "imagen": "../images/productos/bodas-003-00012.jpg",
+            "alt": "ramo de bodas con flores variadas",
             "disponible": true,
             "descuento": false
         },
@@ -222,6 +246,7 @@
             "tipo": "deco",
             "precio": 75.000,
             "imagen": "../images/productos/decoracion-002-00001.jpg",
+            "alt": "jarrón cilindro transparente con flores",
             "disponible": true,
             "descuento": false
         },
@@ -231,6 +256,7 @@
             "tipo": "deco",
             "precio": 75.000,
             "imagen": "../images/productos/decoracion-002-00002.jpg",
+            "alt": "jarrón redondo transparente con flores",
             "disponible": true,
             "descuento": false
         },
@@ -240,6 +266,7 @@
             "tipo": "deco",
             "precio": 85.000,
             "imagen": "../images/productos/decoracion-002-00002.jpg",
+            "alt": "jarrón alargado transparente con flores",
             "disponible": true,
             "descuento": false
         },
@@ -249,6 +276,7 @@
             "tipo": "talleres",
             "precio": 40.000,
             "imagen": "../images/productos/talleres-004-00001.jpg",
+            "alt": "flayer taller inicial",
             "disponible": true,
             "descuento": false
         }

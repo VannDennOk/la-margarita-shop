@@ -33,7 +33,7 @@
             <a href="/index.html"><img class="header__nav-logo" src="./images/logo.svg" alt="logo margarita"></a>
             <ul class="header__nav-links">
                 <li class="header__nav-link"><a class="selected" href="/index.html">Inicio</a></li>
-                <li class="header__nav-link"><a href="#productos">Productos</a></li>
+                <li class="header__nav-link"><a href="#section-productos">Productos</a></li>
                 <li class="header__nav-link"><a href="#talleres">Talleres</a></li>
                 <li class="header__nav-link"><a href="#nosotras">Nosotras</a></li>
                 <li class="header__nav-link"><a href="#contacto">Contacto</a></li>
@@ -119,171 +119,31 @@
         </section>
 
         <!-- PRODUCTOS DESTACADOS -->
-        <section class="container__products-area" id="productos">
+        <section class="container__products-area" id="section-productos">
             <div class="section__header">
                 <h2 class="titulo txt-medium txt-light">PRODUCTOS DESTACADOS</h2>
             </div>
             <div class="container__products-grid-area">
-                <ol class="container__products-grid">
-
-                    <!-- PRODUCTO 1 -->
+                <ol class="container__products-grid" id="contenedor-productos-destacados">
+                    <!-- CARD PRODUCTO
                     <li class="container__products-card">
                         <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/ramos-001-00003.jpg"
-                                alt="ramo de flores con rosas">
+                            <img class="img_product" src="url" alt="alt">
                         </div>
                         <div class="container__product-cards-info">
                             <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Premium: rosas y más</h4>
+                                <h4 class="txt-body txt-small txt-dark txt-strong">titulo</h4>
                                 <button class="btn__heart" type="button" aria-label="Botón me gusta">
                                     <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
                                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                                 </button>
                             </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 75.000</p>
+                            <p class="txt-body txt-small txt-dark">Desde: $ precio</p>
                             <button class="btn-full btn-agregar-carrito btn-full-hover"
                                 aria-label="Agregar al carrito">Agregar al carrito</button>
                         </div>
-                    </li>
-
-                    <!-- PRODUCTO 2 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/bodas-003-00001.jpg"
-                                alt="ramo de novia con rosas blancas">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Bodas | Rosas clásicas</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
-                            <button id="btn_irProductos" class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 3 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/ramos-001-00012.jpg" alt="ramo de fresias">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Siempre fresias</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 4 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/ramos-001-00006.jpg"
-                                alt="ramo de flores variadas">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Primavera total</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 5 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/bodas-003-00005.jpg"
-                                alt="ramo de novia campestre">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Bodas | Popurrí campestre</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 6 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/decoración-002-00002.jpg"
-                                alt="jarrón redondo de vicrio con flores">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Jarrón primaveral</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 75.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 7 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/ramos-001-00011.jpg"
-                                alt="ramo de rosas rojas">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Siempre rosas rojas</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 50.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
-
-                    <!-- PRODUCTO 8 -->
-                    <li class="container__products-card">
-                        <div class="container__img_product">
-                            <img class="img_product" src="./images/productos/talleres-004-00001.png"
-                                alt="taller inicial">
-                        </div>
-                        <div class="container__product-cards-info">
-                            <div class="cards-info-title">
-                                <h4 class="txt-body txt-small txt-dark txt-strong">Taller inicial</h4>
-                                <button class="btn__heart" type="button" aria-label="Botón me gusta">
-                                    <i class="bi bi-heart bi-dark bi-small bi-hover"></i>
-                                    <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
-                                </button>
-                            </div>
-                            <p class="txt-body txt-small txt-dark">Desde $ 40.000</p>
-                            <button class="btn-full btn-agregar-carrito btn-full-hover"
-                                aria-label="Agregar al carrito">Agregar al carrito</button>
-                        </div>
-                    </li>
+                    </li> 
+                    -->
                 </ol>
             </div>
             <button data-action="btn_irProductos" class="btn-blanco btn-blanco-hover" aria-label="Ver todos los productos">Ver
@@ -737,7 +597,7 @@
         </section>
     </footer>
 
-    <script src="/scripts/control-productos.js"></script>
+    <script type="module" src="/scripts/control-productos.js"></script>
     <script src="/scripts/main.js"></script>
 </body>
 
