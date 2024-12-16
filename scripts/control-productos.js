@@ -424,7 +424,7 @@ const productosdb = [
         alt: "flayer taller ramos de novia",
         disponible: true,
         descuento: false,
-        destacado: true
+        destacado: false
     },
     {
         id: "t03",
@@ -435,7 +435,7 @@ const productosdb = [
         alt: "flayer taller arreglos florales para decoracion",
         disponible: true,
         descuento: false,
-        destacado: true
+        destacado: false
     },
     {
         id: "t04",
@@ -446,7 +446,7 @@ const productosdb = [
         alt: "flayer taller ramos estacionales",
         disponible: true,
         descuento: false,
-        destacado: true
+        destacado: false
     }
 ]
 
