@@ -54,6 +54,7 @@
     </header>
 
     <main>
+        <!-- HEADER DE LA PÁGINA -->
         <header class="header__productpage">
             <nav class="page__nav">
                 <ul class="page__nav-links">
@@ -64,21 +65,46 @@
                     <li><a href="/pages/talleres.html" class="page__nav-link-selected">Talleres</a></li>
                 </ul>
             </nav>
-            <!--             <div class="banner__productpage">
-                <img class="banner__img" src="../images/productos/banner-bodas-002-novias.jpg" alt="ramo de boda sostenido por dos manos femeninas">
-                <img class="banner__img" src="../images/productos/banner-bodas-003-ramoenelpiso.jpg"
-                    alt="ramo de boda en el piso con anillos y perfume">
-                <img class="banner__img" src="../images/productos/banner-bodas-004-pareja.jpg"
-                    alt="ramo de bodas sostenido por manos masculina y femenina">
-                <img class="banner__img" src="../images/productos/banner-bodas-001-noviamargaritas.jpg"
-                    alt="mano femenina con ramo de novia de margaristas estilo campestre">
-            </div> -->
+            <!-- BANNER DE IMÁGENES -->
+            <div class="banner__productpage">
+                <img class="banner__img" src="../images/productos/banners/banner-talleres-003-cortando2.jpg" 
+                    alt="manos cortando tallos de flores">
+                <img class="banner__img" src="../images/productos/banners/banner-talleres-002-materiales.jpg"
+                    alt="materiales para el armado de un ramo">
+                <img class="banner__img" src="../images/productos/banners/banner-talleres-001-cortando.jpg"
+                    alt="manos cortando tallos de flores">
+                <img class="banner__img" src="../images/productos/banners/banner-talleres-004-materiales2.jpg"
+                    alt="materiales para el armado de un ramo">
+            </div>
         </header>
 
-        <!-- AVISO DE PÁGINA EN CONSTRUCCIÓN -->
-        <section class="construction__area">
-            <p class="txt-body txt-dark txt-large">Ups! Página en construcción.</p>
-            <img class="img-error" src="../images/error.jpg">
+        <!-- PRODUCTOS -->
+        <section class="container__products-area">
+            <!-- HEADER DE SECCIÓN -->
+            <div class="container__products-header">
+                <div class="container__products-header-txt">
+                    <p class="titulo txt-large txt-dark">Talleres</p>
+                    <p class="txt-body txt-medium txt-dark">Tenemos un taller especial para vos</p>
+                </div>
+                <div class="content-select">
+                    <label for="select"></label>
+                    <select name="Ordenar" id="select">
+                        <option value="0" selected>Ordenar por</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+                        <option value="3">Menor precio</option>
+                        <option value="4">Mayor precio</option>
+                        <option value="5">Más vendidos</option>
+                        <option value="6">Descuentos</option>
+                        <option value="7">Mejores opiniones</option>
+                    </select>
+                    <i></i>
+                </div>
+            </div>
+            <!-- MUESTREO DE PRODUCTOS -->
+            <ol class="container__products-grid" id="contenedor-productos-talleres">
+                <!-- CARDS DINÁMICAS CON JS-->
+            </ol>
         </section>
 
         <!-- BOTON ARRIBA / GO TOP BUTTON -->
