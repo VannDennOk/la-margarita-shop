@@ -119,7 +119,8 @@
         </section>
 
         <!-- PRODUCTOS DESTACADOS -->
-        <section class="container__products-area" id="section-productos">
+        
+        <div class="container__products-display" id="section-productos">
             <div class="section__header">
                 <h2 class="titulo txt-medium txt-light">PRODUCTOS DESTACADOS</h2>
             </div>
@@ -130,7 +131,23 @@
             </div>
             <button data-action="btn_irProductos" class="btn-blanco btn-blanco-hover" aria-label="Ver todos los productos">Ver
                 todos los productos</button>
-        </section>
+        </div>
+
+
+        <!-- CARRITO -->
+        <div class="container__carrito-area" id="carrito">
+            <h2 class="titulo txt-light txt-medium titulo-carrito-box">TU CARRITO</h2>
+            <ul><!-- TARJETA DINÁMICA CON JS--></ul>
+            <div class="container__carrito-card-footer">
+                <div class="container__carrito-card-total">
+                    <p class="txt-body txt-dark txt-strong txt-small">Total a pagar:</p>
+                    <p class="txt-body txt-dark txt-strong txt-small" id="total-carrito"></p>
+                </div>
+                <input class="btn-blanco btn-blanco-hover btn-100" id="btn-borrar" type="button" value="Vaciar carrito">
+                <input class="btn-full btn-full-hover btn-100" id="btn-pagar" type="button" value="Ir a pagar">
+                <p class="carrito-mensaje-error" id="mensaje-carrito"></p>
+            </div>
+        </div>
 
         <!-- WORKSHOPS -->
         <section class="container__workshop-area" id="talleres">

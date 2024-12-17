@@ -554,7 +554,7 @@ footer a:hover {
 
 /* PRODUCTOS DESTACADOS - INICIO */
 
-.container__products-area {
+.container__products-display {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -642,6 +642,82 @@ footer a:hover {
 
 .btn-agregar-carrito {
     width: 100%;
+}
+
+/* CARRITO */
+.container__carrito-area{
+    width: 30%;
+    background-color: var(--color-blanco);
+    margin: 0.5rem;
+    border: 2px solid var(--color-verde);    
+}
+
+.mostrar-container__carrito-area{
+ display: block; 
+}
+
+.titulo-carrito-box{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-verde);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__carrito-card-producto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 2px solid var(--color-verde-claro);
+}
+
+.carrito-producto-info{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.img__carrito-producto{
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-verde); 
+}
+
+.carrito-producto-precio{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container__carrito-card-footer{
+    width: 100%;
+    background-color: var(--color-verde-claro);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 0.8rem;
+}
+
+.container__carrito-card-total{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.carrito-mensaje-error{
+    font-family: var(--font-lato);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-rojo-error);
 }
 
 /* WORKSHOP / TALLERES - INICIO */

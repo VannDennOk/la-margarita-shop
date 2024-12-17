@@ -1,11 +1,11 @@
+/* ///////// ARRAY DE PRODUCTOS ///////// */
 const productosdb = [
-
     // RAMOS
     {
         id: "r01",
         nombre: "Gerbera plus",
         tipo: "ramos",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/ramos/ramos-01.jpg",
         alt: "ramo de flores gerberas",
         disponible: true,
@@ -15,7 +15,7 @@ const productosdb = [
         id: "r02",
         nombre: "Primavera total",
         tipo: "ramos",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/ramos/ramos-02.jpg",
         alt: "ramo de flores variadas",
         disponible: true,
@@ -26,7 +26,7 @@ const productosdb = [
         id: "r03",
         nombre: "Premium | Rosas y más",
         tipo: "ramos",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/ramos/ramos-03.jpg",
         alt: "ramo de flores rosas",
         disponible: true,
@@ -37,7 +37,7 @@ const productosdb = [
         id: "r04",
         nombre: "Primavera especial",
         tipo: "ramos",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/ramos/ramos-04.jpg",
         alt: "ramo de flores variadas",
         disponible: true,
@@ -48,7 +48,7 @@ const productosdb = [
         id: "r05",
         nombre: "Variedad de rosas",
         tipo: "ramos",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/ramos/ramos-05.jpg",
         alt: "ramo de flores rosas",
         disponible: true,
@@ -59,7 +59,7 @@ const productosdb = [
         id: "r06",
         nombre: "Gerbera veraniega",
         tipo: "ramos",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/ramos/ramos-06.jpg",
         alt: "ramo de flores gerberas",
         disponible: true,
@@ -70,7 +70,7 @@ const productosdb = [
         id: "r07",
         nombre: "Gerbera Mimi",
         tipo: "ramos",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/ramos/ramos-07.jpg",
         alt: "ramo de flores gerberas",
         disponible: true,
@@ -81,7 +81,7 @@ const productosdb = [
         id: "r08",
         nombre: "Crisantemos y más",
         tipo: "ramos",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/ramos/ramos-08.jpg",
         alt: "ramo de flores crisantemos",
         disponible: true,
@@ -92,7 +92,7 @@ const productosdb = [
         id: "r09",
         nombre: "Caléndula otoñal",
         tipo: "ramos",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/ramos/ramos-09.jpg",
         alt: "ramo de flores caléndulas",
         disponible: true,
@@ -103,7 +103,7 @@ const productosdb = [
         id: "r10",
         nombre: "Simplemente gerbera",
         tipo: "ramos",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/ramos/ramos-10.jpg",
         alt: "ramo de flores gerberas",
         disponible: true,
@@ -114,7 +114,7 @@ const productosdb = [
         id: "r11",
         nombre: "Siempre rosas rojas",
         tipo: "ramos",
-        precio: "50.000",
+        precio: 50000,
         disponible: true,
         imagen: "../images/productos/ramos/ramos-11.jpg",
         alt: "ramo de flores rosas rojas",
@@ -125,7 +125,7 @@ const productosdb = [
         id: "r12",
         nombre: "Siempre fresias",
         tipo: "ramos",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/ramos/ramos-12.jpg",
         alt: "ramo de flores fresias",
         disponible: true,
@@ -138,7 +138,7 @@ const productosdb = [
         id: "b01",
         nombre: "Bodas | Rosas clásicas",
         tipo: "bodas",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/bodas/bodas-01.jpg",
         alt: "ramo de bodas rosas",
         disponible: true,
@@ -150,7 +150,7 @@ const productosdb = [
         id: "b02",
         nombre: "Bodas | Rosas Diamante",
         tipo: "bodas",
-        precio: "70.000",
+        precio: 70000,
         imagen: "../images/productos/bodas/bodas-02.jpg",
         alt: "ramo de bodas rosas con diamantes",
         disponible: true,
@@ -161,7 +161,7 @@ const productosdb = [
         id: "b03",
         nombre: "Bodas | Rosas campestres",
         tipo: "bodas",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/bodas/bodas-03.jpg",
         alt: "ramo de bodas con margaritas",
         disponible: true,
@@ -172,7 +172,7 @@ const productosdb = [
         id: "b04",
         nombre: "Bodas | Rosas bicolor",
         tipo: "bodas",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/bodas/bodas-04.jpg",
         alt: "ramo de bodas rosas de diferentes colores",
         disponible: true,
@@ -183,7 +183,7 @@ const productosdb = [
         id: "b05",
         nombre: "Bodas | Popurrí campestre",
         tipo: "bodas",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/bodas/bodas-05.jpg",
         alt: "ramo de bodas flores silvestres",
         disponible: true,
@@ -194,7 +194,7 @@ const productosdb = [
         id: "b06",
         nombre: "Bodas | Rosas de primavera",
         tipo: "bodas",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/bodas/bodas-06.jpg",
         alt: "ramo de bodas rosas de diferentes tonos",
         disponible: true,
@@ -205,7 +205,7 @@ const productosdb = [
         id: "b07",
         nombre: "Bodas | Rosas modernas",
         tipo: "bodas",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/bodas/bodas-07.jpg",
         alt: "ramo de bodas rosas con pelotitas",
         disponible: true,
@@ -216,7 +216,7 @@ const productosdb = [
         id: "b08",
         nombre: "Bodas | Margaritas plus",
         tipo: "bodas",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/bodas/bodas-08.jpg",
         alt: "ramo de bodas con margaritas",
         disponible: true,
@@ -227,7 +227,7 @@ const productosdb = [
         id: "b09",
         nombre: "Bodas | Variedad mini",
         tipo: "bodas",
-        precio: "30.000",
+        precio: 30000,
         imagen: "../images/productos/bodas/bodas-09.jpg",
         alt: "ramo de bodas flores variadas y chicas",
         disponible: true,
@@ -238,7 +238,7 @@ const productosdb = [
         id: "b10",
         nombre: "Bodas | Variedad rosal",
         tipo: "bodas",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/bodas/bodas-10.jpg",
         alt: "ramo de bodas rosas variadas",
         disponible: true,
@@ -249,7 +249,7 @@ const productosdb = [
         id: "b11",
         nombre: "Bodas | Rosas coloridas",
         tipo: "bodas",
-        precio: "70.000",
+        precio: 70000,
         imagen: "../images/productos/bodas/bodas-11.jpg",
         alt: "ramo de bodas rosas variadas",
         disponible: true,
@@ -260,7 +260,7 @@ const productosdb = [
         id: "b12",
         nombre: "Bodas | Variedad plus",
         tipo: "bodas",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/bodas/bodas-12.jpg",
         alt: "ramo de bodas con flores variadas",
         disponible: true,
@@ -273,7 +273,7 @@ const productosdb = [
         id: "d01",
         nombre: "Jarrón pompom",
         tipo: "decoracion",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/decoracion/decoracion-01.jpg",
         alt: "jarrón cilindro transparente con flores",
         disponible: true,
@@ -284,7 +284,7 @@ const productosdb = [
         id: "d02",
         nombre: "Jarrón primaveral",
         tipo: "decoracion",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/decoracion/decoracion-02.jpg",
         alt: "jarrón redondo transparente con flores",
         disponible: true,
@@ -295,7 +295,7 @@ const productosdb = [
         id: "d03",
         nombre: "Jarrón rosas y fresias",
         tipo: "decoracion",
-        precio: "85.000",
+        precio: 85000,
         imagen: "../images/productos/decoracion/decoracion-03.jpg",
         alt: "jarrón alargado transparente con flores",
         disponible: true,
@@ -306,7 +306,7 @@ const productosdb = [
         id: "d04",
         nombre: "Jarrón colorido",
         tipo: "decoracion",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/decoracion/decoracion-04.jpg",
         alt: "jarrón blanco moderno con flores",
         disponible: true,
@@ -317,7 +317,7 @@ const productosdb = [
         id: "d05",
         nombre: "Jarrón rosado",
         tipo: "decoracion",
-        precio: "80.000",
+        precio: 80000,
         imagen: "../images/productos/decoracion/decoracion-05.jpg",
         alt: "jarrón cerámica rustica rosa con flores",
         disponible: true,
@@ -328,7 +328,7 @@ const productosdb = [
         id: "d06",
         nombre: "Jarrón variedad",
         tipo: "decoracion",
-        precio: "55.000",
+        precio: 55000,
         imagen: "../images/productos/decoracion/decoracion-06.jpg",
         alt: "jarrón cerámica brillante rosa con flores",
         disponible: true,
@@ -339,7 +339,7 @@ const productosdb = [
         id: "d07",
         nombre: "Jarrón rosas",
         tipo: "decoracion",
-        precio: "90.000",
+        precio: 90000,
         imagen: "../images/productos/decoracion/decoracion-07.jpg",
         alt: "jarrón cilindro transparente con rosas",
         disponible: true,
@@ -350,7 +350,7 @@ const productosdb = [
         id: "d08",
         nombre: "Jarrón tulipanes",
         tipo: "decoracion",
-        precio: "95.000",
+        precio: 95000,
         imagen: "../images/productos/decoracion/decoracion-08.jpg",
         alt: "jarrón cilindro transparente con flores",
         disponible: true,
@@ -361,7 +361,7 @@ const productosdb = [
         id: "d09",
         nombre: "Jarrón elegante",
         tipo: "decoracion",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/decoracion/decoracion-09.jpg",
         alt: "jarrón cilindro blanco con canaletas con flores",
         disponible: true,
@@ -372,7 +372,7 @@ const productosdb = [
         id: "d10",
         nombre: "Jarrón campestre",
         tipo: "decoracion",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/decoracion/decoracion-10.jpg",
         alt: "jarrón esfera transparente con flores",
         disponible: true,
@@ -383,7 +383,7 @@ const productosdb = [
         id: "d11",
         nombre: "Jarrón petit",
         tipo: "decoracion",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/decoracion/decoracion-11.jpg",
         alt: "jarrón cuadrado transparente con flores",
         disponible: true,
@@ -394,7 +394,7 @@ const productosdb = [
         id: "d12",
         nombre: "Jarrón retro",
         tipo: "decoracion",
-        precio: "75.000",
+        precio: 75000,
         imagen: "../images/productos/decoracion/decoracion-12.jpg",
         alt: "jarrón cilindro opaco con flores",
         disponible: true,
@@ -402,13 +402,12 @@ const productosdb = [
         destacado: false
     },
 
-
     //TALLERES
     {
         id: "t01",
         nombre: "Taller inicial de ramos",
         tipo: "talleres",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/talleres/talleres-01.png",
         alt: "flayer taller inicial",
         disponible: true,
@@ -419,7 +418,7 @@ const productosdb = [
         id: "t02",
         nombre: "Taller: ramos de novia",
         tipo: "talleres",
-        precio: "50.000",
+        precio: 50000,
         imagen: "../images/productos/talleres/talleres-02.png",
         alt: "flayer taller ramos de novia",
         disponible: true,
@@ -430,7 +429,7 @@ const productosdb = [
         id: "t03",
         nombre: "Taller: arreglos florales para decoración",
         tipo: "talleres",
-        precio: "60.000",
+        precio: 60000,
         imagen: "../images/productos/talleres/talleres-03.png",
         alt: "flayer taller arreglos florales para decoracion",
         disponible: true,
@@ -441,7 +440,7 @@ const productosdb = [
         id: "t04",
         nombre: "Taller: ramos estacionales",
         tipo: "talleres",
-        precio: "40.000",
+        precio: 40000,
         imagen: "../images/productos/talleres/talleres-04.png",
         alt: "flayer taller ramos estacionales",
         disponible: true,
@@ -450,9 +449,10 @@ const productosdb = [
     }
 ]
 
+/* ///////// MUESTREO DE PRODUCTOS ///////// */
+//Función sencilla para la creación del card, no va porque necesitamos filtrar
 /* function crearCard() {
     let productosHTML = "";
-
 
     for (let indice = 0; indice < productosdb.length; indice++) {
         if (productosdb[indice].destacado) {
@@ -471,7 +471,7 @@ const productosdb = [
                 </button>
             </div>
                 <p class="txt-body txt-small txt-dark">Desde: $ ${productosdb[indice].precio}</p>
-                <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito">Agregar al carrito</button>
+                <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito" data-action="btn_agregarCarrito">Agregar al carrito</button>
             </div>
         </li>
         `;
@@ -480,41 +480,24 @@ const productosdb = [
 
     const contenedorProductos = document.getElementById("contenedor-productos-destacados");
     contenedorProductos.innerHTML = productosHTML;
-
 }
-
 crearCard(); */
 
 
-
-
-//for (let indice = 0; indice < productosdb.length; indice++) {
-//if (productosdb[indice].disponible === true) {
-//    console.log(productosdb[indice].nombre + " está en stock");
-//} else {
-//    console.log(productosdb[indice].nombre + " no está en stock");
-//}
-//}
-
-//for (let indice = 0; indice < productosdb.length; indice++) {
-//    if (productosdb[indice].destacado === true) {
-//        console.log(productosdb[indice].nombre + " es un producto destacado");
-//        crearCard();
-//}
-
+/* ///////// MUESTREO DE PRODUCTOS CON FILTRO///////// */
 //function crearCardsPorFiltro() {
 // Variables para almacenar los productos filtrados
-        let productosRamosHTML = "";
-        let productosBodasHTML = "";
-        let productosDecoracionHTML = "";
-        let productosTalleresHTML = "";
-        let productosDestacadosHTML = "";
-        let productosDisponiblesHTML = ""; // Para productos disponibles
-    
-        // Recorrer los productos y clasificarlos según su tipo, destacado o disponibilidad
-        for (let indice = 0; indice < productosdb.length; indice++) {
-            const producto = productosdb[indice];
-            const productoHTML = `
+let productosRamosHTML = ""; // Para productos categoría ramos
+let productosDecoracionHTML = ""; // Para productos categoría decoración
+let productosBodasHTML = ""; // Para productos categoría bodas
+let productosTalleresHTML = ""; // Para productos categoría talleres
+let productosDestacadosHTML = ""; // Para productos destacados (van al home)
+let productosDisponiblesHTML = ""; // Para productos disponibles (van a todos los productos)
+
+// Recorrer los productos y clasificarlos según su tipo, destacado o disponibilidad
+for (let indice = 0; indice < productosdb.length; indice++) {
+    const producto = productosdb[indice];
+    const productoHTML = `
                 <li class="container__products-card">
                     <div class="container__img_product">
                         <img class="img_product" src=${producto.imagen} alt="${producto.alt}">
@@ -528,53 +511,148 @@ crearCard(); */
                             </button>
                         </div>
                         <p class="txt-body txt-small txt-dark">Desde: $ ${producto.precio}</p>
-                        <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito">Agregar al carrito</button>
+                        <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito" data-action="btn_agregarCarrito" data-product-id="${indice}">Agregar al carrito</button>
                     </div>
                 </li>
             `;
-    
-            // Clasificar según tipo
-            if (producto.tipo === "ramos") {
-                productosRamosHTML += productoHTML;
-            } else if (producto.tipo === "bodas") {
-                productosBodasHTML += productoHTML;
-            } else if (producto.tipo === "decoracion") {
-                productosDecoracionHTML += productoHTML;
-            } else if (producto.tipo === "talleres") {
-                productosTalleresHTML += productoHTML;
-            }
-    
-            // Clasificar según destacado
-            if (producto.destacado) {
-                productosDestacadosHTML += productoHTML;
-            }
-    
-            // Clasificar según disponibilidad
-            if (producto.disponible) {
-                productosDisponiblesHTML += productoHTML;
-            }
-        }
-    
-        // Insertar productos en sus contenedores correspondientes
-        if (document.getElementById("contenedor-productos-ramos")) {
-            document.getElementById("contenedor-productos-ramos").innerHTML = productosRamosHTML;
-        }
-        if (document.getElementById("contenedor-productos-bodas")) {
-            document.getElementById("contenedor-productos-bodas").innerHTML = productosBodasHTML;
-        }
-        if (document.getElementById("contenedor-productos-decoracion")) {
-            document.getElementById("contenedor-productos-decoracion").innerHTML = productosDecoracionHTML;
-        }
-        if (document.getElementById("contenedor-productos-talleres")) {
-            document.getElementById("contenedor-productos-talleres").innerHTML = productosTalleresHTML;
-        }
-        if (document.getElementById("contenedor-productos-destacados")) {
-            document.getElementById("contenedor-productos-destacados").innerHTML = productosDestacadosHTML;
-        }
-        if (document.getElementById("contenedor-productos-disponibles")) {
-            document.getElementById("contenedor-productos-disponibles").innerHTML = productosDisponiblesHTML;
-        }
-    
+
+    // Clasificar según tipo
+    if (producto.tipo === "ramos") {
+        productosRamosHTML += productoHTML;
+    } else if (producto.tipo === "bodas") {
+        productosBodasHTML += productoHTML;
+    } else if (producto.tipo === "decoracion") {
+        productosDecoracionHTML += productoHTML;
+    } else if (producto.tipo === "talleres") {
+        productosTalleresHTML += productoHTML;
+    }
+
+    // Clasificar según destacado
+    if (producto.destacado) {
+        productosDestacadosHTML += productoHTML;
+    }
+
+    // Clasificar según disponibilidad
+    if (producto.disponible) {
+        productosDisponiblesHTML += productoHTML;
+    }
+}
+
+// Insertar productos en sus contenedores correspondientes (primero verifica que el contenedor exista en esa page)
+if (document.getElementById("contenedor-productos-ramos")) {
+    document.getElementById("contenedor-productos-ramos").innerHTML = productosRamosHTML;
+}
+if (document.getElementById("contenedor-productos-decoracion")) {
+    document.getElementById("contenedor-productos-decoracion").innerHTML = productosDecoracionHTML;
+}
+if (document.getElementById("contenedor-productos-bodas")) {
+    document.getElementById("contenedor-productos-bodas").innerHTML = productosBodasHTML;
+}
+if (document.getElementById("contenedor-productos-talleres")) {
+    document.getElementById("contenedor-productos-talleres").innerHTML = productosTalleresHTML;
+}
+if (document.getElementById("contenedor-productos-destacados")) {
+    document.getElementById("contenedor-productos-destacados").innerHTML = productosDestacadosHTML;
+}
+if (document.getElementById("contenedor-productos-disponibles")) {
+    document.getElementById("contenedor-productos-disponibles").innerHTML = productosDisponiblesHTML;
+}
 //}
+
+/* ///////// CARRITO ///////// */
+
+//declarar variables
+const btnsAgregarCarrito = document.querySelectorAll('[data-action="btn_agregarCarrito"]');
+const listaCarrito = document.querySelector('#carrito ul');
+const totalCarrito = document.querySelector('#total-carrito');
+const mensajeCarrito = document.querySelector('#mensaje-carrito');
+let totalPagar = 0;
+
+// Función para actualizar el total
+function actualizarTotal() {
+    totalCarrito.innerText = "$ " + totalPagar;
+}
+
+// Función para agregar el producto al carrito PERO!!! seleccionando por el data-product-id de cada botón (agrgado dinámicamente en la creación de las cards de productos)
+function agregarElementoCarrito(event) {
+    const indice = event.target.dataset.productId;
+    const producto = productosdb[indice];
+
+    if (!producto) {
+        console.error("Producto no encontrado");
+        return;
+    }
+
+    const elementoLi = document.createElement("li");
+    elementoLi.innerHTML = `
+		        <li class="container__carrito-card-producto">
+                    <div class="carrito-producto-info">
+                        <img class="img__carrito-producto" src=${producto.imagen} alt=${producto.alt}>
+                        <p class="txt-body txt-dark txt-small">${producto.nombre}</p>
+                    </div>
+                    <p class="txt-body txt-dark txt-small carrito-producto-precio">$ ${producto.precio}</p>
+                </li>`;
+
+    listaCarrito.appendChild(elementoLi);
+    totalPagar += producto.precio;
+    actualizarTotal();
+    mensajeCarrito.innerText = "";
+}
+
+//agregamos el listener a los botones de agrgar carrito
+btnsAgregarCarrito.forEach(btn => {
+    btn.addEventListener("click", agregarElementoCarrito);
+});
+
+// Función para borrar el carrito
+function borrarCarrito() {
+    listaCarrito.innerHTML = "";
+    totalCarrito.innerText = "";
+    totalPagar = 0;
+    actualizarTotal();
+    mensajeCarrito.innerText = ""
+}
+
+//agregamos el listener al botón borrar
+document.getElementById('btn-borrar').addEventListener("click", borrarCarrito);
+
+
+// Función para borrar ir a pagar
+function irAPagar() {
+    if (listaCarrito.children.length === 0) {
+        mensajeCarrito.innerText = "No has seleccionado ningún producto";
+    } else {
+        window.open("./pages/pagos.html", "_blank");
+        //window.location.href = "./pages/pagos.html"
+    }
+}
+
+//agregamos el listener al botón pagar
+document.getElementById('btn-pagar').addEventListener("click", irAPagar);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////// MOSTRAR PRODUCTOS DISPONIBLES EN LA CONSOLA ///////// */
+for (let indice = 0; indice < productosdb.length; indice++) {
+    if (productosdb[indice].disponible === true) {
+        console.log(productosdb[indice].nombre + " está en stock");
+    } else {
+        console.log(productosdb[indice].nombre + " no está en stock");
+    }
+}
 
 //crearCardsPorFiltro();
