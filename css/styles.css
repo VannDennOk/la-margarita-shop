@@ -679,7 +679,7 @@ footer a:hover {
     position: sticky;
     top: 1rem;
     margin-top: 4.5rem;
-    margin-right: 1rem;
+    margin-right: 4.5rem;
     margin-bottom: 1rem;
     border: 2px solid var(--color-verde);
     display: none;
@@ -716,6 +716,7 @@ footer a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem;
+    border-bottom: 1px solid var(--color-verde);
 }
 
 .carrito-producto-info{
