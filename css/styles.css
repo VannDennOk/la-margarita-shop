@@ -1094,6 +1094,10 @@ footer a:hover {
     box-shadow: 6px 6px 16px var(--color-verde-transp);
 }
 
+.container__opiniones-card:hover {
+    background-color: var(--color-mostaza-claro);
+}
+
 .container__opiniones-card-header {
     width: 100%;
     display: flex;
