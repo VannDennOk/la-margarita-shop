@@ -470,7 +470,7 @@ const productosdb = [
                     <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                 </button>
             </div>
-                <p class="txt-body txt-small txt-dark">Desde: $ ${productosdb[indice].precio}</p>
+                <p class="txt-body txt-small txt-dark">Precio: $ ${productosdb[indice].precio}</p>
                 <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito" data-action="btn_agregarCarrito">Agregar al carrito</button>
             </div>
         </li>
@@ -510,7 +510,7 @@ for (let indice = 0; indice < productosdb.length; indice++) {
                                 <i class="bi bi-heart-fill bi-dark bi-small bi-hover"></i>
                             </button>
                         </div>
-                        <p class="txt-body txt-small txt-dark">Desde: $ ${producto.precio}</p>
+                        <p class="txt-body txt-small txt-dark">Precio: $ ${producto.precio.toLocaleString('es-ES')}</p>
                         <button class="btn-full btn-agregar-carrito btn-full-hover" aria-label="Agregar al carrito" data-action="btn_agregarCarrito" data-product-id="${indice}">Agregar al carrito</button>
                     </div>
                 </li>
@@ -566,11 +566,26 @@ const btnsAgregarCarrito = document.querySelectorAll('[data-action="btn_agregarC
 const listaCarrito = document.querySelector('#carrito ul');
 const totalCarrito = document.querySelector('#total-carrito');
 const mensajeCarrito = document.querySelector('#mensaje-carrito');
+const verCarrito = document.querySelector('#carrito');
+const btn_cerrarCarrito = document.querySelector('[data-action="btn_cerrarCarrito"]')
 let totalPagar = 0;
 
 // Función para actualizar el total
 function actualizarTotal() {
-    totalCarrito.innerText = "$ " + totalPagar;
+    totalCarrito.innerText = "$ " + totalPagar.toLocaleString('es-ES');
+}
+
+function mostrarCarrito() {
+    verCarrito.classList.add('mostrar-carrito');
+}
+
+function cerrarCarrito() {
+    verCarrito.classList.remove('mostrar-carrito');
+}
+
+//agregamos el listener al botón cerrar carrito
+if (btn_cerrarCarrito) {
+    btn_cerrarCarrito.addEventListener("click", cerrarCarrito);
 }
 
 // Función para agregar el producto al carrito PERO!!! seleccionando por el data-product-id de cada botón (agrgado dinámicamente en la creación de las cards de productos)
@@ -583,15 +598,22 @@ function agregarElementoCarrito(event) {
         return;
     }
 
+    mostrarCarrito();
+
     const elementoLi = document.createElement("li");
+    elementoLi.classList.add("container__carrito-card-producto")
     elementoLi.innerHTML = `
-		        <li class="container__carrito-card-producto">
-                    <div class="carrito-producto-info">
+		        <div class="carrito-producto-info">
                         <img class="img__carrito-producto" src=${producto.imagen} alt=${producto.alt}>
                         <p class="txt-body txt-dark txt-small">${producto.nombre}</p>
                     </div>
-                    <p class="txt-body txt-dark txt-small carrito-producto-precio">$ ${producto.precio}</p>
-                </li>`;
+                    <p class="txt-body txt-dark txt-small carrito-producto-precio">$ ${producto.precio.toLocaleString('es-ES')}</p>
+                    <button data-action="btn_eliminarProducto" class="btn_eliminarProducto" aria-label="btn_eliminarProducto"><i class="bi bi-dark bi-small bi-hover bi-trash"></i></button>
+                `;
+
+    // Agregamos el evento al botón eliminar
+    const btnEliminarProducto = elementoLi.querySelector('[data-action="btn_eliminarProducto"]');
+    btnEliminarProducto.addEventListener("click", () => eliminarElementoCarrito(elementoLi, producto.precio));
 
     listaCarrito.appendChild(elementoLi);
     totalPagar += producto.precio;
@@ -599,51 +621,46 @@ function agregarElementoCarrito(event) {
     mensajeCarrito.innerText = "";
 }
 
+// Función para eliminar un producto específico del carrito
+function eliminarElementoCarrito(elemento, precio) {
+    listaCarrito.removeChild(elemento);
+    totalPagar -= precio;
+    actualizarTotal();
+
+    if (listaCarrito.children.length === 0) {
+        mensajeCarrito.innerText = "No hay productos en el carrito";
+    }
+}
+
 //agregamos el listener a los botones de agrgar carrito
 btnsAgregarCarrito.forEach(btn => {
     btn.addEventListener("click", agregarElementoCarrito);
 });
 
-// Función para borrar el carrito
+// Función para borrar/vaciar el carrito
 function borrarCarrito() {
     listaCarrito.innerHTML = "";
-    totalCarrito.innerText = "";
     totalPagar = 0;
     actualizarTotal();
-    mensajeCarrito.innerText = ""
+    mensajeCarrito.innerText = "No hay productos en el carrito"
 }
 
-//agregamos el listener al botón borrar
+//agregamos el listener al botón borrar/vaciar
 document.getElementById('btn-borrar').addEventListener("click", borrarCarrito);
 
 
-// Función para borrar ir a pagar
+// Función para ir a pagar
 function irAPagar() {
     if (listaCarrito.children.length === 0) {
         mensajeCarrito.innerText = "No has seleccionado ningún producto";
     } else {
-        window.open("./pages/pagos.html", "_blank");
+        window.open("../pages/pagos.html", "_blank");
         //window.location.href = "./pages/pagos.html"
     }
 }
 
 //agregamos el listener al botón pagar
 document.getElementById('btn-pagar').addEventListener("click", irAPagar);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ///////// MOSTRAR PRODUCTOS DISPONIBLES EN LA CONSOLA ///////// */

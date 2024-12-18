@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página de productos de decoración de La Margarita Shop. Tienda de arreglos y servicios florales">
+    <meta name="description"
+        content="Página de productos de decoración de La Margarita Shop. Tienda de arreglos y servicios florales">
     <title>La Margarita Shop Productos Decoración</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
 
@@ -80,7 +81,7 @@
         </header>
 
         <!-- PRODUCTOS -->
-        <section class="container__products-area">
+        <section>
             <!-- HEADER DE SECCIÓN -->
             <div class="container__products-header">
                 <div class="container__products-header-txt">
@@ -102,17 +103,41 @@
                     <i></i>
                 </div>
             </div>
-
-            <!-- MUESTREO DE PRODUCTOS -->
-            <ol class="container__products-grid" id="contenedor-productos-decoracion">
-                <!-- CARDS DINÁMICAS CON JS-->
-            </ol>
+            <div class="container__products-area">
+                <!-- MUESTREO DE PRODUCTOS -->
+                <div class="container__products-display">
+                    <div class="container__products-grid-area">
+                        <ol class="container__products-grid" id="contenedor-productos-decoracion">
+                            <!-- CARDS DINÁMICAS CON JS-->
+                        </ol>
+                    </div>
+                </div>
+                <!-- CARRITO -->
+                <div class="container__carrito-area" id="carrito">
+                    <div class="titulo-carrito-box">
+                        <h2 class="titulo txt-light txt-medium">TU CARRITO</h2>
+                        <button data-action="btn_cerrarCarrito" class="btn_cerrar-carrito"
+                            aria-label="cerrar carrito"><i class="bi bi-small bi-hover bi-x-lg"></i></button>
+                    </div>
+                    <ul><!-- TARJETA DINÁMICA CON JS--></ul>
+                    <div class="container__carrito-card-footer">
+                        <div class="container__carrito-card-total">
+                            <p class="txt-body txt-dark txt-strong txt-small">Total a pagar:</p>
+                            <p class="txt-body txt-dark txt-strong txt-small" id="total-carrito"></p>
+                        </div>
+                        <input class="btn-full btn-full-hover btn-100" id="btn-pagar" type="button" value="Ir a pagar">
+                        <input class="btn-claro btn-claro-hover btn-100" id="btn-borrar" type="button"
+                            value="Vaciar carrito">
+                        <p class="carrito-mensaje-error" id="mensaje-carrito"></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- BOTON ARRIBA / GO TOP BUTTON -->
         <div class="btn-up btn-hover" data-action="btn_irArriba">
             <i class="bi bi-chevron-up"></i>
-        </div>
+        </div>   
     </main>
 
     <!-- FOOTER PARA TODOS LAS PAGES -->
@@ -146,12 +171,14 @@
                     <p class="titulo txt-medium txt-light">Contacto</p>
                     <ul class="contact-list">
                         <li class="contact-line">
-                            <button data-action="btn_enviarMail" class="btn__icon" aria-label="enviar mail a lamargarita.shop@gmail.com">
+                            <button data-action="btn_enviarMail" class="btn__icon"
+                                aria-label="enviar mail a lamargarita.shop@gmail.com">
                                 <i class="bi bi-envelope bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">lamargarita.shop@gmail.com</span>
                         </li>
                         <li class="contact-line">
-                            <button data-action="btn_irGoogleMaps" class="btn__icon" aria-label="ver nuestra ubicación en google map">
+                            <button data-action="btn_irGoogleMaps" class="btn__icon"
+                                aria-label="ver nuestra ubicación en google map">
                                 <i class="bi bi-geo-alt bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">Rivadavia 4379 - CABA, Argentina</span>
                         </li>
@@ -175,8 +202,8 @@
                                 class="bi bi-instagram bi-hover"></i></button>
                         <button data-action="btn_irPinterest" class="btn__icon" aria-label="Ir a nuestro pinterest"><i
                                 class="bi bi-pinterest bi-hover"></i></button>
-                        <button data-action="btn_irYoutube" class="btn__icon" aria-label="Ir a nuestro canal de you tube"><i
-                                class="bi bi-youtube bi-hover"></i></button>
+                        <button data-action="btn_irYoutube" class="btn__icon"
+                            aria-label="Ir a nuestro canal de you tube"><i class="bi bi-youtube bi-hover"></i></button>
                     </div>
                 </div>
             </div>

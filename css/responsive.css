@@ -92,9 +92,21 @@
 
     /* PRODUCTOS DESTACADOS - INICIO */
 
+    .container__products-area {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .container__products-grid {
         gap: 2rem;
         padding: 0 2%;
+    }
+
+    /* CARRITO */
+    .container__carrito-area{
+        width: 90%;
+        margin-top: 0;
     }
 
     /* WORKSHOP / TALLERES - INICIO */
