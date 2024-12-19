@@ -2,6 +2,8 @@
 <p>
 Proyecto Integrador para el curso de Front End con JavaScript de Talento Tech 2024 de la Agencia de Habilidades para el Futuro (Ministerio de Educación, Ciudad Autónoma de Buenos Aires, Argentina).
 </p>
+<br>
+<p align="center"><img src="./images/portada.png" alt="vista del proyecto en distintos dispositivos" width="1000"></p>
 
 <h2>Estado :battery:</h2>
 <p align="left"><img src="https://img.shields.io/badge/STATUS-EN_DESARROLLO-0B8E36?style=flat-square"></p>
@@ -30,7 +32,7 @@ Se cuenta con una ruta de avance con los requisitos mínimos para cada etapa.
 
 <h3>Etapa :one: - HTML</h3>
 <p>
-Lo realizado hasta la clase 4:
+Construye la estructura inicial con HTML:
 <br>:heavy_check_mark: Estructura básica HTML dividida en etiquetas semánticas estructurales.
 <br>:heavy_check_mark: Archivo README.md que explique el proyecto.
 <br>:heavy_check_mark: Integración de archivos multimedia funcionales.
@@ -41,7 +43,7 @@ Lo realizado hasta la clase 4:
 
 <h3>Etapa :two: - CSS</h3>
 <p>
-Lo realizado hasta la clase 8 (preentrega):
+Agrega estilos con CSS:
 <br>:heavy_check_mark: Aplicación de estilos básicos con CSS (header, footer, lista de navegación).
 <br>:heavy_check_mark: Integración de un archivo externo styles.css.
 <br>:heavy_check_mark: Implementación de Google Fonts.
@@ -53,19 +55,20 @@ Lo realizado hasta la clase 8 (preentrega):
 
 <h3>Etapa :three: - JavaScript</h3>
 <p>
-Lo realizado hasta la clase 12. Agrega funcionalidad con JavaScript:
+Agrega funcionalidad con JavaScript:
 <br>:heavy_check_mark: Integración de un archivo script.js relacionado con el HTML.
 <br>:heavy_check_mark: Implementación de una función que verifique si todos los campos del formulario de contacto están completos, mostrando un mensaje en consola (extra: verifica el formato del e-mail y del teléfono). 
-<br>:x: Creación de un ciclo que genere dinámicamente una lista de productos disponibles y los muestre en la consola.
-<br>:x: Implementación de un evento click que muestra la descripción ampliada del producto que clickeamos.
-<br>:x: Listado de productos incluidos en nuestro HTML generado por medio de una función en Js.
-<br>:x: Función que cree un array de productos y los muestre en la página utilizando una plantilla HTML dinámica.
+<br>:heavy_check_mark: Creación de un ciclo que genere dinámicamente una lista de productos disponibles y los muestre en la consola.
+<br>:heavy_check_mark: Listado de productos incluidos en nuestro HTML generado por medio de una función en Js.
+<br>:heavy_check_mark: Función que cree un array de productos y los muestre en la página utilizando una plantilla HTML dinámica.
+<br>:heavy_check_mark: Carrito de compras que permita a los usuarios añadir productos desde las cards creado provisoriamente hasta trabajar con permanencia de datos.
 </p>
 
-<h3>Entrega final :rocket:</h3>
+<h3>Puntos de mejora para el futuro :rocket:</h3>
 <p>
-Lo realizado hasta la clase 16. 
+Temas que no se llegaron a practicar en clase: 
 <br>:x: Reemplazar la barra de navegación por un navbar responsivo creado por Bootstrap, adaptada a la paleta de colores del proyecto.
+<br>:x: Implementación de un evento click que muestra la descripción ampliada del producto que clickeamos.
 <br>:x: Utilizar Fetch para obtener datos de una API pública y mostrarlos en la sección main en el HTML.
 <br>:x: Procesar los datos obtenidos de la API para organizarlos en cards (diseñadas con Flexbox o Grid).
 <br>:x: Implementar un carrito de compras que permita a los usuarios añadir productos desde las cards, utilizando localStorage y sessionStorage para almacenar la información del carrito.
