@@ -1516,6 +1516,16 @@ dos bordes con color y que se gira 45 grados;
     background-repeat: no-repeat;
 }
 
+.container__pagenotfound-img-box-pagos {
+    width: 50%;
+    height: 100%;
+    background-color: var(--color-verde);
+    background-image: url("../images/errorPagos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .container__pagenotfound-txt-box {
     width: 50%;
     height: 100%;
