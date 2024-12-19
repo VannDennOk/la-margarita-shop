@@ -23,23 +23,29 @@
 
 
 <body>
-
     <!-- HEADER TODOS LAS PAGES -->
     <header class="header">
         <div class="header__banner">
             <p class="header__banner-txt">3 CUOTAS SIN INTERÉS</p>
             <i class="bi bi-credit-card bi-small"></i>
         </div>
-        <nav class="header__nav">
+
+        <div class="header__nav-area">
             <a href="/index.html"><img class="header__nav-logo" src="../images/logo.svg" alt="logo margarita"></a>
-            <ul class="header__nav-links">
-                <li class="header__nav-link"><a href="/index.html">Inicio</a></li>
-                <li class="header__nav-link"><a href="/pages/productos.html">Productos</a></li>
-                <li class="header__nav-link"><a href="/pages/talleres.html">Talleres</a></li>
-                <li class="header__nav-link"><a class="selected" href="/pages/contacto.html">Contacto</a></li>
-                <li class="header__nav-link"><a href="/pages/nosotras.html">Nosotras</a></li>
-                <li class="header__nav-link"><a href="/pages/opiniones.html">Opiniones</a></li>
-            </ul>
+
+            <nav class="header__nav-list" id="nav-list">
+                <button class="btn__icon cerrar-menu" aria-label="cerrar menú desplegable"
+                    data-action="btn_cerrarMenu"><i class="bi bi-x-lg bi-med bi-hover"></i></button>
+                <ul class="header__nav-links" id="nav-links">
+                    <li class="header__nav-link"><a href="/index.html">Inicio</a></li>
+                    <li class="header__nav-link"><a href="/pages/productos.html">Productos</a></li>
+                    <li class="header__nav-link"><a href="/pages/talleres.html">Talleres</a></li>
+                    <li class="header__nav-link"><a href="/pages/nosotras.html">Nosotras</a></li>
+                    <li class="header__nav-link"><a class="selected" href="/pages/contacto.html">Contacto</a></li>
+                    <li class="header__nav-link"><a href="/pages/opiniones.html">Opiniones</a></li>
+                </ul>
+            </nav>
+
             <div class="header__nav-icons">
                 <button class="btn__icon ocultarCelular" aria-label="buscar en la tienda"><i
                         class="bi bi-search bi-hover"></i></button>
@@ -49,10 +55,10 @@
                         class="bi bi-person bi-hover"></i></button>
                 <button class="btn__icon ocultarCelular" aria-label="mi bolsa"><i
                         class="bi bi-bag bi-hover"></i></button>
-                <button class="btn__icon mostrarTablet" aria-label="menú desplegable" hidden><i
+                <button class="btn__icon abrir-menu" aria-label="abrir menú desplegable" data-action="btn_abrirMenu"><i
                         class="bi bi-list bi-hover"></i></button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -75,12 +81,14 @@
                             <p class="titulo txt-medium txt-light">Contacto</p>
                             <ul class="contact-list">
                                 <li class="contact-line">
-                                    <button data-action="btn_enviarMail" class="btn__icon" aria-label="enviar mail a lamargarita.shop@gmail.com">
+                                    <button data-action="btn_enviarMail" class="btn__icon"
+                                        aria-label="enviar mail a lamargarita.shop@gmail.com">
                                         <i class="bi bi-envelope bi-hover"></i></button>
                                     <span class="txt-body txt-small txt-light">lamargarita.shop@gmail.com</span>
                                 </li>
                                 <li class="contact-line">
-                                    <button data-action="btn_irGoogleMaps" class="btn__icon" aria-label="ver nuestra ubicación en google map">
+                                    <button data-action="btn_irGoogleMaps" class="btn__icon"
+                                        aria-label="ver nuestra ubicación en google map">
                                         <i class="bi bi-geo-alt bi-hover"></i></button>
                                     <span class="txt-body txt-small txt-light">Rivadavia 4379 - CABA, Argentina</span>
                                 </li>
@@ -89,7 +97,8 @@
                                     <span class="txt-body txt-small txt-light">+54 11 4981-2606</span>
                                 </li>
                                 <li class="contact-line">
-                                    <button data-action="btn_iniciarWA" class="btn__icon" aria-label="iniciar chat en whatsapp">
+                                    <button data-action="btn_iniciarWA" class="btn__icon"
+                                        aria-label="iniciar chat en whatsapp">
                                         <i class="bi bi-whatsapp bi-hover"></i></button>
                                     <span class="txt-body txt-small txt-light">+54 9 11 6861-1033</span>
                                 </li>
@@ -98,13 +107,16 @@
                         <div class="social">
                             <p class="titulo txt-medium txt-light">Seguinos</p>
                             <div class="social-icons">
-                                <button data-action="btn_irFacebook" class="btn__icon" aria-label="Ir a nuestro facebook"><i
-                                        class="bi bi-facebook bi-hover"></i></button>
-                                <button data-action="btn_irInstagram" class="btn__icon" aria-label="Ir a nuestro instagram"><i
+                                <button data-action="btn_irFacebook" class="btn__icon"
+                                    aria-label="Ir a nuestro facebook"><i class="bi bi-facebook bi-hover"></i></button>
+                                <button data-action="btn_irInstagram" class="btn__icon"
+                                    aria-label="Ir a nuestro instagram"><i
                                         class="bi bi-instagram bi-hover"></i></button>
-                                <button data-action="btn_irPinterest" class="btn__icon" aria-label="Ir a nuestro pinterest"><i
+                                <button data-action="btn_irPinterest" class="btn__icon"
+                                    aria-label="Ir a nuestro pinterest"><i
                                         class="bi bi-pinterest bi-hover"></i></button>
-                                <button data-action="btn_irYoutube" class="btn__icon" aria-label="Ir a nuestro canal de you tube"><i
+                                <button data-action="btn_irYoutube" class="btn__icon"
+                                    aria-label="Ir a nuestro canal de you tube"><i
                                         class="bi bi-youtube bi-hover"></i></button>
                             </div>
                         </div>
@@ -195,12 +207,14 @@
                     <p class="titulo txt-medium txt-light">Contacto</p>
                     <ul class="contact-list">
                         <li class="contact-line">
-                            <button data-action="btn_enviarMail" class="btn__icon" aria-label="enviar mail a lamargarita.shop@gmail.com">
+                            <button data-action="btn_enviarMail" class="btn__icon"
+                                aria-label="enviar mail a lamargarita.shop@gmail.com">
                                 <i class="bi bi-envelope bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">lamargarita.shop@gmail.com</span>
                         </li>
                         <li class="contact-line">
-                            <button data-action="btn_irGoogleMaps" class="btn__icon" aria-label="ver nuestra ubicación en google map">
+                            <button data-action="btn_irGoogleMaps" class="btn__icon"
+                                aria-label="ver nuestra ubicación en google map">
                                 <i class="bi bi-geo-alt bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">Rivadavia 4379 - CABA, Argentina</span>
                         </li>
@@ -224,8 +238,8 @@
                                 class="bi bi-instagram bi-hover"></i></button>
                         <button data-action="btn_irPinterest" class="btn__icon" aria-label="Ir a nuestro pinterest"><i
                                 class="bi bi-pinterest bi-hover"></i></button>
-                        <button data-action="btn_irYoutube" class="btn__icon" aria-label="Ir a nuestro canal de you tube"><i
-                                class="bi bi-youtube bi-hover"></i></button>
+                        <button data-action="btn_irYoutube" class="btn__icon"
+                            aria-label="Ir a nuestro canal de you tube"><i class="bi bi-youtube bi-hover"></i></button>
                     </div>
                 </div>
             </div>
@@ -247,7 +261,7 @@
             <p class="txt-body txt-small txt-light">Página creada con propósitos educativos y sin fines de lucro.</p>
         </section>
     </footer>
-    
+
     <script src="/scripts/verificacion-formulario.js"></script>
     <script src="/scripts/main.js"></script>
 </body>

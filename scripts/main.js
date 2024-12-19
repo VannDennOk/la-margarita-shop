@@ -59,4 +59,22 @@ window.addEventListener("scroll", () => {
     btnUp.style.transform = scroll > 500 ? "scale(1)" : "scale(0)";
 });
 
+// Mostrar/ocultar menú hamburguesa
+const nav = document.querySelector('#nav-list');
+const abrirMenu = document.querySelector('[data-action="btn_abrirMenu"]');
+const cerrarMenu = document.querySelector('[data-action="btn_cerrarMenu"]');
+const navLinks = document.querySelectorAll('#nav-links a');
 
+abrirMenu.addEventListener("click", () => {
+    nav.classList.add("nav-visible");
+});
+
+cerrarMenu.addEventListener("click", () => {
+    nav.classList.remove("nav-visible");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("nav-visible");
+    });
+});

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Información sobre cómo comprar de La Margarita Shop. Tienda de arreglos y servicios florales">
+    <meta name="description"
+        content="Información sobre cómo comprar de La Margarita Shop. Tienda de arreglos y servicios florales">
     <title>La Margarita Shop Cómo Comprar</title>
     <link rel="icon" type="image/png" href="/images/favicon.png" />
 
@@ -28,16 +29,23 @@
             <p class="header__banner-txt">3 CUOTAS SIN INTERÉS</p>
             <i class="bi bi-credit-card bi-small"></i>
         </div>
-        <nav class="header__nav">
+
+        <div class="header__nav-area">
             <a href="/index.html"><img class="header__nav-logo" src="../images/logo.svg" alt="logo margarita"></a>
-            <ul class="header__nav-links">
-                <li class="header__nav-link"><a href="/index.html">Inicio</a></li>
-                <li class="header__nav-link"><a href="/pages/productos.html">Productos</a></li>
-                <li class="header__nav-link"><a href="/pages/talleres.html">Talleres</a></li>
-                <li class="header__nav-link"><a href="/pages/contacto.html">Contacto</a></li>
-                <li class="header__nav-link"><a href="/pages/nosotras.html">Nosotras</a></li>
-                <li class="header__nav-link"><a href="/pages/opiniones.html">Opiniones</a></li>
-            </ul>
+
+            <nav class="header__nav-list" id="nav-list">
+                <button class="btn__icon cerrar-menu" aria-label="cerrar menú desplegable"
+                    data-action="btn_cerrarMenu"><i class="bi bi-x-lg bi-med bi-hover"></i></button>
+                <ul class="header__nav-links" id="nav-links">
+                    <li class="header__nav-link"><a href="/index.html">Inicio</a></li>
+                    <li class="header__nav-link"><a href="/pages/productos.html">Productos</a></li>
+                    <li class="header__nav-link"><a href="/pages/talleres.html">Talleres</a></li>
+                    <li class="header__nav-link"><a href="/pages/nosotras.html">Nosotras</a></li>
+                    <li class="header__nav-link"><a href="/pages/contacto.html">Contacto</a></li>
+                    <li class="header__nav-link"><a href="/pages/opiniones.html">Opiniones</a></li>
+                </ul>
+            </nav>
+
             <div class="header__nav-icons">
                 <button class="btn__icon ocultarCelular" aria-label="buscar en la tienda"><i
                         class="bi bi-search bi-hover"></i></button>
@@ -47,10 +55,10 @@
                         class="bi bi-person bi-hover"></i></button>
                 <button class="btn__icon ocultarCelular" aria-label="mi bolsa"><i
                         class="bi bi-bag bi-hover"></i></button>
-                <button class="btn__icon mostrarTablet" aria-label="menú desplegable" hidden><i
+                <button class="btn__icon abrir-menu" aria-label="abrir menú desplegable" data-action="btn_abrirMenu"><i
                         class="bi bi-list bi-hover"></i></button>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
@@ -70,23 +78,66 @@
             <div class="container__masinfo-txt txt-body txt-dark txt-small">
                 <p>Te dejamos el paso a paso para realizar una compra en nuestra tienda.</p>
                 <div class="container__masinfo-txt-punteo">
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Elige el producto que deseas comprar.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Haz clic en el botón <strong class="txt-resalte">Seleccionar</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Se abrirá la página sonde podrás personalizar tu producto: podrás elegir tamaño del arreglo, color de envoltorio o tipo de florero, etc.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Una vez personalizado el producto, haz clic en el botón <strong class="txt-resalte">Agregar al carrito</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Esto agregará el producto a tu carrito y te llevará al mismo.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Puedes seguir agregando otros productos al carrito o hacer clic en <strong class="txt-resalte">Iniciar Compra</strong></p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Completa tus datos de contacto y haz clic en <strong class="txt-resalte">Continuar</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Ingresa la dirección a donde deseas que sea enviado el producto o si deseas retirarlo en nuestro local.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Luego haz clic en <strong class="txt-resalte">Continuar</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Elige el medio de pago y haz clic en <strong class="txt-resalte">Continuar</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Finalmente en la página de <strong class="txt-resalte">Confirmación de compra</strong> puedes revisar toda la información de la compra.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Luego haz clic en <strong class="txt-resalte">Continuar</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Aparecerá un mensaje de éxito y podrás seguir navegando nuestra tienda.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Después de confirmar la compra recibirás un correo de nuestra parte con todos los datos del pedido.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Una vez acreditado el pago, recibirás por e-mail el <strong class="txt-resalte">comprobante de pago</strong>.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Luego <strong class="txt-resalte">inciaremos el envío</strong> de acuerdo a los plazos seleccionados.</p></span>
-                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i><p>Te enviaremos un nuevo correo cuando el producto sea recibido.</p></span>            
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Elige el producto que deseas comprar.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Haz clic en el botón <strong class="txt-resalte">Seleccionar</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Se abrirá la página sonde podrás personalizar tu producto: podrás elegir tamaño del arreglo,
+                            color de envoltorio o tipo de florero, etc.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Una vez personalizado el producto, haz clic en el botón <strong class="txt-resalte">Agregar
+                                al carrito</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Esto agregará el producto a tu carrito y te llevará al mismo.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Puedes seguir agregando otros productos al carrito o hacer clic en <strong
+                                class="txt-resalte">Iniciar Compra</strong></p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Completa tus datos de contacto y haz clic en <strong class="txt-resalte">Continuar</strong>.
+                        </p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Ingresa la dirección a donde deseas que sea enviado el producto o si deseas retirarlo en
+                            nuestro local.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Luego haz clic en <strong class="txt-resalte">Continuar</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Elige el medio de pago y haz clic en <strong class="txt-resalte">Continuar</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Finalmente en la página de <strong class="txt-resalte">Confirmación de compra</strong> puedes
+                            revisar toda la información de la compra.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Luego haz clic en <strong class="txt-resalte">Continuar</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Aparecerá un mensaje de éxito y podrás seguir navegando nuestra tienda.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Después de confirmar la compra recibirás un correo de nuestra parte con todos los datos del
+                            pedido.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Una vez acreditado el pago, recibirás por e-mail el <strong class="txt-resalte">comprobante
+                                de pago</strong>.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Luego <strong class="txt-resalte">inciaremos el envío</strong> de acuerdo a los plazos
+                            seleccionados.</p>
+                    </span>
+                    <span class="masinfo-txt-line"><i class="bi bi-dot bi-dark"></i>
+                        <p>Te enviaremos un nuevo correo cuando el producto sea recibido.</p>
+                    </span>
                 </div>
                 <p>Esperamos que te haya servido, cualquier consulta, no dudes en comunicarte con nosotras.</p>
             </div>
@@ -129,12 +180,14 @@
                     <p class="titulo txt-medium txt-light">Contacto</p>
                     <ul class="contact-list">
                         <li class="contact-line">
-                            <button data-action="btn_enviarMail" class="btn__icon" aria-label="enviar mail a lamargarita.shop@gmail.com">
+                            <button data-action="btn_enviarMail" class="btn__icon"
+                                aria-label="enviar mail a lamargarita.shop@gmail.com">
                                 <i class="bi bi-envelope bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">lamargarita.shop@gmail.com</span>
                         </li>
                         <li class="contact-line">
-                            <button data-action="btn_irGoogleMaps" class="btn__icon" aria-label="ver nuestra ubicación en google map">
+                            <button data-action="btn_irGoogleMaps" class="btn__icon"
+                                aria-label="ver nuestra ubicación en google map">
                                 <i class="bi bi-geo-alt bi-hover"></i></button>
                             <span class="txt-body txt-small txt-light">Rivadavia 4379 - CABA, Argentina</span>
                         </li>
@@ -158,8 +211,8 @@
                                 class="bi bi-instagram bi-hover"></i></button>
                         <button data-action="btn_irPinterest" class="btn__icon" aria-label="Ir a nuestro pinterest"><i
                                 class="bi bi-pinterest bi-hover"></i></button>
-                        <button data-action="btn_irYoutube" class="btn__icon" aria-label="Ir a nuestro canal de you tube"><i
-                                class="bi bi-youtube bi-hover"></i></button>
+                        <button data-action="btn_irYoutube" class="btn__icon"
+                            aria-label="Ir a nuestro canal de you tube"><i class="bi bi-youtube bi-hover"></i></button>
                     </div>
                 </div>
             </div>
